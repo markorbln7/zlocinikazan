@@ -9,6 +9,17 @@
    WP "2rem" -> calc(var(--zik) * 2).
    ============================================================ */
 
+:root {
+  --zik: 10px;
+  --zik-mono: 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    --zik: 0.52vw;
+  }
+}
+
 .zik {
   --zik: 10px;
 
@@ -1266,4 +1277,66 @@ body.zik-no-scroll {
   background-position: calc(100% - 16px) 50%, calc(100% - 11px) 50%;
   background-size: 5px 5px, 5px 5px;
   background-repeat: no-repeat;
+}
+
+/* ------------------------------------------------------------
+   Collection page adjustments (Horizon's own collection template)
+
+   Scoped to the heading section only: `product-title` blocks render the
+   same `text` snippet, so a looser `.text-block` scope would restyle every
+   product card. Both the block and its children are targeted because
+   base.css styles the child (`.text-block.h2 > *`), and !important is used
+   so this holds regardless of the preset Horizon applies.
+   ------------------------------------------------------------ */
+
+#shopify-section-collection_heading .text-block,
+#shopify-section-collection_heading .text-block *,
+[data-template^='collection'] > .shopify-section:first-child .text-block,
+[data-template^='collection'] > .shopify-section:first-child .text-block * {
+  font-family: var(--zik-mono) !important;
+  text-align: center !important;
+}
+
+/* Title — matches .introText__title (z-h1 / Roboto Mono 500 / black) */
+#shopify-section-collection_heading .text-block:is(.h1, .h2, .h3),
+#shopify-section-collection_heading .text-block:is(.h1, .h2, .h3) *,
+[data-template^='collection'] > .shopify-section:first-child .text-block:is(.h1, .h2, .h3),
+[data-template^='collection'] > .shopify-section:first-child .text-block:is(.h1, .h2, .h3) * {
+  font-size: calc(var(--zik) * 5.2) !important;
+  font-weight: 500 !important;
+  line-height: 1.1 !important;
+  letter-spacing: 0 !important;
+  color: #000000 !important;
+  margin: 0 !important;
+}
+
+/* Description — matches .introText__text (z-p-large / Roboto Mono 400 / #434343) */
+#shopify-section-collection_heading .text-block.rte,
+#shopify-section-collection_heading .text-block.rte *,
+[data-template^='collection'] > .shopify-section:first-child .text-block.rte,
+[data-template^='collection'] > .shopify-section:first-child .text-block.rte * {
+  font-size: calc(var(--zik) * 1.6) !important;
+  font-weight: 400 !important;
+  line-height: 1.9 !important;
+  letter-spacing: 0 !important;
+  color: #434343 !important;
+}
+
+@media screen and (min-width: 992px) {
+  #shopify-section-collection_heading .text-block.rte,
+  #shopify-section-collection_heading .text-block.rte *,
+  [data-template^='collection'] > .shopify-section:first-child .text-block.rte,
+  [data-template^='collection'] > .shopify-section:first-child .text-block.rte * {
+    font-size: calc(var(--zik) * 2) !important;
+    letter-spacing: 0.04em !important;
+  }
+}
+
+/* Three product cards per row on desktop, one on mobile.
+   Horizon computes columns as repeat(auto-fill, minmax(card-size, 1fr))
+   from an inline {% style %} block, so an exact count needs !important. */
+@media screen and (min-width: 750px) {
+  [data-template^='collection'] .product-grid:is(.product-grid--grid) {
+    --product-grid-columns-desktop: repeat(3, 1fr) !important;
+  }
 }

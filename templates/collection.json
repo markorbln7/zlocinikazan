@@ -1,25 +1,16 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
-    "section": {
+    "collection_heading": {
       "type": "section",
       "blocks": {
-        "text_tqQTNE": {
+        "title": {
           "type": "text",
           "name": "Title",
           "settings": {
             "text": "<h1>{{ closest.collection.title }}</h1>",
-            "width": "fit-content",
+            "width": "100%",
             "max_width": "normal",
-            "alignment": "left",
+            "alignment": "center",
             "type_preset": "h2",
             "font": "var(--font-primary--family)",
             "font_size": "",
@@ -38,14 +29,14 @@
           },
           "blocks": {}
         },
-        "text_twGGkJ": {
+        "description": {
           "type": "text",
           "name": "Description",
           "settings": {
             "text": "{{ closest.collection.description }}",
             "width": "100%",
-            "max_width": "none",
-            "alignment": "left",
+            "max_width": "normal",
+            "alignment": "center",
             "type_preset": "rte",
             "font": "var(--font-primary--family)",
             "font_size": "",
@@ -66,8 +57,8 @@
         }
       },
       "block_order": [
-        "text_tqQTNE",
-        "text_twGGkJ"
+        "title",
+        "description"
       ],
       "name": "Collection heading",
       "settings": {
@@ -103,7 +94,6 @@
       "blocks": {
         "filters": {
           "type": "filters",
-          "disabled": true,
           "static": true,
           "settings": {
             "enable_filtering": true,
@@ -215,9 +205,7 @@
       "settings": {
         "layout_type": "grid",
         "product_card_size": "medium",
-        "mobile_product_card_size": "small",
-        "enable_infinite_scroll": true,
-        "products_per_page": 24,
+        "mobile_product_card_size": "large",
         "product_grid_width": "centered",
         "full_width_on_mobile": true,
         "columns_gap_horizontal": 16,
@@ -231,7 +219,7 @@
     }
   },
   "order": [
-    "section",
+    "collection_heading",
     "main"
   ]
 }
