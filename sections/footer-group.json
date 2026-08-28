@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "footer",
   "name": "Footer",
@@ -5,6 +14,8 @@
     "zik_footer_newsletter": {
       "type": "zik-footer-newsletter",
       "settings": {
+        "image": "shopify://shop_images/Zlocin-i-Kazan-7-1-scaled.jpg",
+        "space_below": 0,
         "show_newsletter": true,
         "newsletter_title": "NEWSLETTER",
         "newsletter_text": "Najteže je opisati nešto na šta ste ponosni. Ovo je džin kakav smo od početka hteli da napravimo. U njemu je sublimirana cela filozofija naše destilerije. Sa posebnom pažnjom kreiran od ideje do flaše",
@@ -16,12 +27,48 @@
     "zik_instagram": {
       "type": "zik-instagram",
       "blocks": {
-        "instagram_1": { "type": "instagram_image", "settings": {} },
-        "instagram_2": { "type": "instagram_image", "settings": {} },
-        "instagram_3": { "type": "instagram_image", "settings": {} },
-        "instagram_4": { "type": "instagram_image", "settings": {} },
-        "instagram_5": { "type": "instagram_image", "settings": {} },
-        "instagram_6": { "type": "instagram_image", "settings": {} }
+        "instagram_1": {
+          "type": "instagram_image",
+          "disabled": true,
+          "settings": {
+            "link": ""
+          }
+        },
+        "instagram_2": {
+          "type": "instagram_image",
+          "disabled": true,
+          "settings": {
+            "link": ""
+          }
+        },
+        "instagram_3": {
+          "type": "instagram_image",
+          "disabled": true,
+          "settings": {
+            "link": ""
+          }
+        },
+        "instagram_4": {
+          "type": "instagram_image",
+          "disabled": true,
+          "settings": {
+            "link": ""
+          }
+        },
+        "instagram_5": {
+          "type": "instagram_image",
+          "disabled": true,
+          "settings": {
+            "link": ""
+          }
+        },
+        "instagram_6": {
+          "type": "instagram_image",
+          "disabled": true,
+          "settings": {
+            "link": ""
+          }
+        }
       },
       "block_order": [
         "instagram_1",
@@ -37,23 +84,89 @@
         "profile_url": "https://www.instagram.com/zlocinikazan.rs/"
       }
     },
+    "17879055679a01bf18": {
+      "type": "_blocks",
+      "blocks": {
+        "instafeed_app_block_Hqj3hx": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "left",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_Hqj3hx"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 40
+      }
+    },
     "zik_footer": {
       "type": "zik-footer",
       "blocks": {
         "column_site": {
           "type": "link_column",
-          "settings": { "title": "SAJT", "menu": "footer" }
+          "settings": {
+            "title": "SAJT",
+            "menu": "footer"
+          }
         },
         "column_account": {
           "type": "link_column",
-          "settings": { "title": "MOJ NALOG", "menu": "footer" }
+          "settings": {
+            "title": "MOJ NALOG",
+            "menu": "footer"
+          }
         },
         "column_info": {
           "type": "link_column",
-          "settings": { "title": "INFORMACIJE", "menu": "footer" }
+          "settings": {
+            "title": "INFORMACIJE",
+            "menu": "footer"
+          }
         }
       },
-      "block_order": ["column_site", "column_account", "column_info"],
+      "block_order": [
+        "column_site",
+        "column_account",
+        "column_info"
+      ],
       "settings": {
         "contact_title": "KONTAKTIRAJTE NAS",
         "address": "ZLOČIN I KAZAN, METOHIJSKA 24, BEOGRAD",
@@ -66,5 +179,10 @@
       }
     }
   },
-  "order": ["zik_footer_newsletter", "zik_instagram", "zik_footer"]
+  "order": [
+    "zik_footer_newsletter",
+    "zik_instagram",
+    "17879055679a01bf18",
+    "zik_footer"
+  ]
 }
