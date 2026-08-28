@@ -74,9 +74,9 @@
       "settings": {
         "title": "NAŠ DŽIN",
         "title_size": "z-h1",
-        "text": "<p>Mi smo bili grupa prijatelja. Sada smo grupa prijatelja koja ima destileriju. Vi mislite da mi u njoj pravimo džin. Ali mi u njoj ne pravimo džin, mi u njoj igramo tu igru stvaranja nečega od nule.<br><br>Taj ples ideja, rada, radosti i napora. Naša je želja da napravimo priču koju ćemo pričati sa ponosom. A ako uz to nekome od vas ulepšamo trenutak, dan ili život našim proizvodima, onda smo postigli sve što smo ikada hteli.</p>",
+        "text": "<p>Mi smo bili grupa prijatelja. Sada smo grupa prijatelja koja ima destileriju. Vi mislite da mi u njoj pravimo džin. Ali mi u njoj ne pravimo džin, mi u njoj igramo tu igru stvaranja nečega od nule.<br/><br/>Taj ples ideja, rada, radosti i napora. Naša je želja da napravimo priču koju ćemo pričati sa ponosom. A ako uz to nekome od vas ulepšamo trenutak, dan ili život našim proizvodima, onda smo postigli sve što smo ikada hteli.</p>",
         "link_label": "O nama",
-        "link_url": ""
+        "link_url": "shopify://pages/o-nama"
       }
     },
     "product_1": {
