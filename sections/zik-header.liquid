@@ -1,0 +1,103 @@
+{%- liquid
+  assign s = section.settings
+-%}
+
+<zik-header
+  class="zik zik-header"
+  {% if s.sticky %}sticky{% endif %}
+  style="--zik-menu-bg: {{ s.mobile_menu_background }};"
+>
+  <nav class="navigation">
+    <div class="open-menu w-33">
+      <button
+        type="button"
+        class="hamburger-x"
+        data-zik-menu-toggle
+        data-zik-hamburger
+        aria-expanded="false"
+        aria-label="{{ s.menu_label | escape }}"
+      >
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </div>
+
+    <div class="navigation__menu z-mono-regular" data-zik-menu>
+      {%- for link in s.menu.links -%}
+        <a href="{{ link.url }}" class="navigation__menu--single">{{ link.title }}</a>
+      {%- endfor -%}
+    </div>
+
+    <a href="{{ routes.root_url }}" class="navigation__logo w-33">
+      {%- if s.logo != blank -%}
+        {{
+          s.logo
+          | image_url: width: 600
+          | image_tag:
+            widths: '150, 300, 450, 600',
+            sizes: '200px',
+            alt: shop.name,
+            loading: 'eager',
+            fetchpriority: 'high'
+        }}
+      {%- else -%}
+        <span class="navigation__logo-text z-mono-medium">{{ shop.name }}</span>
+      {%- endif -%}
+    </a>
+
+    <div class="navigation__woo w-33 z-mono-regular">
+      <a href="{{ routes.cart_url }}" class="navigation__woo--basket">
+        <span class="basket">{{ s.cart_label }}</span>
+        <span>(<zik-cart-count>{{ cart.item_count }}</zik-cart-count>)</span>
+      </a>
+    </div>
+  </nav>
+</zik-header>
+
+{% schema %}
+{
+  "name": "ZiK header",
+  "tag": "header",
+  "class": "zik-header-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Meni",
+      "default": "main-menu"
+    },
+    {
+      "type": "text",
+      "id": "cart_label",
+      "label": "Tekst korpe",
+      "default": "Korpa"
+    },
+    {
+      "type": "text",
+      "id": "menu_label",
+      "label": "Naziv dugmeta menija (pristupačnost)",
+      "default": "Meni"
+    },
+    {
+      "type": "checkbox",
+      "id": "sticky",
+      "label": "Zalepi header pri skrolovanju",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "mobile_menu_background",
+      "label": "Pozadina mobilnog menija",
+      "info": "WordPress sajt koristi #40BEE7 — izgleda kao zaostala boja iz razvoja, pa je ovde podrazumevano belo.",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": []
+}
+{% endschema %}

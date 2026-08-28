@@ -1,0 +1,97 @@
+{%- comment -%}
+  Instagram heading + image grid.
+
+  Its own section so it can be deleted and replaced by an Instagram feed app
+  section. Leaving the image blocks empty renders just the ZiK heading, which
+  can then sit directly above an app section.
+{%- endcomment -%}
+
+{%- liquid
+  assign s = section.settings
+-%}
+
+<div class="zik">
+  <div class="footer__instagram zik-container">
+    {%- if s.title != blank or s.handle != blank -%}
+      <div class="footer__instagram--header">
+        <div class="footer__instagram--header__title z-mono-medium z-black z-h4">{{ s.title }}</div>
+        <div class="footer__instagram--header__logo z-mono-medium z-black z-p-large">{{ s.handle }}</div>
+      </div>
+    {%- endif -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="footer__instagram--grid">
+        {%- for block in section.blocks -%}
+          <a
+            href="{{ block.settings.link | default: s.profile_url | default: '#' }}"
+            target="_blank"
+            rel="noopener"
+            {{ block.shopify_attributes }}
+          >
+            {%- if block.settings.image != blank -%}
+              {{
+                block.settings.image
+                | image_url: width: 600
+                | image_tag:
+                  widths: '200, 300, 400, 600',
+                  sizes: '(min-width: 769px) 14vw, 45vw',
+                  alt: block.settings.image.alt,
+                  loading: 'lazy'
+              }}
+            {%- else -%}
+              {{ 'lifestyle-2' | placeholder_svg_tag }}
+            {%- endif -%}
+          </a>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "ZiK Instagram",
+  "tag": "section",
+  "class": "zik-instagram-section",
+  "max_blocks": 12,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Naslov",
+      "default": "ZAPRATITE NAS NA INSTAGRAMU"
+    },
+    {
+      "type": "text",
+      "id": "handle",
+      "label": "Handle",
+      "default": "ZLOCINIKAZAN.RS"
+    },
+    {
+      "type": "url",
+      "id": "profile_url",
+      "label": "Link profila",
+      "info": "Koristi se za slike koje nemaju svoj link."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "instagram_image",
+      "name": "Slika",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Slika"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": []
+}
+{% endschema %}

@@ -1,0 +1,101 @@
+{%- liquid
+  assign s = section.settings
+-%}
+
+<div class="zik">
+  <div class="testimonials">
+    {%- if s.heading != blank -%}
+      <div class="testimonials__header z-mono-bold z-h2 z-center">{{ s.heading }}</div>
+    {%- endif -%}
+
+    <zik-slider
+      class="zik-slider testimonials__slides"
+      {% if s.loop %}loop{% endif %}
+      autoplay="{{ s.autoplay_speed | times: 1000 | round }}"
+      role="region"
+      aria-roledescription="carousel"
+      aria-label="{{ s.heading | default: 'Utisci' | escape }}"
+    >
+      <div class="zik-slider__track" data-zik-track>
+        {%- for block in section.blocks -%}
+          <div class="zik-slider__slide" {{ block.shopify_attributes }}>
+            <div class="testimonials__slides--text z-mono-italic z-center z-h3">
+              {{- block.settings.text -}}
+            </div>
+            <div class="testimonials__slides--name z-mono-medium z-p-large z-center">
+              {{- block.settings.name -}}
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+
+      {%- if section.blocks.size > 1 -%}
+        {% render 'zik-slider-controls' %}
+      {%- endif -%}
+    </zik-slider>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "ZiK utisci",
+  "tag": "section",
+  "class": "zik-section",
+  "max_blocks": 20,
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Naslov",
+      "default": "Šta kažu o nama"
+    },
+    {
+      "type": "checkbox",
+      "id": "loop",
+      "label": "Beskonačno ponavljanje",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "label": "Automatska promena",
+      "info": "0 isključuje automatsku promenu.",
+      "min": 0,
+      "max": 10,
+      "step": 0.5,
+      "unit": "s",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Utisak",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Tekst",
+          "default": "Ništa originalnije ne čuh odavno!"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Ime",
+          "default": "Juucika"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ZiK utisci",
+      "blocks": [
+        { "type": "testimonial" },
+        { "type": "testimonial" },
+        { "type": "testimonial" }
+      ]
+    }
+  ]
+}
+{% endschema %}

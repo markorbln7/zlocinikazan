@@ -1,0 +1,109 @@
+{%- liquid
+  assign s = section.settings
+-%}
+
+<div class="zik">
+  <zik-slider
+    class="zik-slider zik-slideshow"
+    {% if s.loop %}loop{% endif %}
+    autoplay="{{ s.autoplay_speed | times: 1000 | round }}"
+    role="region"
+    aria-roledescription="carousel"
+    aria-label="{{ section.settings.aria_label | default: 'Galerija' | escape }}"
+  >
+    <div class="zik-slider__track" data-zik-track>
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign loading = 'lazy'
+          if forloop.first
+            assign loading = 'eager'
+          endif
+        -%}
+        <div class="zik-slider__slide" {{ block.shopify_attributes }}>
+          {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}">{%- endif -%}
+          {%- if block.settings.image != blank -%}
+            {{
+              block.settings.image
+              | image_url: width: 3000
+              | image_tag:
+                widths: '600, 900, 1200, 1600, 2000, 2600, 3000',
+                sizes: '100vw',
+                alt: block.settings.image.alt,
+                loading: loading,
+                class: 'zik-slideshow__image'
+            }}
+          {%- else -%}
+            {{ 'hero-apparel-1' | placeholder_svg_tag: 'zik-slideshow__image' }}
+          {%- endif -%}
+          {%- if block.settings.link != blank -%}</a>{%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+
+    {%- if section.blocks.size > 1 -%}
+      {% render 'zik-slider-controls' %}
+    {%- endif -%}
+  </zik-slider>
+</div>
+
+{% schema %}
+{
+  "name": "ZiK slajder",
+  "tag": "section",
+  "class": "zik-section",
+  "max_blocks": 12,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "loop",
+      "label": "Beskonačno ponavljanje",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "label": "Automatska promena",
+      "info": "0 isključuje automatsku promenu.",
+      "min": 0,
+      "max": 10,
+      "step": 0.5,
+      "unit": "s",
+      "default": 0
+    },
+    {
+      "type": "text",
+      "id": "aria_label",
+      "label": "Naziv slajdera (pristupačnost)",
+      "default": "Galerija"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slajd",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Slika"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ZiK slajder",
+      "blocks": [
+        { "type": "slide" },
+        { "type": "slide" },
+        { "type": "slide" }
+      ]
+    }
+  ]
+}
+{% endschema %}

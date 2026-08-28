@@ -1,0 +1,72 @@
+{%- liquid
+  assign s = section.settings
+-%}
+
+<div class="zik">
+  <div class="component introText">
+    {%- if s.title != blank -%}
+      <div class="introText__title {{ s.title_size }} z-black z-mono-medium z-center">{{ s.title }}</div>
+    {%- endif -%}
+
+    {%- if s.text != blank -%}
+      <div class="introText__text z-mono-regular z-p-large z-muted z-center">{{ s.text }}</div>
+    {%- endif -%}
+
+    {%- if s.link_label != blank -%}
+      <div class="introText__link z-center">
+        <a href="{{ s.link_url | default: '#' }}" class="z-black z-center z-p-large z-mono-medium">
+          {{- s.link_label -}}
+        </a>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "ZiK uvodni tekst",
+  "tag": "section",
+  "class": "zik-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Naslov",
+      "default": "NAŠ DŽIN"
+    },
+    {
+      "type": "select",
+      "id": "title_size",
+      "label": "Veličina naslova",
+      "info": "Manji naslov odgovara varijanti sa podstranica (introTextSmaller).",
+      "options": [
+        { "value": "z-h1", "label": "Veliki" },
+        { "value": "introText__title--small", "label": "Manji" }
+      ],
+      "default": "z-h1"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Tekst",
+      "default": "<p>Mi smo bili grupa prijatelja. Sada smo grupa prijatelja koja ima destileriju.</p>"
+    },
+    {
+      "type": "text",
+      "id": "link_label",
+      "label": "Tekst linka",
+      "default": "O nama"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "ZiK uvodni tekst"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,221 @@
+{%- liquid
+  assign s = section.settings
+  assign product = s.product
+
+  # Give the theme editor something to render before a product is picked.
+  if product == blank and request.design_mode
+    assign product = collections.all.products.first
+  endif
+
+  assign variant = product.selected_or_first_available_variant
+
+  assign can_add_to_cart = false
+  assign button_label = s.sold_out_label
+  if variant != blank and variant.available
+    assign can_add_to_cart = true
+    assign button_label = s.button_label
+  endif
+
+  assign featured_image = s.image | default: product.featured_image
+  assign product_form_id = 'ZikProductForm-' | append: section.id
+
+  assign variant_media = variant.featured_media.preview_image | image_url: width: 100
+  if variant.featured_media.preview_image == blank
+    assign variant_media = product.featured_media.preview_image | image_url: width: 100
+  endif
+-%}
+
+{%- if product != blank -%}
+  <div class="zik">
+    <section class="homeProduct">
+      <div class="homeProduct__inner">
+        <a href="{{ product.url }}" class="homeProduct__inner--image">
+          {%- if featured_image != blank -%}
+            {{
+              featured_image
+              | image_url: width: 1600
+              | image_tag:
+                widths: '400, 600, 800, 1200, 1600',
+                sizes: '(min-width: 1025px) 40vw, 100vw',
+                alt: product.title,
+                loading: 'lazy'
+            }}
+          {%- else -%}
+            {{ 'product-1' | placeholder_svg_tag }}
+          {%- endif -%}
+        </a>
+
+        <div class="homeProduct__inner--content">
+          <a href="{{ product.url }}" class="homeProduct__inner--content__title z-h2 z-mono-medium">
+            {{- product.title -}}
+          </a>
+
+          {%- if s.show_description and product.description != blank -%}
+            <div class="homeProduct__inner--content__description z-p z-mono-regular">
+              {{ product.description }}
+            </div>
+          {%- endif -%}
+
+          {%- if s.show_tags and product.tags.size > 0 -%}
+            <div class="homeProduct__inner--content__tags z-p-smaller z-mono-regular">
+              {%- for tag in product.tags -%}{{ tag }} | {% endfor -%}
+            </div>
+          {%- endif -%}
+
+          <div class="homeProduct__inner--content__price z-h2 z-mono-medium">
+            <div class="zik-price-row">
+              <div class="z-h2 z-mono-medium">{{ variant.price | money }}</div>
+              {%- if variant.compare_at_price > variant.price -%}
+                <div class="z-h2 z-mono-medium zik-price-compare">{{ variant.compare_at_price | money }}</div>
+              {%- endif -%}
+            </div>
+          </div>
+
+          <product-form-component
+            data-section-id="{{ section.id }}"
+            data-product-id="{{ product.id }}"
+            data-product-url="{{ product.url }}"
+            on:submit="/handleSubmit"
+            data-quantity-default="{{ variant.quantity_rule.min | default: 1 }}"
+            data-quantity-error-max="{{ 'products.product.quantity_error_max' | t }}"
+          >
+            <div class="visually-hidden" aria-live="assertive" role="status" aria-atomic="true" ref="liveRegion"></div>
+
+            {%- form 'product', product, id: product_form_id, class: 'zik-product-form' -%}
+              <input type="hidden" name="id" ref="variantId" value="{{ variant.id }}">
+
+              <div class="homeProduct__inner--content__quantity">
+                <div class="homeProduct__inner--content__quantity--title z-p z-mono-regular">
+                  {{ s.quantity_label }}
+                </div>
+
+                <quantity-selector-component
+                  class="homeProduct__inner--content__quantity--wrapper z-p z-mono-regular"
+                  ref="quantitySelector"
+                  data-variant-id="{{ variant.id }}"
+                >
+                  <button
+                    class="homeProduct__inner--content__quantity--wrapper__minus"
+                    type="button"
+                    name="minus"
+                    on:click="/decreaseQuantity"
+                    ref="minusButton"
+                    aria-label="{{ 'accessibility.decrease_quantity' | t }}"
+                  >
+                    &minus;
+                  </button>
+                  <input
+                    class="homeProduct__inner--content__quantity--wrapper__number"
+                    type="number"
+                    name="quantity"
+                    value="{{ variant.quantity_rule.min | default: 1 }}"
+                    min="{{ variant.quantity_rule.min | default: 1 }}"
+                    data-min="{{ variant.quantity_rule.min | default: 1 }}"
+                    data-cart-quantity="{{ cart | item_count_for_variant: variant.id }}"
+                    {% if variant.quantity_rule.max %}
+                      max="{{ variant.quantity_rule.max }}"
+                    {% endif %}
+                    step="{{ variant.quantity_rule.increment | default: 1 }}"
+                    on:blur="/setQuantity"
+                    on:focus="/selectInputValue"
+                    ref="quantityInput"
+                    aria-label="{{ 'accessibility.quantity' | t }}"
+                  >
+                  <button
+                    class="homeProduct__inner--content__quantity--wrapper__plus"
+                    type="button"
+                    name="plus"
+                    on:click="/increaseQuantity"
+                    ref="plusButton"
+                    aria-label="{{ 'accessibility.increase_quantity' | t }}"
+                  >
+                    +
+                  </button>
+                </quantity-selector-component>
+              </div>
+
+              <add-to-cart-component
+                ref="addToCartButtonContainer"
+                data-product-variant-media="{{ variant_media }}"
+              >
+                <button
+                  type="submit"
+                  name="add"
+                  ref="addToCartButton"
+                  class="homeProduct__inner--content__button z-mono-regular"
+                  {% unless can_add_to_cart %}
+                    disabled
+                  {% endunless %}
+                >
+                  {{ button_label }}
+                </button>
+              </add-to-cart-component>
+            {%- endform -%}
+          </product-form-component>
+        </div>
+      </div>
+    </section>
+  </div>
+{%- elsif request.design_mode -%}
+  <div class="zik">
+    <section class="homeProduct">
+      <p class="z-p z-mono-regular">Izaberite proizvod u podešavanjima sekcije.</p>
+    </section>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "ZiK proizvod",
+  "tag": "section",
+  "class": "zik-section",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Proizvod"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Slika (opciono)",
+      "info": "Ako se ne izabere, koristi se glavna slika proizvoda."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_description",
+      "label": "Prikaži opis",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_tags",
+      "label": "Prikaži tagove (sastojke)",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "quantity_label",
+      "label": "Naziv polja za količinu",
+      "default": "Količina"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Tekst dugmeta",
+      "default": "DODAJ U KORPU +"
+    },
+    {
+      "type": "text",
+      "id": "sold_out_label",
+      "label": "Tekst kada nema na stanju",
+      "default": "NEMA NA STANJU"
+    }
+  ],
+  "presets": [
+    {
+      "name": "ZiK proizvod"
+    }
+  ]
+}
+{% endschema %}

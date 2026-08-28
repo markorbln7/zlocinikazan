@@ -1,0 +1,217 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "zik-slideshow",
+      "blocks": {
+        "slide_1": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "slide_2": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "slide_3": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_1",
+        "slide_2",
+        "slide_3"
+      ],
+      "settings": {
+        "loop": true,
+        "autoplay_speed": 0,
+        "aria_label": "Galerija"
+      }
+    },
+    "intro": {
+      "type": "zik-intro-text",
+      "settings": {
+        "title": "NAŠ DŽIN",
+        "title_size": "z-h1",
+        "text": "<p>Mi smo bili grupa prijatelja. Sada smo grupa prijatelja koja ima destileriju. Vi mislite da mi u njoj pravimo džin. Ali mi u njoj ne pravimo džin, mi u njoj igramo tu igru stvaranja nečega od nule.<br><br>Taj ples ideja, rada, radosti i napora. Naša je želja da napravimo priču koju ćemo pričati sa ponosom. A ako uz to nekome od vas ulepšamo trenutak, dan ili život našim proizvodima, onda smo postigli sve što smo ikada hteli.</p>",
+        "link_label": "O nama",
+        "link_url": ""
+      }
+    },
+    "product_1": {
+      "type": "zik-product",
+      "settings": {
+        "product": "dry-gin-classic",
+        "show_description": true,
+        "show_tags": true,
+        "quantity_label": "Količina",
+        "button_label": "DODAJ U KORPU +",
+        "sold_out_label": "NEMA NA STANJU"
+      }
+    },
+    "product_2": {
+      "type": "zik-product",
+      "settings": {
+        "product": "botanicki-dzin-0-75l",
+        "show_description": true,
+        "show_tags": true,
+        "quantity_label": "Količina",
+        "button_label": "DODAJ U KORPU +",
+        "sold_out_label": "NEMA NA STANJU"
+      }
+    },
+    "zigzag": {
+      "type": "zik-zigzag",
+      "blocks": {
+        "row_1": {
+          "type": "row",
+          "settings": {
+            "heading": "Punoća ukusa",
+            "text": "<p>Predstavljamo naš botanički džin bogatog ukusa, u kojem se prepliću nežni tonovi zove, aromatična žalfija, osvežavajući matičnjak i slatkast dodir sušene kruške. Ove pažljivo birane biljke daju našem džinu punoću ukusa, stvarajući savršen balans između biljne svežine i voćne topline.</p>",
+            "product": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_2": {
+          "type": "row",
+          "settings": {
+            "heading": "Mirisne note",
+            "text": "<p>Naš botanički džin ne samo da osvaja ukusom, već i svojim bogatim mirisnim notama. Zova donosi suptilnu cvetnu aromu koja pruža nežan uvod, dok žalfija dodaje duboke, zemljane tonove. Matičnjak osvežava blago citrusnim mirisom, a sušena kruška unosi slatkastu voćnu notu, zaokružujući mirisni profil džina i čineći ga nezaboravnim iskustvom za sva čula.</p>",
+            "product": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_3": {
+          "type": "row",
+          "settings": {
+            "heading": "Savršen za koktele",
+            "text": "<p>Naš botanički džin je savršen izbor za koktele zbog svoje složene i balansirane kombinacije biljnih i voćnih aroma. Zova donosi cvetnu nežnost koja osvežava svaki gutljaj, dok žalfija daje dubinu i aromatičnu kompleksnost. Matičnjak dodaje osvežavajuću notu koja se savršeno uklapa sa citrusima, a sušena kruška unosi suptilan, sladak završetak. Ova harmonična mešavina ukusa i mirisa čini naš džin idealnim za raznovrsne koktele, od klasičnih do modernih kreacija.</p>",
+            "product": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_1",
+        "row_2",
+        "row_3"
+      ],
+      "disabled": true,
+      "settings": {
+        "button_label": "DODAJ U KORPU +",
+        "sold_out_label": "NEMA NA STANJU"
+      }
+    },
+    "images": {
+      "type": "zik-image-stack",
+      "blocks": {
+        "image_1": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_2": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "image_1",
+        "image_2"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "kokteli": {
+      "type": "zik-rich-text",
+      "disabled": true,
+      "settings": {
+        "heading": "KOKTELI SA NAŠIM DŽINOM",
+        "heading_size": "z-h2",
+        "text": "<p>Naš Dry DŽIN je savršen sam po sebi, ali u koktelima pokazuje sav svoj potencijal.</p>",
+        "alignment": "center",
+        "narrow": true,
+        "link_label": "",
+        "link_url": ""
+      }
+    },
+    "testimonials": {
+      "type": "zik-testimonials",
+      "blocks": {
+        "t_1": {
+          "type": "testimonial",
+          "settings": {
+            "text": "Ima simbolike posle gledanja serije Vratiće se rode gde grupica beogradskih padavičara dolazi da proba nešto novo.",
+            "name": "Miloš Dašić - Kemiš"
+          }
+        },
+        "t_2": {
+          "type": "testimonial",
+          "settings": {
+            "text": "Ništa originalnije ne čuh odavno!",
+            "name": "Juucika"
+          }
+        },
+        "t_3": {
+          "type": "testimonial",
+          "settings": {
+            "text": "Dođite do sjajnih momaka! Primaju i kartice",
+            "name": "borhesbg"
+          }
+        },
+        "t_4": {
+          "type": "testimonial",
+          "settings": {
+            "text": "Nije vam dobro ime firme.",
+            "name": "neka baba u prolazu"
+          }
+        },
+        "t_5": {
+          "type": "testimonial",
+          "settings": {
+            "text": "Jedino ko može da me pobedi su momci iz ZiK-a!",
+            "name": "ChatGPT"
+          }
+        }
+      },
+      "block_order": [
+        "t_1",
+        "t_2",
+        "t_3",
+        "t_4",
+        "t_5"
+      ],
+      "settings": {
+        "heading": "Šta kažu o nama",
+        "loop": true,
+        "autoplay_speed": 0
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "intro",
+    "product_1",
+    "product_2",
+    "zigzag",
+    "images",
+    "kokteli",
+    "testimonials"
+  ]
+}

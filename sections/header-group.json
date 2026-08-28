@@ -1,0 +1,17 @@
+{
+  "type": "header",
+  "name": "Header",
+  "sections": {
+    "zik_header": {
+      "type": "zik-header",
+      "settings": {
+        "menu": "main-menu",
+        "cart_label": "Korpa",
+        "menu_label": "Meni",
+        "sticky": true,
+        "mobile_menu_background": "#ffffff"
+      }
+    }
+  },
+  "order": ["zik_header"]
+}

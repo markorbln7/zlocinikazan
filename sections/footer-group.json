@@ -1,0 +1,70 @@
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "zik_footer_newsletter": {
+      "type": "zik-footer-newsletter",
+      "settings": {
+        "show_newsletter": true,
+        "newsletter_title": "NEWSLETTER",
+        "newsletter_text": "Najteže je opisati nešto na šta ste ponosni. Ovo je džin kakav smo od početka hteli da napravimo. U njemu je sublimirana cela filozofija naše destilerije. Sa posebnom pažnjom kreiran od ideje do flaše",
+        "newsletter_placeholder": "email",
+        "newsletter_button": "Prijavi se",
+        "newsletter_success": "Hvala na prijavi!"
+      }
+    },
+    "zik_instagram": {
+      "type": "zik-instagram",
+      "blocks": {
+        "instagram_1": { "type": "instagram_image", "settings": {} },
+        "instagram_2": { "type": "instagram_image", "settings": {} },
+        "instagram_3": { "type": "instagram_image", "settings": {} },
+        "instagram_4": { "type": "instagram_image", "settings": {} },
+        "instagram_5": { "type": "instagram_image", "settings": {} },
+        "instagram_6": { "type": "instagram_image", "settings": {} }
+      },
+      "block_order": [
+        "instagram_1",
+        "instagram_2",
+        "instagram_3",
+        "instagram_4",
+        "instagram_5",
+        "instagram_6"
+      ],
+      "settings": {
+        "title": "ZAPRATITE NAS NA INSTAGRAMU",
+        "handle": "ZLOCINIKAZAN.RS",
+        "profile_url": "https://www.instagram.com/zlocinikazan.rs/"
+      }
+    },
+    "zik_footer": {
+      "type": "zik-footer",
+      "blocks": {
+        "column_site": {
+          "type": "link_column",
+          "settings": { "title": "SAJT", "menu": "footer" }
+        },
+        "column_account": {
+          "type": "link_column",
+          "settings": { "title": "MOJ NALOG", "menu": "footer" }
+        },
+        "column_info": {
+          "type": "link_column",
+          "settings": { "title": "INFORMACIJE", "menu": "footer" }
+        }
+      },
+      "block_order": ["column_site", "column_account", "column_info"],
+      "settings": {
+        "contact_title": "KONTAKTIRAJTE NAS",
+        "address": "ZLOČIN I KAZAN, METOHIJSKA 24, BEOGRAD",
+        "phone": "+381641815117",
+        "email": "info@zlocinikazan.rs",
+        "instagram_url": "https://www.instagram.com/zlocinikazan.rs/",
+        "facebook_url": "https://www.facebook.com/zlocinikazan",
+        "twitter_url": "https://twitter.com/zlocinikazan",
+        "copyright": "Autorska prava © 2025 Zločin i kazan. Sva prava zadržana"
+      }
+    }
+  },
+  "order": ["zik_footer_newsletter", "zik_instagram", "zik_footer"]
+}

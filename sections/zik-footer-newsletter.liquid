@@ -1,0 +1,133 @@
+{%- comment -%}
+  Footer image + yellow newsletter panel.
+
+  Split out of zik-footer so an app section (e.g. an Instagram feed) can be
+  placed between this and the dark footer. The two stay in one section because
+  the newsletter is pulled up over the image with a negative margin.
+{%- endcomment -%}
+
+{%- liquid
+  assign s = section.settings
+-%}
+
+<div class="zik" style="padding-bottom: {{ s.space_below }}px;">
+  <div class="footer">
+    {%- if s.image != blank -%}
+      <div class="footer__image">
+        {{
+          s.image
+          | image_url: width: 2800
+          | image_tag:
+            widths: '600, 900, 1200, 1600, 2000, 2400, 2800',
+            sizes: '100vw',
+            alt: s.image.alt,
+            loading: 'lazy'
+        }}
+      </div>
+    {%- endif -%}
+
+    {%- if s.show_newsletter -%}
+      <div class="footer__newsletter z-center">
+        {%- if s.newsletter_title != blank -%}
+          <div class="footer__newsletter--title z-h2 z-black">{{ s.newsletter_title }}</div>
+        {%- endif -%}
+
+        <div class="zik-divider"></div>
+
+        {%- if s.newsletter_text != blank -%}
+          <div class="footer__newsletter--text z-p-large z-black">{{ s.newsletter_text }}</div>
+        {%- endif -%}
+
+        {%- form 'customer', class: 'footer__newsletter--form' -%}
+          <input type="hidden" name="contact[tags]" value="newsletter">
+          <div class="footer__newsletter--fields">
+            <input
+              class="text-input z-mono-regular"
+              type="email"
+              name="contact[email]"
+              value="{{ form.email }}"
+              placeholder="{{ s.newsletter_placeholder | escape }}"
+              aria-label="{{ s.newsletter_placeholder | escape }}"
+              autocorrect="off"
+              autocapitalize="off"
+              autocomplete="email"
+              required
+            >
+            <input class="submit z-mono-regular z-p-smaller" type="submit" value="{{ s.newsletter_button | escape }}">
+          </div>
+
+          {%- if form.posted_successfully? -%}
+            <p class="footer__newsletter--message z-p z-mono-regular z-black">{{ s.newsletter_success }}</p>
+          {%- elsif form.errors -%}
+            <p class="footer__newsletter--message z-p z-mono-regular z-black">
+              {{ form.errors.translated_fields.email }} {{ form.errors.messages.email }}
+            </p>
+          {%- endif -%}
+        {%- endform -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "ZiK newsletter",
+  "tag": "section",
+  "class": "zik-footer-newsletter-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Slika iznad newslettera"
+    },
+    {
+      "type": "range",
+      "id": "space_below",
+      "label": "Razmak ispod",
+      "info": "Dodaje prostor ispod newslettera — korisno kada se ispod ubaci app sekcija.",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "show_newsletter",
+      "label": "Prikaži newsletter",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "newsletter_title",
+      "label": "Naslov",
+      "default": "NEWSLETTER"
+    },
+    {
+      "type": "textarea",
+      "id": "newsletter_text",
+      "label": "Tekst",
+      "default": "Najteže je opisati nešto na šta ste ponosni. Ovo je džin kakav smo od početka hteli da napravimo."
+    },
+    {
+      "type": "text",
+      "id": "newsletter_placeholder",
+      "label": "Placeholder polja",
+      "default": "email"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_button",
+      "label": "Tekst dugmeta",
+      "default": "Prijavi se"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_success",
+      "label": "Poruka nakon prijave",
+      "default": "Hvala na prijavi!"
+    }
+  ],
+  "presets": []
+}
+{% endschema %}

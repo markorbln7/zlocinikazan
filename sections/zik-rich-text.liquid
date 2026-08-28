@@ -1,0 +1,90 @@
+{%- liquid
+  assign s = section.settings
+
+  assign align_class = 'z-center'
+  if s.alignment == 'left'
+    assign align_class = 'z-left'
+  endif
+-%}
+
+<div class="zik">
+  <div class="zik-richtext zik-container{% if s.narrow %} zik-richtext--narrow{% endif %} {{ align_class }}">
+    <div class="zik-richtext__inner">
+      {%- if s.heading != blank -%}
+        <div class="zik-richtext__heading {{ s.heading_size }} z-mono-medium">{{ s.heading }}</div>
+      {%- endif -%}
+
+      {%- if s.text != blank -%}
+        <div class="zik-richtext__text z-p-large z-mono-regular z-muted">{{ s.text }}</div>
+      {%- endif -%}
+
+      {%- if s.link_label != blank -%}
+        <div class="zik-richtext__link">
+          <a href="{{ s.link_url | default: '#' }}" class="z-black z-p-large z-mono-medium">{{ s.link_label }}</a>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "ZiK tekst",
+  "tag": "section",
+  "class": "zik-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Naslov"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Veličina naslova",
+      "options": [
+        { "value": "z-h1", "label": "Veliki" },
+        { "value": "z-h2", "label": "Srednji" },
+        { "value": "z-h4", "label": "Mali" }
+      ],
+      "default": "z-h2"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Tekst"
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Poravnanje",
+      "options": [
+        { "value": "center", "label": "Centrirano" },
+        { "value": "left", "label": "Levo" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "checkbox",
+      "id": "narrow",
+      "label": "Uža kolona teksta",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "link_label",
+      "label": "Tekst linka"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "ZiK tekst"
+    }
+  ]
+}
+{% endschema %}
