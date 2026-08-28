@@ -6,8 +6,7 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */
-{
+ */{
   "sections": {
     "collection_heading": {
       "type": "section",
@@ -44,7 +43,7 @@
           "settings": {
             "text": "{{ closest.collection.description }}",
             "width": "100%",
-            "max_width": "normal",
+            "max_width": "none",
             "alignment": "center",
             "type_preset": "rte",
             "font": "var(--font-primary--family)",
