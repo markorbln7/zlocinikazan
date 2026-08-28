@@ -1340,3 +1340,73 @@ body.zik-no-scroll {
     --product-grid-columns-desktop: repeat(3, 1fr) !important;
   }
 }
+
+/* ------------------------------------------------------------
+   Static content page (About) — ports components/static.scss
+   ------------------------------------------------------------ */
+
+.page-static {
+  padding-bottom: calc(var(--zik) * 4);
+}
+
+@media screen and (min-width: 1025px) {
+  .page-static {
+    padding-bottom: calc(var(--zik) * 8);
+  }
+}
+
+.page-static__title {
+  background-color: rgba(248, 219, 49, 0.5);
+  width: fit-content;
+  margin: 0 auto calc(var(--zik) * 3);
+  padding: calc(var(--zik) * 0.7) calc(var(--zik) * 2) 0;
+  line-height: 0.9;
+}
+
+.page-static__content p {
+  margin-bottom: calc(var(--zik) * 4);
+  line-height: calc(var(--zik) * 3.8);
+  color: var(--zik-gray);
+}
+
+.page-static__content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Two images sit side by side inside a paragraph, as in the WP content.
+   .zik img sets display:block, which would stack them. */
+.page-static__content img {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(38% - 16px);
+  height: auto;
+}
+
+.page-static__content img:last-child {
+  margin-left: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .page-static__content img,
+  .page-static__content img:last-child {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: calc(var(--zik) * 2);
+  }
+}
+
+.page-static__content a {
+  text-decoration: underline;
+}
+
+.page-static__content :is(h1, h2, h3, h4, h5, h6) {
+  margin-bottom: calc(var(--zik) * 2);
+}
+
+.page-static__content :is(ul, ol) {
+  margin-bottom: calc(var(--zik) * 4);
+  padding-left: calc(var(--zik) * 2);
+  color: var(--zik-gray);
+  text-align: left;
+  list-style-position: inside;
+}

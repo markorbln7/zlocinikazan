@@ -15,6 +15,11 @@
   if s.hide_on_product and template.name == 'product'
     assign hidden = true
   endif
+
+  # Same rule for the static content pages (.page-template-page-static).
+  if s.hide_on_about and template.suffix == 'about'
+    assign hidden = true
+  endif
 -%}
 
 {%- unless hidden -%}
@@ -94,6 +99,13 @@
       "id": "hide_on_product",
       "label": "Sakrij na stranici proizvoda",
       "info": "WordPress sajt sakriva sliku i newsletter na stranicama proizvoda.",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_on_about",
+      "label": "Sakrij na About stranici",
+      "info": "WordPress sajt sakriva sliku i newsletter i na statičnim stranicama.",
       "default": true
     },
     {

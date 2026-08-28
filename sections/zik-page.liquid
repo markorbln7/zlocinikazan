@@ -1,0 +1,49 @@
+{%- comment -%}
+  Static content page. Ports page-static.php: the page's own title in a
+  highlighted lockup, followed by its rich-text content, centred inside the
+  ZiK container. Content comes from the page itself (title + content).
+{%- endcomment -%}
+
+{%- liquid
+  assign s = section.settings
+
+  assign page_title = page.title
+  assign page_content = page.content
+
+  if request.visual_preview_mode and page == blank
+    assign page_title = 'O nama'
+  endif
+-%}
+
+<div class="zik">
+  <div class="page-static zik-container z-center">
+    {%- if s.show_title and page_title != blank -%}
+      <div class="page-static__title z-h2 z-mono-regular">{{ page_title }}</div>
+    {%- endif -%}
+
+    {%- if page_content != blank -%}
+      <div class="page-static__content z-p-large z-mono-regular">{{ page_content }}</div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "ZiK stranica",
+  "tag": "section",
+  "class": "zik-page-section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Naslov i sadržaj se preuzimaju sa same stranice (Sadržaj → Stranice)."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_title",
+      "label": "Prikaži naslov stranice",
+      "default": true
+    }
+  ],
+  "presets": []
+}
+{% endschema %}
