@@ -93,7 +93,7 @@
     "product_2": {
       "type": "zik-product",
       "settings": {
-        "product": "botanicki-dzin-0-75l",
+        "product": "botanicki-dzin",
         "show_description": true,
         "show_tags": true,
         "quantity_label": "Količina",
