@@ -1,13 +1,26 @@
+{%- comment -%}
+  Product detail page.
+
+  Ports single-product.php. Note the field order differs from the homepage
+  product section: title -> price -> quantity -> button -> description -> tags.
+
+  No gallery or slider by design. The first product image is the main image;
+  the second, if present, renders full width beneath the section.
+{%- endcomment -%}
+
 {%- liquid
   assign s = section.settings
-  assign product = s.product
 
-  # Give the theme editor something to render before a product is picked.
-  if product == blank and request.design_mode
+  if request.visual_preview_mode and product == blank
     assign product = collections.all.products.first
   endif
 
   assign variant = product.selected_or_first_available_variant
+
+  assign main_image = product.images[0]
+  assign secondary_image = product.images[1]
+  assign main_alt = main_image.alt | default: product.title
+  assign secondary_alt = secondary_image.alt | default: product.title
 
   assign can_add_to_cart = false
   assign button_label = s.sold_out_label
@@ -16,7 +29,6 @@
     assign button_label = s.button_label
   endif
 
-  assign featured_image = s.image | default: product.featured_image
   assign product_form_id = 'ZikProductForm-' | append: section.id
 
   assign variant_media = variant.featured_media.preview_image | image_url: width: 100
@@ -25,45 +37,33 @@
   endif
 -%}
 
-{%- if product != blank -%}
-  <div class="zik">
+<div class="zik">
+  <div class="product__single">
     <section class="homeProduct">
       <div class="homeProduct__inner">
-        <a href="{{ product.url }}" class="homeProduct__inner--image">
-          {%- if featured_image != blank -%}
+        <div class="homeProduct__inner--image">
+          {%- if main_image != blank -%}
             {{
-              featured_image
+              main_image
               | image_url: width: 1600
               | image_tag:
                 widths: '400, 600, 800, 1200, 1600',
                 sizes: '(min-width: 1025px) 40vw, 100vw',
-                alt: product.title,
-                loading: 'lazy'
+                alt: main_alt,
+                loading: 'eager',
+                fetchpriority: 'high'
             }}
           {%- else -%}
             {{ 'product-1' | placeholder_svg_tag }}
           {%- endif -%}
-        </a>
+        </div>
 
         <div class="homeProduct__inner--content">
-          <a href="{{ product.url }}" class="homeProduct__inner--content__title z-h2 z-mono-medium">
-            {{- product.title -}}
-          </a>
-
-          {%- if s.show_description and product.description != blank -%}
-            <div class="homeProduct__inner--content__description z-p z-mono-regular">
-              {{ product.description }}
-            </div>
-          {%- endif -%}
-          {%- if s.show_tags and product.tags.size > 0 -%}
-            <div class="homeProduct__inner--content__tags z-p-smaller z-mono-regular">
-              {%- for tag in product.tags -%}{{ tag }} | {% endfor -%}
-            </div>
-          {%- endif -%}
+          <div class="homeProduct__inner--content__title z-h2 z-mono-medium">{{ product.title }}</div>
 
           <div class="homeProduct__inner--content__price z-h2 z-mono-medium">
             <div class="zik-price-row">
-              <div class="z-h2 z-mono-medium">{{ variant.price | money }}</div>
+              <div class="z-h2 z-mono-medium" ref="zikPrice" data-zik-price>{{ variant.price | money }}</div>
               {%- if variant.compare_at_price > variant.price -%}
                 <div class="z-h2 z-mono-medium zik-price-compare">{{ variant.compare_at_price | money }}</div>
               {%- endif -%}
@@ -81,7 +81,31 @@
             <div class="visually-hidden" aria-live="assertive" role="status" aria-atomic="true" ref="liveRegion"></div>
 
             {%- form 'product', product, id: product_form_id, class: 'zik-product-form' -%}
-              <input type="hidden" name="id" ref="variantId" value="{{ variant.id }}">
+              {%- if product.has_only_default_variant -%}
+                <input type="hidden" name="id" ref="variantId" value="{{ variant.id }}">
+              {%- else -%}
+                <div class="product__single--variants z-p z-mono-regular">
+                  <label for="ZikVariant-{{ section.id }}">{{ s.variant_label }}</label>
+                  <select
+                    id="ZikVariant-{{ section.id }}"
+                    name="id"
+                    ref="variantId"
+                    data-zik-variant-select
+                  >
+                    {%- for v in product.variants -%}
+                      <option
+                        value="{{ v.id }}"
+                        data-price="{{ v.price | money | escape }}"
+                        data-available="{{ v.available }}"
+                        {% if v.id == variant.id %}selected{% endif %}
+                        {% unless v.available %}disabled{% endunless %}
+                      >
+                        {{ v.title }}{% unless v.available %} — {{ s.sold_out_label }}{% endunless %}
+                      </option>
+                    {%- endfor -%}
+                  </select>
+                </div>
+              {%- endif -%}
 
               <div class="homeProduct__inner--content__quantity">
                 <div class="homeProduct__inner--content__quantity--title z-p z-mono-regular">
@@ -142,6 +166,9 @@
                   name="add"
                   ref="addToCartButton"
                   class="homeProduct__inner--content__button z-mono-regular"
+                  data-zik-atc
+                  data-add-label="{{ s.button_label | escape }}"
+                  data-sold-out-label="{{ s.sold_out_label | escape }}"
                   {% unless can_add_to_cart %}
                     disabled
                   {% endunless %}
@@ -151,34 +178,75 @@
               </add-to-cart-component>
             {%- endform -%}
           </product-form-component>
+
+          {%- if s.show_description and product.description != blank -%}
+            <div class="homeProduct__inner--content__description z-p z-mono-regular">
+              {{ product.description }}
+            </div>
+          {%- endif -%}
+
+          {%- if s.show_tags and product.tags.size > 0 -%}
+            <div class="homeProduct__inner--content__tags z-p-smaller z-mono-regular">
+              {%- for tag in product.tags -%}{{ tag }} | {% endfor -%}
+            </div>
+          {%- endif -%}
         </div>
       </div>
     </section>
+
+    {%- if secondary_image != blank -%}
+      <div class="product__single--image">
+        {{
+          secondary_image
+          | image_url: width: 2800
+          | image_tag:
+            widths: '600, 900, 1200, 1600, 2000, 2400, 2800',
+            sizes: '100vw',
+            alt: secondary_alt,
+            loading: 'lazy'
+        }}
+      </div>
+    {%- endif -%}
   </div>
-{%- elsif request.design_mode -%}
-  <div class="zik">
-    <section class="homeProduct">
-      <p class="z-p z-mono-regular">Izaberite proizvod u podešavanjima sekcije.</p>
-    </section>
-  </div>
-{%- endif -%}
+</div>
+
+{%- unless product.has_only_default_variant -%}
+  <script>
+    (function () {
+      const root = document.currentScript.closest('.shopify-section') || document;
+      const select = root.querySelector('[data-zik-variant-select]');
+      const price = root.querySelector('[data-zik-price]');
+      const button = root.querySelector('[data-zik-atc]');
+      if (!select) return;
+
+      select.addEventListener('change', () => {
+        const option = select.selectedOptions[0];
+        if (!option) return;
+
+        if (price && option.dataset.price) price.textContent = option.dataset.price;
+
+        if (button) {
+          const available = option.dataset.available === 'true';
+          button.disabled = !available;
+          button.textContent = available ? button.dataset.addLabel : button.dataset.soldOutLabel;
+        }
+
+        const quantity = root.querySelector('quantity-selector-component');
+        if (quantity) quantity.dataset.variantId = option.value;
+      });
+    })();
+  </script>
+{%- endunless -%}
 
 {% schema %}
 {
-  "name": "ZiK proizvod",
+  "name": "ZiK proizvod PDP",
   "tag": "section",
-  "class": "zik-section",
+  "class": "zik-main-product-section",
   "settings": [
     {
-      "type": "product",
-      "id": "product",
-      "label": "Proizvod"
-    },
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Slika (opciono)",
-      "info": "Ako se ne izabere, koristi se glavna slika proizvoda."
+      "type": "paragraph",
+      "content": "Glavna slika je prva slika proizvoda. Druga slika proizvoda se prikazuje preko cele širine ispod. Nema galerije ni slajdera."
     },
     {
       "type": "checkbox",
@@ -200,6 +268,12 @@
     },
     {
       "type": "text",
+      "id": "variant_label",
+      "label": "Naziv polja za varijantu",
+      "default": "Varijanta"
+    },
+    {
+      "type": "text",
       "id": "button_label",
       "label": "Tekst dugmeta",
       "default": "DODAJ U KORPU +"
@@ -211,10 +285,6 @@
       "default": "NEMA NA STANJU"
     }
   ],
-  "presets": [
-    {
-      "name": "ZiK proizvod"
-    }
-  ]
+  "presets": []
 }
 {% endschema %}

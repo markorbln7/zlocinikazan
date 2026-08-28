@@ -1212,3 +1212,58 @@ body.zik-no-scroll {
     font-size: 50px;
   }
 }
+
+/* ------------------------------------------------------------
+   Product detail page — ports pages/product-single.scss
+   ------------------------------------------------------------ */
+
+.product__single {
+  margin: calc(var(--zik) * 6) auto calc(var(--zik) * 12);
+}
+
+.product__single--image {
+  margin-top: calc(var(--zik) * 12);
+}
+
+.product__single--image img {
+  display: block;
+  width: 100%;
+}
+
+/* The PDP inverts the add-to-cart button: dark fill, white text. */
+.zik .product__single .homeProduct__inner--content__button {
+  background: var(--zik-ink);
+  color: var(--zik-white);
+  margin-bottom: calc(var(--zik) * 4);
+}
+
+/* Variant select — only rendered when a product actually has variants.
+   The WP catalogue had none, so this has no counterpart to match; it is
+   styled to sit with the quantity control. */
+.product__single--variants {
+  margin-bottom: calc(var(--zik) * 3);
+}
+
+.product__single--variants label {
+  display: block;
+  margin-bottom: var(--zik);
+  color: var(--zik-gray);
+}
+
+.zik .product__single--variants select {
+  width: 100%;
+  height: calc(var(--zik) * 3.6);
+  padding: 0 var(--zik);
+  border: 1px solid var(--zik-black);
+  border-radius: 0;
+  background: var(--zik-white);
+  color: var(--zik-black);
+  font-family: var(--zik-mono);
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--zik-black) 50%),
+    linear-gradient(135deg, var(--zik-black) 50%, transparent 50%);
+  background-position: calc(100% - 16px) 50%, calc(100% - 11px) 50%;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}

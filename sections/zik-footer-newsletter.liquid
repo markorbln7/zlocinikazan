@@ -8,8 +8,16 @@
 
 {%- liquid
   assign s = section.settings
+
+  # The WP theme hides the footer image and newsletter on product pages
+  # (.product-template-default { .footer__image, .footer__newsletter { display:none } }).
+  assign hidden = false
+  if s.hide_on_product and template.name == 'product'
+    assign hidden = true
+  endif
 -%}
 
+{%- unless hidden -%}
 <div class="zik" style="padding-bottom: {{ s.space_below }}px;">
   <div class="footer">
     {%- if s.image != blank -%}
@@ -68,6 +76,7 @@
     {%- endif -%}
   </div>
 </div>
+{%- endunless -%}
 
 {% schema %}
 {
@@ -79,6 +88,13 @@
       "type": "image_picker",
       "id": "image",
       "label": "Slika iznad newslettera"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_on_product",
+      "label": "Sakrij na stranici proizvoda",
+      "info": "WordPress sajt sakriva sliku i newsletter na stranicama proizvoda.",
+      "default": true
     },
     {
       "type": "range",

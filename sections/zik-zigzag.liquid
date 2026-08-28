@@ -15,8 +15,13 @@
           assign reverse = true
         endif
 
-        assign product = bs.product
-        assign variant = product.selected_or_first_available_variant
+        # Fall back to the page's product so the button adds the current item
+        # when this section is used on a product template. Blank elsewhere.
+        assign row_product = bs.product
+        if row_product == blank
+          assign row_product = product
+        endif
+        assign variant = row_product.selected_or_first_available_variant
         assign form_id = 'ZikZigzagForm-' | append: section.id | append: '-' | append: block.id
       -%}
 
@@ -53,18 +58,18 @@
             <div class="zik-zigzag__body z-p-large z-mono-regular">{{ bs.text }}</div>
           {%- endif -%}
 
-          {%- if product != blank -%}
+          {%- if row_product != blank -%}
             <product-form-component
               data-section-id="{{ section.id }}"
-              data-product-id="{{ product.id }}"
-              data-product-url="{{ product.url }}"
+              data-product-id="{{ row_product.id }}"
+              data-product-url="{{ row_product.url }}"
               on:submit="/handleSubmit"
               data-quantity-default="1"
               data-quantity-error-max="{{ 'products.product.quantity_error_max' | t }}"
             >
               <div class="visually-hidden" aria-live="assertive" role="status" aria-atomic="true" ref="liveRegion"></div>
 
-              {%- form 'product', product, id: form_id -%}
+              {%- form 'product', row_product, id: form_id -%}
                 <input type="hidden" name="id" ref="variantId" value="{{ variant.id }}">
                 <input type="hidden" name="quantity" value="1">
 
