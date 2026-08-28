@@ -78,6 +78,7 @@
         "instagram_5",
         "instagram_6"
       ],
+      "disabled": true,
       "settings": {
         "title": "ZAPRATITE NAS NA INSTAGRAMU",
         "handle": "ZLOCINIKAZAN.RS",
@@ -90,7 +91,7 @@
         "instafeed_app_block_Hqj3hx": {
           "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "title": "",
+            "title": "ZAPRATITE NAS NA INSTAGRAMU",
             "title_color": "",
             "title_size_v2": 0,
             "alignment": "center",
@@ -133,7 +134,7 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 0,
+        "padding-block-start": 60,
         "padding-block-end": 40
       }
     },
