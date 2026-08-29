@@ -15,6 +15,8 @@
       "type": "zik-footer-newsletter",
       "settings": {
         "image": "shopify://shop_images/Zlocin-i-Kazan-7-1-scaled.jpg",
+        "hide_on_product": true,
+        "hide_on_about": true,
         "space_below": 0,
         "show_newsletter": true,
         "newsletter_title": "NEWSLETTER",
@@ -145,7 +147,7 @@
           "type": "link_column",
           "settings": {
             "title": "SAJT",
-            "menu": "footer"
+            "menu": "footer-prvi"
           }
         },
         "column_account": {
