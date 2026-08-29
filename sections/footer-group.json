@@ -147,7 +147,7 @@
           "type": "link_column",
           "settings": {
             "title": "SAJT",
-            "menu": "footer-prvi"
+            "menu": "footer"
           }
         },
         "column_account": {
@@ -171,6 +171,7 @@
         "column_info"
       ],
       "settings": {
+        "logo": "shopify://shop_images/WhatsApp_Image_2026-08-29_at_15.26.45-Photoroom.png",
         "contact_title": "KONTAKTIRAJTE NAS",
         "address": "ZLOČIN I KAZAN, METOHIJSKA 24, BEOGRAD",
         "phone": "+381641815117",
