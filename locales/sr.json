@@ -654,7 +654,10 @@
         "ship_to_company": "Dostaviti na {{companyName}}"
       },
       "too_many_requests": {
-        "return_to_cart": "Povratak u korpu"
+        "return_to_cart": "Povratak u korpu",
+        "title": "Previše pokušaja placanja",
+        "body": "Sačekajte nekoliko minuta, pa pokušajte ponovo iz korpe.",
+        "body_no_cart": "Molimo sačekajte nekoliko minuta, pa pokušajte ponovo."
       },
       "required_extensions": {
         "errors": {
@@ -1239,7 +1242,86 @@
           "one_more_step": "Još samo jedan korak..."
         },
         "call_to_action": "Platite putem {{walletName}}",
-        "place_order": "Poruči"
+        "place_order": "Poruči",
+        "redirection_notice": "Bićete preusmereni na {{walletName}} da biste dovršili kupovinu",
+        "recovery_notice": "Došlo je do problema sa detaljima vaše porudžbine. Ažurirajte svoje podatke da biste završili plaćanje.",
+        "errors": {
+          "unavailable": {
+            "title": "{{walletName}} nije dostupan",
+            "description": "{{walletName}} nije bio dostupan. Koristite drugi način plaćanja ili pokušajte ponovo kasnije.",
+            "instructions": "Došlo je do problema sa {{walletName}}. Vratite se u prodavnicu da probate ponovo ili platite na drugi način.",
+            "unavailable_for_country": "{{walletName}} nije dostupan u {{countryName}}. Izaberite drugi način plaćanja da biste dovršili kupovinu"
+          },
+          "unavailable_terminal": {
+            "instructions": "{{walletName}} trenutno nije dostupan za vašu porudžbinu. Da biste nastavili kupovinu, izaberite drugi način plaćanja."
+          },
+          "subscription_review_required": "Vaša narudžbina uključuje pretplatu. Morate pregledati uslove navedene u nastavku pre nego što dovršite narudžbinu.",
+          "generic": "Došlo je do problema sa {{walletName}}. Pokušajte ponovo ili koristite drugi način plaćanja.",
+          "discount_code": "Nije moguće primeniti ovaj kod za popust. Proverite kod i pokušajte ponovo.",
+          "terminal": "Došlo je do problema sa {{walletName}}. Koristite drugi način plaćanja.",
+          "detour": {
+            "stock_problems": "Neke stavke više nisu dostupne. Zatvorite {{walletName}} i pokušajte ponovo.",
+            "price_change": "Neke cene artikala su promenjene. Zatvorite {{walletName}} da biste pregledali porudžbinu i pokušajte ponovo.",
+            "queue": "<p>Nalazite se u redu za naplatu. Zatvorite {{walletName}} da biste nastavili.</p>",
+            "currency_change": "Ne možete koristiti drugu adresu sa {{walletName}}. Koristite originalnu adresu ili pokušajte sa drugim načinom plaćanja."
+          },
+          "unsupported": {
+            "address": "Prodavac ne može isporučiti na ovu adresu",
+            "wallet_is_unavailable": "{{walletName}} ne može da se koristi sa ovom adresom. Izaberite drugu adresu ili zatvorite {{walletName}} da biste dovršili kupovinu",
+            "postal_code": "Ova lokacija nije podržana"
+          },
+          "outdated": {
+            "shipping_method": "Opcije isporuke za vašu porudžbinu su promenjene. Pregledajte svoj izbor.",
+            "payment_terms": "Uslovi plaćanja su promenjeni. Pregledajte svoju porudžbinu"
+          },
+          "invalid": {
+            "shipping_address": "Unesite validnu adresu za isporuku",
+            "billing_address": "Unesite važeću adresu za naplatu",
+            "shipping_option": "Izaberite važeću opciju isporuke",
+            "email": "Unesite ispravnu e-adresu",
+            "zone": "Unesite važeću državu / provinciju",
+            "billing_zone": "Unesite važeću državu / pokrajinu adrese za naplatu",
+            "emirate": "Unesite važeći emirat",
+            "postal_code": "Unesite validan poštanski broj",
+            "phone": "Unesite važeći broj telefona",
+            "billing_phone": "Unesite validan broj telefona za naplatu",
+            "reduction_code": "Unesite važeći kod za popust ili poklon karticu",
+            "billing_must_match_shipping": "Mora se podudarati sa adresom isporuke",
+            "billing_zip": "Unesite važeći poštanski broj za adresu za naplatu"
+          },
+          "missing": {
+            "first_name": "Unesite ime",
+            "billing_first_name": "Unesite ime u adresi za naplatu",
+            "last_name": "Unesite prezime",
+            "address1": "Unesite adresu",
+            "billing_address1": "Unesite adresu za naplatu",
+            "address2": "Uđite u stan, apartman, itd.",
+            "billing_address2": "Unesite adresu za naplatu (broj stana, apartmana, itd.)",
+            "city": "Unesite grad",
+            "billing_city": "Unesite grad za adresu za naplatu",
+            "province": "Izaberite državu / provinciju",
+            "billing_province": "Izaberite državu/pokrajinu za adresu naplate",
+            "country": "Izaberite državu/region",
+            "zip": "Unesite poštanski broj",
+            "billing_zip": "Unesite poštanski broj adrese za naplatu",
+            "phone": "Unesite broj telefona",
+            "contact_info": "Unesite kontakt informacije"
+          },
+          "formatting": {
+            "name_contains_emojis": "Obriši emodži iz svog imena",
+            "postal_code_contains_emoji": "Izbriši emodži iz svog poštanskog broja",
+            "first_name_too_long": "Ime sadrži previše slova",
+            "last_name_too_long": "Prezime sadrži previše slova",
+            "address_too_long": "Adresna linija je predugačka"
+          },
+          "select_different_shipping_address_to_resolve_errors": "Vaša adresa za isporuku je nevažeća. Odaberite drugu adresu ili unesite novu.",
+          "processing_error_checkout_as_guest": "Došlo je do problema pri obradi plaćanja. Pokušajte ponovo ili {{checkout_as_guest_link}}."
+        },
+        "scrim": {
+          "continue_purchase_in_window": "Nastavite sa kupovinom u prozoru {{walletName}}",
+          "and_return_to_checkout": "i vratite se na naplatu",
+          "cancel": "Poništi"
+        }
       },
       "localized_fields": {
         "additional_information": {
@@ -1363,7 +1445,185 @@
         "billing_address_associated_with_mandate": "Koristite adresu povezanu sa načinom plaćanja",
         "billing_address_associated_with_mandate_info": "Ako želite da promenite adresu za naplatu, uklonite pa ponovo unesite podatke o svojoj kreditnoj kartici.",
         "free_order_notice_html": "Vaša narudžbina je <strong>besplatna</strong>. Plaćanje nije potrebno.",
-        "express_checkout_free_order": "Neće vam biti naplaćena besplatna porudžbina."
+        "express_checkout_free_order": "Neće vam biti naplaćena besplatna porudžbina.",
+        "order_covered_by_gift_cards_notice": {
+          "one": "Vaša porudžbina je plaćena poklon karticom.",
+          "other": "Vaša porudžbina je pokrivena vašim poklon karticama."
+        },
+        "offsite_gateway_redirect_hint": "Bićete preusmereni na %{gateway_label} da dovršite kupovinu.",
+        "offsite_gateway_review_page_redirect_hint": "Nakon pregleda porudžbine, bićete preusmereni na %{gateway_label} da biste dovršili kupovinu.",
+        "offsite_gateway_redirect_hint_multi_currency_html": "%{gateway_label} ukupno %{total_shop_price}",
+        "offsite_gateway_redirect_hint_no_button_label": "Bićete preusmereni na %{gateway_label} da dovršite kupovinu.",
+        "receiver_payment_experience_hint": "Nakon što pošaljete porudžbinu, dobićete detalje za plaćanje. Uplatite na Multibanco ili putem interneta u roku od %{due_days} dana.",
+        "billing_address_title": "Adresa za naplatu",
+        "billing_address_rollup_accessibility_label": "Opcije adrese za naplatu",
+        "billing_address_description": "Izaberite adresu koja se podudara sa vašom karticom ili načinom plaćanja.",
+        "billing_address_description_no_shipping_address": "Unesite adresu koja se podudara sa vašom karticom ili načinom plaćanja.",
+        "no_js_credit_card_fields_redirect_hint": "Bićete preusmereni na dodavanje informacija o plaćanju.",
+        "card_fields_container_prefix": "Kontejner polja za:",
+        "card_fields_unavailable_html": {
+          "one": "Plaćanje kreditnim i debitnim karticama trenutno nije dostupno.<br><a href=\"%{current_url}\">Osvežite ovu stranicu</a> ili pokušajte ponovo kasnije.",
+          "other": "Plaćanje kreditnim i debitnim karticama trenutno nije dostupno.<br><a href=\"%{current_url}\">Osvežite ovu stranicu</a> ili pokušajte sa drugim načinom plaćanja."
+        },
+        "card_fields_processing_error": "Došlo je do problema prilikom obrade plaćanja. Pokušajte da osvežite ovu stranicu ili proverite internet vezu.",
+        "technical_error": "Plaćanja trenutno ne mogu biti obrađena zbog tehničkog problema. Pokušajte ponovo za nekoliko minuta.",
+        "no_method_error": "Ova prodavnica trenutno ne može da prima uplate.",
+        "not_configured_error": "Ova prodavnica trenutno ne može da prima uplate.",
+        "missing_credit_card_error": "Unesite podatke o kartici da biste dovršili plaćanje",
+        "shop_pay_ideal_unavailable_error": "iDEAL | Wero nije dostupan za ovu porudžbinu. Odaberite drugi način plaćanja.",
+        "payment_method_not_available_for_shipping_address_error": "Način plaćanja nije dostupan za izabranu adresu za dostavu. Izaberite drugi način plaćanja.",
+        "payment_method_unavailable_error": "Ovaj način plaćanja trenutno nije dostupan. Izaberite drugi način plaćanja.",
+        "payment_method_loading_error": "Način plaćanja se i dalje učitava. Pokušajte ponovo za nekoliko sekundi.",
+        "bank_payment_method_label": "Bankarski način plaćanja",
+        "billing_address_not_supported_for_payment_method_error": "Ovaj način plaćanja nije dostupan za vašu adresu za naplatu i valutu. Probajte drugi način plaćanja.",
+        "generic_incorrect_card_info": "Vaši podaci za plaćanje nisu mogli biti potvrđeni. Proverite podatke o kartici i pokušajte ponovo.",
+        "sofort_label": "Sofort bankovni transfer",
+        "paypal_label": "PayPal",
+        "paypal_wallet_label": "PayPal novčanik",
+        "shop_pay_installments_label": "Shop Pay rate na rate",
+        "default": "Podrazumevano",
+        "set_as_default_card": "Postavi kao podrazumevanu karticu",
+        "continue_to_guest_checkout": "Nastavi na naplatu kao gost",
+        "paypal_modal": {
+          "order_contains_subscriptions": "Pretplata",
+          "order_contains_fixed_selling_plans": "Ukupan iznos možda ne uključuje poreze, troškove isporuke, odložena plaćanja i neke popuste. Nastavite na naplatu za iznos koji dospeva danas."
+        },
+        "klarna_label": "Klarna",
+        "klarna_pay_later_label": "Plati kasnije uz Klarnu",
+        "klarna_pay_now_label": "Platite odmah putem Klarne",
+        "bancontact_label": "Bankkontakt",
+        "giropay_label": "Giropay",
+        "multibanco_label": "Multibanko",
+        "mb_way_label": "MB WAY",
+        "bizum_label": "Bizum",
+        "eps_label": "eps-uplatnica",
+        "klarna_slice_it_label": "Finansiranje uz Klarnu",
+        "ideal_label": "iDEAL | Wero",
+        "bank_picker_label": "Banka",
+        "afterpay_label": "Afterpay",
+        "cashapppay_label": "Plaćanje putem aplikacije Cash App",
+        "przelewy24_label": "Przelewy24",
+        "blik_label": "BLIK",
+        "twint_label": "TWINT",
+        "mobilepay_label": "MobilePay",
+        "swish_label": "Zvižduk",
+        "vipps_label": "Vipps",
+        "grabpay_label": "GrabPay",
+        "kcp_creditcard_label": "KCP kreditna kartica",
+        "alipay_label": "Alipay",
+        "wechat_pay_label": "WeChat Pay",
+        "wechat_app_label": "WeChat",
+        "oxxo_label": "OXXO",
+        "satispay_label": "Satispay",
+        "usdc_label": "USDC",
+        "usdc_cashback_title": "%{incentive_percentage}% povraćaja novca",
+        "usdc_cashback_additional_info": "Platite uz USDC na Base-u i ostvarite povrat od %{incentive_percentage}% u svom novčaniku za 30 dana.",
+        "usdc_cashback_terms": "Važe uslovi i ograničenja",
+        "purchase_options_card_update_agreement_label_html": "Ažuriranjem načina plaćanja odobravate plaćanja za svaku tekuću ili odloženu kupovinu u skladu sa <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{cancellation_policy}\" href=\"%{policy_href}\">politikom otkazivanja</a> ove prodavnice.",
+        "subscription_card_update_agreement_label": "Promena načina plaćanja ažuriraće vašu pretplatu i buduće periodične uplate.",
+        "subscription_agreement_label": "Jedna ili više stavki u vašoj korpi je odložena kupovina ili kupovina pretplate. Nastavkom plaćanja, saglasni ste da će se vašem načinu plaćanja automatski naplaćivati cena i učestalost navedene na ovoj stranici dok se ne završi ili dok ne otkažete. Sva otkazivanja podležu %{cancelled}.",
+        "subscription_agreement_cancelled": "politika otkazivanja",
+        "subscription_heading": "Ugovor o pretplati",
+        "subscription_agreement_label_html": "Razumem da se pretplaćujem. Pretplata će se obnavljati po navedenoj ceni i učestalosti sve dok se ne završi ili ne bude\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">otkazana</a>.\n",
+        "purchase_options_agreement_label": "Jedna ili više stavki u vašoj korpi je odložena ili periodična kupovina. Nastavkom plaćanja saglasni ste da će se vaš način plaćanja automatski naplaćivati po ceni i učestalosti navedenoj na ovoj stranici dok se ne završi ili dok ne otkažete. Sva otkazivanja podležu %{cancellation_policy_label}.",
+        "purchase_options_agreement_label_html": "Razumem da je jedna ili više stavki u mojoj korpi odložena ili ponavljajuća kupovina. Nastavkom se slažem sa\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">politikom otkazivanja</a>\ni ovlašćujem vas da teretite moj način plaćanja po cenama, učestalosti i datumima navedenim na ovoj stranici dok se moja\nporudžbina ne izvrši ili dok ne otkažem, ako je dozvoljeno.\n",
+        "purchase_options_agreement_label_wallets": "Nastavkom plaćanja slažete se sa budućim troškovima navedenim na ovoj stranici i politikom otkazivanja.",
+        "purchase_options_subscription_agreement_label": "Vaša korpa sadrži pretplatu koja se automatski obnavlja. Klikom na „%{button_label}“ %{consent_text} %{cancellation_instructions}",
+        "purchase_options_subscription_consent_text": "izričito i potvrdno se slažete da će vam automatski biti naplaćen iznos(i) koji se ponavlja, a koji je prikazan u vašoj korpi (plus troškovi dostave i porezi) sve dok se pretplata(e) ne završi ili je ne otkažete.",
+        "purchase_options_subscription_cancellation_instructions": "%{cancel_text} Pogledajte %{cancellation_policy_label}.",
+        "purchase_options_subscription_cancel_text": "Možete otkazati bilo kada tako što ćete otići na svoj nalog ili kontaktirati prodavnicu.",
+        "change_currency_section_description": "Odaberite valutu",
+        "no_real_orders_dev_store": "Ova prodavnica ne može da prima stvarne porudžbine ili stvarna plaćanja.",
+        "loading": "Učitavanje uplate...",
+        "waiting_on_payment_methods": "Preuzimanje dostupnih metoda plaćanja...",
+        "apple_pay_payment_error": "Vaša uplata nije mogla biti izvršena. Pokušajte ponovo ili koristite drugi metod plaćanja.",
+        "taxes_not_included": "Porezi nisu uključeni",
+        "no_taxes_banner_content": "Porezi se neće naplaćivati za ovu narudžbinu. Kada se naplati uplata, porezi se više ne mogu dodati.",
+        "paypal": {
+          "connect": "Kliknite da povežete svoj PayPal nalog"
+        },
+        "apple": {
+          "connect": "Kliknite da povežete svoj Apple Pay nalog",
+          "not_available": "Apple Pay nije dostupan u ovom pregledaču. Da biste povezali svoj Apple Pay nalog, moraćete da koristite Safari na Apple uređaju."
+        },
+        "google": {
+          "connect": "Kliknite da se povežete sa svojim Google Pay nalogom",
+          "error_authorizing": "Greška pri autorizaciji plaćanja"
+        },
+        "account_connected": "Nalog povezan.",
+        "mor_disclaimer_html": "Klikom ispod i dovršavanjem porudžbine, saglasni ste da kupite svoj(e) artikal(e) od kompanije Global-e kao trgovca i prodavca\nza ovu transakciju, prema Global-e <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">Uslovima i odredbama</a>\ni <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">Politici privatnosti</a>. Global-e je međunarodni\npružalac usluga ispunjenja porudžbina za %{shop_name}\n",
+        "pending_payment": {
+          "due_notice": "Vaša uplata od %{amount_due} dospeva %{due_date}.",
+          "multibanco": {
+            "buyer_action_info": "Vaša uplata u iznosu od %{amount_due} dospeva na naplatu.",
+            "instruction_html": "Izvršite uplatu putem Multibanco-a ili onlajn koristeći detalje navedene u nastavku. Za pitanja ili ažuriranje podataka za plaćanje, %{contact_us}.",
+            "entity": "Entitet",
+            "reference": "Referenca",
+            "amount": "Iznos"
+          }
+        }
+      },
+      "note": {
+        "length_exceeds_maximum": "Smanjite veličinu beleške na 5000 znakova ili manje."
+      },
+      "offsite_payment_failed": {
+        "title": "Plaćanje van sajta nije uspelo",
+        "payment_not_processed_title": "Plaćanje nije uspelo",
+        "payment_not_processed_text": "Pokušajte ponovo da skenirate QR kod. Ako i dalje ne radi, obavestite naše osoblje i pokušajte sa drugim načinom plaćanja.",
+        "payment_link_expired_title": "Link za plaćanje je istekao",
+        "payment_link_expired_text": "Pokušajte ponovo da skenirate QR kod."
+      },
+      "one": {
+        "errors": {
+          "merchandise": {
+            "gift_card_price_must_be_greater_than_zero": "Cena poklon kartice mora biti veća od 0.",
+            "gift_card_price_must_not_exceed_limit": "Cena poklon kartice ne sme preći %{gift_card_limit}.",
+            "subtotal_limit_reached": "Dostignuta je maksimalna vrednost stavki.",
+            "signature_mismatch": "Nepodudaranje potpisa robe za liniju %{stable_id}."
+          }
+        }
+      },
+      "remote": {
+        "errors": {
+          "only_remote_merchandise_lines": "Kasa sadrži samo robu koja se šalje. Za dovršetak kupovine potrebno je preusmeravanje na eksternu prodavnicu.",
+          "currency_mismatch": "Ova stavka ne može biti dodata u vašu korpu jer je iz prodavnice koja koristi drugu valutu.",
+          "currency_mismatch_removal": "Artikal je uklonjen iz vaše korpe jer je iz prodavnice koja koristi drugu valutu.",
+          "max_remote_shops_exceeded": "Ovaj proizvod se ne može dodati jer vaša korpa već ima maksimum iz drugih prodavnica."
+        }
+      },
+      "units": {
+        "milligram": "mg",
+        "kilogram": "kg",
+        "milliliter": "ml",
+        "centiliter": "kl",
+        "cubic_meter": "m³",
+        "millimeter": "mm",
+        "centimeter": "cm",
+        "square_meter": "m²",
+        "ounce": "unca",
+        "pound": "lb",
+        "fluid_ounce": "fl oz",
+        "pint": "tačka",
+        "quart": "кг",
+        "gallon": "galona",
+        "inch": "u",
+        "foot": "stopa",
+        "yard": "jd",
+        "square_foot": "ft²",
+        "item": "stavka"
+      },
+      "memberships": {
+        "delivery_promise_unfulfillable": "Adresa nije podržana za trenutno članstvo.",
+        "items_split_across_locations_unsupported": "Prime dostava nije dostupna za vašu porudžbinu. Vaše opcije dostave su ažurirane."
+      },
+      "editor": {
+        "navigation": {
+          "store_logo_accessibility_label": "Idi u Online prodavnicu"
+        }
+      },
+      "tooltip": {
+        "accessibility_label_context": "Više informacija o %{context}",
+        "additional_payment_methods": "Dodatni načini plaćanja"
       }
     },
     "pagination": {
