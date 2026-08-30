@@ -126,7 +126,123 @@
             "pickup_points_unavailable": "Preuzimanje na paketomatima trenutno nije moguće.",
             "local_pickup_delivery_line_detail_changed": "Postojeću strategiju isporuke sa preuzimanjem na licu mesta (local pickup) moramo promeniti kako bismo nastavili.",
             "selected_pickup_option_no_longer_available": "Prethodno odabrana opcija preuzimanja više nije dostupna.",
-            "local_pickup_no_delivery_strategy_available": "Nije pronađena strategija isporuke za lokalno preuzimanje."
+            "local_pickup_no_delivery_strategy_available": "Nije pronađena strategija isporuke za lokalno preuzimanje.",
+            "origin_location_id_required": "Potreban je ID lokacije porekla kada se zahteva maloprodajni način isporuke.",
+            "invalid_origin_location_id": "Nije pronađena lokacija koja odgovara ID-u izvorne lokacije.",
+            "origin_location_id_not_allowed": "Traženi metodi dostave ne podržavaju ID izvorne lokacije.",
+            "auto_fulfill_not_allowed": "Ova sesija nema ovlašćenje da zanemari ponašanje ispunjavanja.",
+            "auto_fulfill_required": "Automatsko ispunjavanje je potrebno kada je zatražen način isporuke MALOPRODAJE.",
+            "prefetch_shipping_rates_used": "Unapred preuzete cene isporuke nikada ne bi trebalo da vrate cene.",
+            "fulfillment_constraints_not_satisfied": "Jedno ili više ograničenja ispunjenja nije zadovoljeno.",
+            "must_fulfill_from_constraint_not_satisfied": "Nisu zadovoljena ograničenja ispunjenja jer se stavke ne mogu isporučiti sa zahtevanih lokacija.",
+            "must_fulfill_from_same_location_constraint_not_satisfied": "Ograničenja ispunjenja nisu zadovoljena jer se artikli ne mogu ispuniti sa iste lokacije.",
+            "delivery_strategy_conditions_not_satisfied": "Strategije isporuke su dostupne za ovu lokaciju, ali njihovi uslovi nisu ispunjeni.",
+            "out_of_stock_at_origin_location": "Nema zaliha na polaznoj lokaciji.",
+            "invalid_signature": "Nevažeći potpis popusta.",
+            "mixed_destination_countries": "Dostava nije dostupna jer linije isporuke obuhvataju više zemalja."
+          },
+          "discount": {
+            "discounts_not_allowed_for_b2b": "Popusti nisu dozvoljeni u B2B prodavnicama.",
+            "mixed_destination_countries": "Popusti nisu dostupni jer se linije isporuke prostiru na više zemalja.",
+            "custom_discount_not_honoured": "Prilagođeni popust nije uvažen.",
+            "unsupported_expectation": "Navedena linija popusta sadržala je očekivanje koje pravila nisu mogla protumačiti.",
+            "additional_requested_discount_code_discarded": "{{code}} je važeći, ali nije primenljiv. Proverite uslove popusta.",
+            "additional_requested_discount_discarded": "Vaš popust je važeći, ali nije primenljiv. Proverite uslove popusta.",
+            "allocations_mismatch": "Vaš kod za popust je promenjen. Pregledajte svoju korpu i pokušajte ponovo.",
+            "discount_code_not_honoured": "%{discount_rejection_message}",
+            "discount_title_too_long": "Naslov popusta ne može biti duži od 255 znakova."
+          },
+          "tax": {
+            "new_tax_must_be_accepted": "Porezi povezani sa vašom porudžbinom su se promenili. Pregledajte i pokušajte ponovo.",
+            "unresolvable_tax_terms": "Predloženi uslovi su nerešivi s obzirom na trenutni kontekst pregovora.",
+            "delivery_price_is_abstract": "Povezana cena isporuke je apstraktna.",
+            "tax_inclusivity_mismatch": "Ponovo pregovarajte sa konkretnom vrednošću totalTaxAndDutyAmount ili totalAmountIncludedInTarget.",
+            "mixed_tax_inclusivity_not_supported": "Poreske stavke moraju biti ili sve sa uračunatim porezom ili sve bez uračunatog poreza.",
+            "tax_exemption_not_supported": "Poreska izuzimanja nisu podržana za trenutnu sesiju pregovora.",
+            "delivery_tax_exemption_not_supported": "Poreska oslobođenja za linije isporuke trenutno nisu podržana.",
+            "proposed_allocations_required": "Nedostaje polje 'predložene alokacije'.",
+            "merchandise_terms_must_be_defined": "Uslovi za robu moraju biti definisani.",
+            "delivery_terms_must_be_defined": "Uslovi isporuke moraju biti definisani.",
+            "merchandise_discount_terms_must_be_defined": "Moraju se definisati uslovi popusta na robu.",
+            "delivery_discount_terms_must_be_defined": "Uslovi za popust na isporuku moraju biti definisani.",
+            "allocated_required": "Nedostaje polje „dodijeljeno”.",
+            "value_required": "Nedostaje polje 'vrednost'.",
+            "line_splits_not_supported": "Polje 'linije robe' mora biti podeljeno tako da svaka ima jednu komponentu linije u predlogu prodavca."
+          },
+          "payment": {
+            "manual_payments_not_allowed_for_b2b": "Ručna plaćanja nisu dozvoljena u B2B prodavnicama.",
+            "positive_amount_expected": "Iznos za uplatu mora biti veći od 0.",
+            "total_amount_mismatch": "Ukupan iznos za plaćanje se ne podudara sa zbirom uplata.",
+            "subscription_terms_not_accepted": "Uslovi pretplate nisu prihvaćeni.",
+            "missing_session_id": "Nedostaju informacije o sesiji kreditne kartice.",
+            "gateway_not_supported": "Sistem za obradu plaćanja ne podržava čuvanje načina plaćanja.",
+            "credit_card_last_name_required": "'prezime' ne može biti nil.",
+            "credit_card_update_failed": "Ažuriranje kreditne kartice nije uspelo.",
+            "invalid_address_type": "Navedeni tip adrese je nevažeći za ovaj način plaćanja.",
+            "missing_retail_attributions": "Atribucije maloprodaje su obavezne za ručno unete uplate kreditnom karticom.",
+            "unexpected_retail_attributions": "Maloprodajni podaci o transakciji su neočekivano dostavljeni za plaćanje kreditnom karticom.",
+            "invalid_card_source": "Ova sesija nema dozvolu da koristi ovaj izvor kartice.",
+            "wallet_content_missing": "Nedostaje sadržaj novčanika.",
+            "payment_instrument_not_found": "Nismo uspeli da pronađemo način plaćanja",
+            "unauthorized_capture_method": "Konfigurisanje metode za naplatu plaćanja nije dozvoljeno.",
+            "saved_payment_methods_not_allowed": "Sačuvane metode plaćanja nisu dozvoljene.",
+            "saved_payment_methods_not_enabled": "Sačuvani načini plaćanja nisu omogućeni za ovu prodavnicu.",
+            "saved_payment_methods_cvv_verification_disabled": "Odabrani metod plaćanja zahteva CVV verifikaciju koja nije omogućena za ovu prodavnicu. Odaberite drugi metod plaćanja.",
+            "store_credit_not_enabled": "Kredit prodavnice nije omogućen za ovu prodavnicu.",
+            "store_credit_account_not_found": "Nalog za prodajni kredit nije pronađen.",
+            "store_credit_account_mismatch": "Nalog prodavnice kredita se ne podudara sa identitetom kupca.",
+            "store_credit_mismatched_currency": "Valuta računa trgovinskog kredita se ne podudara sa valutom plaćanja.",
+            "store_credit_insufficient_funds": "Nema dovoljno sredstava na računu prodavničkog kredita.",
+            "store_credit_buying_gift_card": "Ne možete koristiti kredit iz prodavnice za kupovinu poklon kartice.",
+            "gift_cards_not_allowed_for_b2b": "Poklon kartice nisu dozvoljene u B2B prodavnicama.",
+            "method_required": "Mora se predložiti način plaćanja.",
+            "paypal_express_address_invalid": "PayPal je vratio nevažeću adresu."
+          },
+          "tip": {
+            "not_accepted_by_shop": "Prodavnica ne prima bakšiš.",
+            "only_one_tip_line_allowed": "Višestruke linije napojnica nisu podržane.",
+            "tips_not_allowed_for_b2b": "Napojnice nisu dozvoljene u B2B prodavnicama.",
+            "currency_change_reset": "Napojnica je resetovana zbog promene valute.",
+            "tips_not_allowed_for_deferred_purchase_options": "Napojnice još uvek nisu podržane za opcije odloženog plaćanja."
+          },
+          "sale_attribution": {
+            "draft_order_not_exist": "Ovaj nacrt porudžbine ne postoji u trenutnoj prodavnici.",
+            "staff_member_not_exist": "Osoblje ne postoji u trenutnoj prodavnici.",
+            "location_not_exist": "Ova lokacija ne postoji u trenutnoj prodavnici.",
+            "point_of_sale_device_not_exist": "Ovaj POS uređaj ne postoji u trenutnoj prodavnici.",
+            "unresolvable_target_merchandise_lines": "Predložene atribucije prodaje su nerešive s obzirom na trenutni kontekst pregovora."
+          },
+          "non_negotiable": {
+            "missing_non_negotiable_terms": "Predlog vašeg kupca treba da sadrži uslove o kojima se ne može pregovarati.",
+            "invalid_signature": "Potpis za {{target_terms}} je nevažeći."
+          },
+          "inventory": {
+            "missing_quantity_value": "Polje količine nedostaje u stavkama zaliha kupca.",
+            "changing_behavior_not_allowed": "Ovaj klijent nema dozvolu za izmenu ponašanja inventara.",
+            "only_one_inventory_behavior_allowed": "Trenutno je dozvoljeno samo jedno ponašanje zaliha po naplati."
+          },
+          "optional_duties": {
+            "optional_duties_not_permitted": "Odbijanje obaveza nije dozvoljeno za ovu kasu."
+          },
+          "attribution": {
+            "retail_attribution_not_allowed": "Maloprodajna atribucija nije dozvoljena za ovu naplatu.",
+            "retail_attribution_required": "Maloprodajna atribucija je potrebna za ovu naplatu."
+          },
+          "captcha": {
+            "metadata_missing": "Rešavanje captcha-e je obavezno za ovu kupovinu.",
+            "metadata_mismatch": "Navedeni provajder i tip captcha-e se ne poklapaju sa očekivanim vrednostima.",
+            "token_missing": "Token za proveru (captcha) mora biti obezbeđen da bi se kompletirala ova kupovina.",
+            "job_enqueue_failed": "Posao validacije captcha-e nije uspešno stavljen u red.",
+            "job_already_queued": "Provera putem Captcha-e je već stavljena u red čekanja za ovaj Captcha token.",
+            "token_expired": "Dostavljeni captcha token je istekao. Popunite novu captcha-u da biste nastavili sa naplatom.",
+            "token_invalid": "Ponuđeni captcha token je bio nevažeći. Popunite novi captcha da biste nastavili sa naplatom.",
+            "token_not_valid_for_session": "Pružena captcha se ne može koristiti pri ovoj kupovini."
+          },
+          "fx_reconciliation_override": {
+            "shop_currency_mismatch": "Primljeni iznos mora biti u valuti prodavnice."
+          },
+          "checkout_source": {
+            "revoked": "Ova naplata više nije dostupna."
           }
         },
         "submit_for_review_button_label": "Dostavi na pregled",
@@ -201,7 +317,15 @@
           "add_file": "Dodaj datoteku",
           "invalid_file_type": "Tip datoteke nije podržan",
           "dragged_over": "Prevucite datoteku za otpremanje"
-        }
+        },
+        "full_price": "Puna cena:",
+        "title": "Plaćanje - {{shopName}}",
+        "full_title": "{{pageTitle}} - {{shopName}} - Plaćanje",
+        "loading": "Učitavanje…",
+        "loading_title": "Plaćanje - {{shopName}}",
+        "google_map_title": "Google Mapa",
+        "confirm_order_button_label": "Potvrdite porudžbinu",
+        "submit_order_button_label": "Naruči"
       },
       "field_errors": {
         "tips_invalid_tip_amount": "Unesite napojnicu manju od %{amount}",
@@ -769,42 +893,7 @@
         "checkout_a_different_way": "Istražite drugačiji pristup",
         "blocks": {
           "contact_method_title": "Kontakt",
-          "billing_address_title": "Naplata",
-          "shipping_address_title": "Isporuči na",
-          "shipping_method_title": "Način slanja",
-          "payment_method_title": "Način plaćanja",
-          "change_link_label": "Izmeni",
-          "change_contact_method_link_label": "Promenite podatke za kontakt",
-          "change_billing_address_link_label": "Promenite adresu za naplatu",
-          "change_company_location_link_label": "Promeni lokaciju kompanije",
-          "change_shipping_address_link_label": "Promenite adresu za dostavu",
-          "change_shipping_method_link_label": "Promeni način isporuke",
-          "change_payment_method_link_label": "Promenite način plaćanja",
-          "pick_up_in_store_shipping_method_html": "Preuzimanje u prodavnici · %{location_name}",
-          "purchase_order_number_title": "Broj narudžbenice",
-          "change_purchase_order_number_label": "Promenite broj porudžbenice",
-          "change_delivery_method_link_label": "Promenite način isporuke",
-          "no_address": "(Nema adrese)",
-          "no_purchase_order_number": "(Nema broja narudžbenice)",
-          "no_purchase_order_number_long": "Bez broja porudžbenice",
-          "due_after_order_reviewed_html": "Dospeva nakon pregleda porudžbine",
-          "review_title_free_order": "Pregledajte i kompletirajte vašu porudžbinu",
-          "payment_method_saved_company_location": "Sačuvajte karticu za ovu lokaciju",
-          "company_location": "Lokacija kompanije",
-          "pickup_items_at": {
-            "one": "Preuzmite %{count} predmet u",
-            "other": "Preuzmite %{count} stvari na"
-          },
-          "ship_items_to": {
-            "one": "Isporučite %{count} artikal na",
-            "other": "Isporučite %{count} proizvoda na"
-          }
-        },
-        "block_title": "Pregledajte svoje informacije",
-        "item_header": {
-          "change_value": "Promeni vrednost",
-          "section": "Odeljak",
-          "value": "Vrednost"
+          "billing_address_title": "Naplata"
         }
       },
       "order_summary": {
@@ -1152,114 +1241,129 @@
         "call_to_action": "Platite putem {{walletName}}",
         "place_order": "Poruči"
       },
-      "marketing": {
-        "accept_marketing_checkbox_label": "Pošaljite mi e-poštom novosti i ponude",
-        "post_accept_marketing_checkbox_label": "Pretplaćeni ste na primanje novosti i ponuda putem e-pošte",
-        "pending_accept_marketing_checkbox_label": "Proverite svoju e-poštu da biste potvrdili pretplatu na vesti i ponude",
-        "accept_sms_checkbox_label": "Pišite mi o novostima i ponudama",
-        "disclaimer": {
-          "privacy_policy": "Politika privatnosti",
-          "terms_of_service": "Uslovi korišćenja"
-        },
-        "sms": {
-          "disclaimer": {
-            "privacy_policy": "Politika privatnosti",
-            "terms_of_service": "Uslovi korišćenja",
-            "description_html": "Prijavljivanjem putem SMS-a, slažete se da primate ponavljajuće automatizovane marketinške poruke, uključujući podsetnike o napuštenoj korpi, na navedeni broj telefona. Saglasnost nije uslov kupovine. Odgovorite sa STOP da biste se odjavili. Odgovorite sa HELP za pomoć. Učestalost poruka varira. Mogu se primeniti troškovi slanja poruka i prenosa podataka. Pogledajte našu %{privacy_policy_link} i %{terms_of_service_link}.",
-            "description_transactional_html": "Možete primati tekstualne poruke u vezi sa potvrdom porudžbine i obaveštenjima o isporuci. Odgovorite sa STOP da se odjavite. Odgovorite sa HELP za pomoć. Učestalost poruka varira. Mogu se naplaćivati tarife za poruke i prenos podataka. Pogledajte našu %{privacy_policy_modal_link} i %{terms_of_service_modal_link}."
-          },
-          "mobile_phone_number": "Broj mobilnog telefona",
-          "get_offers_by_text": "Dobijajte ponude putem SMS-a"
-        },
-        "unsubscribe": {
-          "title": "Uspešno ste se odjavili",
-          "description": "Nećete više primati podsetnike o korpi od nas."
-        },
-        "accept_shop_pay_marketing_checkbox_label": "Prijavite me za novosti i ponude ove prodavnice"
-      },
-      "shop_policies": {
-        "policy_label": "Politika",
-        "policies_label": "Pravilnici",
-        "select_policy_label": "Odaberite pravilo",
-        "refund_policy": "Politika povraćaja novca",
-        "privacy_policy": "Politika privatnosti",
-        "terms_of_service": "Uslovi korišćenja",
-        "legal_notice": "Pravno obaveštenje",
-        "shipping_policy": "Dostava",
-        "terms_of_sale": "Uslovi prodaje",
-        "subscription_policy": "Otkazivanje",
-        "purchase_options_policy": "Politika opcija kupovine",
-        "contact_information": "Kontakt",
-        "purchase_options_cancellation_policy": "Otkazivanje",
-        "cookie_preferences": "Kolačići",
-        "terms_and_policies": "Uslovi i pravila"
-      },
-      "remote_policies": {
-        "unavailable_policy": "Nije postavljena %{policy_name} za ovu prodavnicu. Za više informacija, kontaktirajte direktno %{shop_name}."
-      },
-      "mor_policies": {
-        "terms_and_conditions": "Uslovi i odredbe Trgovca za evidenciju",
-        "privacy_policy": "Politika privatnosti Posrednika za obradu plaćanja"
-      },
-      "markets": {
-        "invalid_market_manager_error": "Proverite svoje kontakt podatke pre nego što završite plaćanje"
-      },
-      "notifications": {
-        "title": "Obaveštenja"
-      },
-      "order_payment_collection": {
-        "custom_line_item_description": "Iznos za uplatu za porudžbinu %{order_name}",
-        "changes_summary": {
-          "added": {
-            "one": "Dodato",
-            "other": "Dodato %{count}"
-          },
-          "removed": "Uklonjeno",
-          "subtracted": "Uklonjeno %{count}",
-          "returned": "Vraćeno %{count}",
-          "return_line_item_removed": "Uklonjeno %{count} iz povrata"
-        },
-        "additional_payment_requested": "Potrebno je uplatiti %{total_outstanding}",
-        "checkout_review_and_pay": "Vaša porudžbina %{order_name} je ažurirana. Pregledajte promene, a zatim platite da biste potvrdili porudžbinu.",
-        "order_updated_on": "Vaša porudžbina je ažurirana %{last_edited_at}.",
-        "order_review_and_pay": "Vaša porudžbina je ažurirana. Pregledajte i platite da biste potvrdili porudžbinu.",
-        "pay_now": "Plati odmah"
-      },
-      "change_currency": {
-        "currency_button_label": "%{currency} (%{currency_symbol})",
-        "credit_card_will_be_charged_html": "Vaša kreditna kartica biće zadužena za %{amount}",
-        "payment_total_label": "Ukupna uplata",
-        "conversion_rate": "1 %{from_currency_code} = %{rate} %{to_currency_code}",
-        "change_currency_link": "Promeni u %{currency_name}",
-        "card_provider_fx_charges_warning": "Vaš provajder kartice može naplatiti naknade za transakcije u valuti %{currency_code}.",
-        "currency_not_supported_by_shop": "Izabrana valuta više nije dostupna. Sve cene su sada u %{currency_code}."
-      },
-      "change_country": {
-        "cart_updated_based_on_country": "Vaša korpa je ažurirana na osnovu zemlje isporuke.",
-        "cart_and_currency_updated_based_on_country": "Vaša korpa i valuta su ažurirane na osnovu zemlje isporuke.",
-        "currency_updated_for_country": "Valuta ažurirana za %{country}"
-      },
-      "change_cart_localization": {
-        "verify_shipping_address": "Vaša zemlja/region je ažuriran. Unesite adresu isporuke da biste nastavili sa naplatom."
-      },
-      "tips": {
-        "title": "Dodajte napojnicu",
-        "description": "Pokažite svoju podršku timu u %{shop_name}",
-        "presets_description": "Izaberite procenat napojnice",
-        "custom_label": "Prilagođena napojnica",
-        "add_tip": "Dodajte napojnicu",
-        "update_tip": "Savet za ažuriranje",
-        "message": "Hvala, cenimo to.",
-        "preset_label": "%{tip_percent}%",
-        "no_tip_label": "Nijedan",
-        "not_available_with_spi": "Nije dostupno uz plaćanje putem Shop Pay Rate"
-      },
-      "open_graph_meta_tag": {
-        "title_with_products": {
-          "zero": "Kupi %{product_name}",
-          "one": "Kupite %{product_name} i još %{count} artikal/artikla",
-          "other": "Kupite %{product_name} i još %{count} drugih artikala"
+      "localized_fields": {
+        "additional_information": {
+          "shipping_credential_es": "DNI/NIF",
+          "shipping_credential_tw": "Nacionalni identifikacioni broj/PIB",
+          "tax_credential_tr": "Matični broj turskog državljanina/PDV",
+          "shipping_credential_tr": "Matični broj turskog državljanina/PDV"
         }
+      },
+      "payment": {
+        "network_card_payment_options": "Izaberite kartičnu mrežu",
+        "network_card_persistence_description": "Izabrana mreža biće sačuvana uz vaš način plaćanja za buduće transakcije.",
+        "amazon_payments_label": "Amazon Pay",
+        "amazon_payments_login_hint": "Biće vam zatraženo da se prijavite pomoću Amazon naloga.",
+        "amazon_payments_logout": "Odjavi se sa Amazon Pay-a",
+        "amazon_payments_failed_mfa_challenge": "Odabrani način plaćanja nije mogao biti korišćen. Odaberite drugi način ili kontaktirajte svoju banku ili izdavaoca kartice.",
+        "amazon_payments_abandoned_mfa_challenge": "Vaše plaćanje nije uspelo. Pokušajte sa drugim načinom plaćanja ili kontaktirajte svoju banku ili izdavaoca kartice.",
+        "amazon_payments_could_not_enqueue_authorize": "Došlo je do greške prilikom obrade vaše uplate. Pokušajte ponovo ili upotrebite drugi način plaćanja.",
+        "title": "Plaćanje",
+        "amount_left_to_pay_label": "Rok za plaćanje:",
+        "discount_button_action_label": "Primeni kod za popust",
+        "discount_codes_removed_summary": {
+          "one": "%{count} kôd za popust je uklonjen",
+          "other": "Uklonjeno je %{count} kodova za popust"
+        },
+        "discount_codes_modified_summary": {
+          "one": "%{count} kodova za popust je izmenjeno",
+          "other": "%{count} kodova za popust je izmenjeno"
+        },
+        "discount_codes_removed_or_modified_summary": {
+          "one": "%{count} kod za popust je uklonjen ili izmenjen",
+          "other": "%{count} kodova za popust je uklonjeno ili izmenjeno"
+        },
+        "discount_show_more_warnings": {
+          "one": "Prikaži još %{count}",
+          "other": "Prikaži još %{count}"
+        },
+        "gift_card_code_label": "Kod poklon kartice",
+        "apply_gift_card_button_label": "Primeni",
+        "gift_card_balance_label": "Stanje na računu:",
+        "supported_card_brands_more_label": "i više…",
+        "detected_card_brand": "Otkriven izdavalac kartice: {brand}",
+        "credit_card_vaulting_sign_in_banner_title": "Sačuvajte svoju kreditnu karticu",
+        "credit_card_vaulting_sign_in_banner_info": "Prijavite se ili kreirajte nalog kako biste sačuvali svoju kreditnu karticu za buduće kupovine.",
+        "credit_card_vaulting_sign_in_banner_button_label": "Prijavi se",
+        "ftd_vault_credit_card_label": "Sačuvaj ovu kreditnu karticu na mom nalogu radi brže naplate",
+        "card_number_label": "Broj kartice",
+        "card_number_placeholder": "Broj kartice",
+        "bogus_test_checkout": {
+          "title": "Uputstvo za testiranje",
+          "intro": "Koristite ove vrednosti da biste testirali svoju kasu:",
+          "approved_transaction": "{{card_number}} za simuliranje odobrene transakcije",
+          "declined_transaction": "{{card_number}} za simuliranje odbijene transakcije",
+          "gateway_failure": "{{card_number}} za simulaciju greške mrežnog prolaza",
+          "additional_instructions": "Koristite bilo koji budući datum isteka i bilo koji trocifreni sigurnosni kod.",
+          "support_link": "Dobijte podršku"
+        },
+        "card_pay_with": "Platite pomoću:",
+        "card_security_notice": "Sve transakcije su sigurne i šifrovane.",
+        "card_security_vault_notice": "Potrebni su nam vaši podaci za buduća plaćanja. Sve transakcije su sigurne i šifrovane.",
+        "card_information_notice": "Sve transakcije su sigurne i šifrovane. Podaci o kreditnoj kartici se nikada ne čuvaju.",
+        "name_on_card_label": "Ime na kartici",
+        "name_on_card_placeholder": "Ime na kartici",
+        "card_nickname_label": "Nadimak (opciono)",
+        "card_expired": "Isteklo je",
+        "card_expiry_label": "Datum isteka (MM / GG)",
+        "card_expiry_placeholder": "Datum isteka (MM / GG)",
+        "credit_card_start_month": "Početni mesec",
+        "credit_card_start_year": "Godina početka",
+        "delete_customer_mandate_modal_title": "Ukloniti ovu platnu karticu?",
+        "delete_customer_mandate_modal_body": "Ako uklonite ovu karticu, moraćete ponovo da je dodate pre nego što je upotrebite za plaćanja.",
+        "delete_customer_mandate_modal_confirm": "Ukloni karticu",
+        "delete_customer_mandate_modal_cancel": "Poništi",
+        "card_verification_value_label": "Sigurnosni kod",
+        "card_verification_value_placeholder": "Sigurnosni kod",
+        "card_verification_confirm": "Radi verifikacije, unesite sigurnosni kod vaše kartice.",
+        "card_expiry_date_explanation": "Datum isteka kartice u formatu: mesec, mesec, godina, godina",
+        "card_expiration_month_label": "Mesec isteka",
+        "card_expiration_year_label": "Godina isteka",
+        "card_verification_value_explanation": "Trojevocifreni sigurnosni kod se obično nalazi na poleđini vaše kartice. American Express kartice imaju četvorocifreni kod koji se nalazi na prednjoj strani.",
+        "card_verification_value_explanation_amex": "4-cifreni sigurnosni kod na prednjoj strani vaše kartice",
+        "card_verification_value_explanation_other": "Trošifreni sigurnosni kod na poleđini vaše kartice",
+        "card_start_label": "Datum izdavanja (MM / GG)",
+        "card_start_placeholder": "Datum izdavanja (MM / GG)",
+        "card_issue_number_label": "Broj problema",
+        "card_issue_number_placeholder": "Broj problema",
+        "card_change_label": "Izmeni",
+        "card_update_label": "Ažuriraj karticu",
+        "paypal_disconnect": "Prekini vezu",
+        "ends_with_label": "koji se završava sa %{last_digits}",
+        "masked_digits_label": "•••• %{last_digits}",
+        "payment_method_saved": "Način plaćanja sačuvan",
+        "card_vaulted_company_location": "Kartica sačuvana za ovu lokaciju",
+        "bank_account_vaulted_company_location": "Bankovni račun sačuvan za ovu lokaciju",
+        "expiry_long": "(Ističe %{month}/%{year})",
+        "expiry_short": "(Ističe %{month}/%{year})",
+        "crypto_payment_method": {
+          "description": "Bezbedno povežite svoj novčanik. Vaše stanje i adresa neće biti podeljeni.",
+          "tooltip": "Stanje vašeg novčanika i adresa neće biti deljeni, a biće naplaćen samo traženi iznos.",
+          "cashback_descriptor": {
+            "one": "Primićete povraćaj novca nakon %{count} dana",
+            "other": "Dobijate povraćaj novca nakon %{count} dana"
+          }
+        },
+        "crypto_modal": {
+          "header": "Platite %{shop_name} %{total_price} USDC",
+          "error": {
+            "refresh": "Osveži",
+            "close": "Zatvori",
+            "sandbox_error": "Došlo je do greške",
+            "web_component_error": "Došlo je do problema pri učitavanju ove stranice"
+          }
+        },
+        "saved_by_payment_method": "Sačuvano putem %{payment_method}",
+        "pay_with_payment_method": "Platite putem %{payment_method}",
+        "pay_with_credit_card": "Platite kreditnom karticom",
+        "pay_with_debit_card": "Plati debitnom karticom",
+        "different_credit_card_label": "Koristite drugu kreditnu karticu",
+        "same_billing_address_label": "Isto kao adresa za isporuku",
+        "different_billing_address_label": "Koristi drugu adresu za naplatu",
+        "billing_address_associated_with_mandate": "Koristite adresu povezanu sa načinom plaćanja",
+        "billing_address_associated_with_mandate_info": "Ako želite da promenite adresu za naplatu, uklonite pa ponovo unesite podatke o svojoj kreditnoj kartici.",
+        "free_order_notice_html": "Vaša narudžbina je <strong>besplatna</strong>. Plaćanje nije potrebno.",
+        "express_checkout_free_order": "Neće vam biti naplaćena besplatna porudžbina."
       }
     },
     "pagination": {
