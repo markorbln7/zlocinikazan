@@ -2765,12 +2765,103 @@
         "tax_exemptions_modal_button_accessibility_label": "Prikažite sva poreska izuzeća"
       },
       "location_selection": {
-        "continue_to_store": "Nastaviti da čuvate"
+        "continue_to_store": "Nastaviti da čuvate",
+        "description": "Ako već imate artikle u korpi, promena lokacije može uticati na cene i količine u korpi.",
+        "description_switch_later": "Uvek možete kasnije da se predomislite",
+        "error_loading_locations": "Došlo je do problema sa učitavanjem lokacija. Proverite internet konekciju i pokušajte ponovo.",
+        "list_accessibility_label": "Lista lokacija",
+        "list_item_without_address_accessibility_label": "{{name}}: Nema adrese",
+        "list_loading_accessibility_message": "Učitavam listu lokacija",
+        "list_loading_address_accessibility_message": "Adresa utovara za {{locationName}}",
+        "list_loading_finished_accessibility_message": "Lista lokacija je učitana",
+        "loading_store_accessibility_message": "Idem u prodavnicu",
+        "no_location_title": "Samo za ličnu upotrebu",
+        "no_location_description": "Više nemate dozvolu da postavljate porudžbine za {{company}}. I dalje možete postavljati lične porudžbine.",
+        "no_locations_found": "Lokacije nisu pronađene",
+        "search": "Pretraži lokacije",
+        "search_location_title": "Izaberite lokaciju",
+        "selection_cancel_button": "Poništi",
+        "selection_confirmation_button": "Odaberite lokaciju",
+        "selection_continue_button": "Nastaviti",
+        "title": "Za koju lokaciju kupujete?",
+        "title_choose_location": "Izaberite lokaciju",
+        "clear_search": "Obriši pretragu",
+        "try_new_search": "Probajte novu pretragu"
       },
       "draft_order_details": {
         "payment_status": {
           "pay_now_accessibility_label": "Platite odmah za porudžbinu {{orderName}}",
-          "title": "Status uplate"
+          "title": "Status uplate",
+          "pending": {
+            "banner_overdue": {
+              "one": "Vaša uplata kasni {{count}} dan",
+              "other": "Vaša uplata kasni {{count}} dana"
+            },
+            "banner_due": {
+              "one": "Vaša uplata dospeva za {{count}} dan",
+              "other": "Vaša uplata dospeva za {{count}} dana"
+            },
+            "banner_due_today": "Vaša uplata dospeva danas",
+            "banner_due_today_for_multiple_fulfillments": "<p>Isplata danas za {{count}} ispunjenja</p>",
+            "banner_overdue_for_multiple_fulfillments": "Plaćanje duga za {{count}} ispunjenja",
+            "title": "Rok plaćanja",
+            "title_with_date": "Plaćanje dospeva {{date}}",
+            "title_due_on_receipt": "Plaćanje još nije dospelo",
+            "title_due_on_fulfillment": "Plaćanje po ispunjenju obaveze",
+            "description_overdue": "Vaša uplata kasni.",
+            "description_partially_paid": "Ova porudžbina je delimično plaćena. Imate preostali dug.",
+            "description_authorized": "Vaš metod plaćanja biće naplaćen na dan dospeća, ili možete platiti odmah.",
+            "description_waiting_for_manual_payment": "Ova porudžbina ima plaćanje na čekanju. Stanje će biti ažurirano kada plaćanje bude primljeno.",
+            "description_due_on_receipt": "Dobićete fakturu kada dospe uplata.",
+            "description_due_on_receipt_partially_paid": "Ova narudžbina je delimično plaćena. Preostali iznos je neuplaćen. Dobićete fakturu kada dospe plaćanje.",
+            "description_due_on_fulfillment": "Plaćanje dospeva po ispunjenju svih stavki u ovoj narudžbini.",
+            "description_due_on_fulfillment_partially_paid": "Ova porudžbina je delimično plaćena. Imate preostali dug. Plaćanje je dospelo kada svi artikli iz ove porudžbine budu isporučeni.",
+            "description_due_on_fulfillment_partially_paid_next": "Ova porudžbina je delimično plaćena. Imate preostali dug."
+          },
+          "draft": {
+            "description": "Detalji plaćanja se dogovaraju prilikom potvrđivanja porudžbine.",
+            "title": "Plaćanje još nije dospelo",
+            "in_review": {
+              "description": "Detalji plaćanja se dogovaraju prilikom potvrđivanja porudžbine.",
+              "title": "Plaćanje još nije dospelo"
+            },
+            "submitted": {
+              "description": "Uplatite novac da biste potvrdili ovu porudžbinu.",
+              "title": "Platite da potvrdite",
+              "deposit": {
+                "title": "Uplata dospeva",
+                "due_later": "Stanje je po uslovima {{translatedName}} i dospeva {{dueDate}}.",
+                "due_on_fulfillment": "Preostali iznos dospeva po ispunjenju svih stavki u ovoj porudžbini.",
+                "due_on_receipt": "Dobićete fakturu za preostali iznos.",
+                "due_on_date": "Iznos dospeva {{dueDate}}."
+              }
+            },
+            "deposit": {
+              "due_later": "{{depositAmount}} će dospeti na naplatu kada vaša porudžbina bude potvrđena. Ostatak će biti po {{translatedName}} uslovima.",
+              "due_on_fulfillment": "{{depositAmount}} će biti dospeo kada vaša narudžbina bude potvrđena. Ostatak će biti dospeo kada narudžbina bude ispunjena.",
+              "due_on_receipt": "{{depositAmount}} dospeva kada se vaša porudžbina potvrdi. Preostali iznos dospeva kasnije.",
+              "due_on_date": "{{depositAmount}} dospeva kada se vaša porudžbina potvrdi. Preostali iznos dospeva {{dueDate}}."
+            }
+          },
+          "paid": {
+            "title": "Plaćeno",
+            "title_with_date": "Plaćeno {{date}}",
+            "description": "Vaša narudžbina je u potpunosti plaćena."
+          },
+          "refund": {
+            "title": "Refundirano",
+            "title_with_date": "Refundirano {{date}}",
+            "description_full_refund": "Dobili ste pun povraćaj novca za ovu porudžbinu.",
+            "description_single_refund": "Delimično vam je refundiran novac za ovu porudžbinu.",
+            "description_multiple_refunds": "Delimično ste refundirani za ovu porudžbinu."
+          },
+          "canceled": {
+            "title": "Plaćanje otkazano",
+            "description": "Nije vam naplaćeno."
+          },
+          "due_date": "Dospeva {{date}}",
+          "total_balance": "Ukupan iznos",
+          "pay_now": "Plati odmah"
         },
         "order_timeline": {
           "expand_events_label": "Prikaži detalje",
@@ -2779,7 +2870,10 @@
           "hide_events_accessibility_label": "Sakrij detalje nacrta porudžbine"
         },
         "subtitle": "Poslato {{date}}",
-        "title": "Naručite {{name}}"
+        "title": "Naručite {{name}}",
+        "draft_order_subtitle": "Potvrđeno {{date}} iz porudžbine {{draftOrderName}}",
+        "loading": "Učitavanje detalja porudžbine",
+        "loading_finished_accessibility_message": "Detalji porudžbine su učitani"
       },
       "payment_methods": {
         "payment_delete": {
@@ -2805,6 +2899,46 @@
         "modal_po_number_input_max_length_error": "Brojevi narudžbenica imaju maksimalno {{maxLength}} karaktera.",
         "save": "Sačuvaj",
         "title": "Narudžbenica #{{poNumber}}"
+      },
+      "addresses": {
+        "add_billing_address_button": "Dodajte adresu za naplatu",
+        "add_billing_address_section_accessibility_label": "Dodajte adresu za naplatu",
+        "add_shipping_address_button": "Dodajte adresu za dostavu",
+        "add_shipping_address_section_accessibility_label": "Dodajte adresu za dostavu",
+        "billing_address_card_title": "Adresa za naplatu",
+        "no_billing_address_banner": "Adresa za naplatu nije dodata",
+        "cancel_adding_billing_address_accessibility_label": "Odustani od dodavanja adrese za naplatu",
+        "cancel_adding_shipping_address_accessibility_label": "Odustani od dodavanja adrese za dostavu",
+        "save_new_billing_address_accessibility_label": "Sačuvaj adresu za naplatu",
+        "save_new_shipping_address_accessibility_label": "Sačuvaj adresu za dostavu",
+        "shipping_address_card_title": "Adresa za dostavu"
+      },
+      "orders": {
+        "draft_order_list": {
+          "hide_all": "Sakrij sve",
+          "show_all": "Prikaži sve",
+          "hide_all_accessibility_label": "Sakrij sve porudžbine u pregledu",
+          "show_all_accessibility_label": "Prikažite sve porudžbine na pregledu",
+          "show_all_orders_in_review": "Prikažite sve porudžbine na pregledu",
+          "show_less_orders_in_review": "Prikaži manje narudžbina u pregledu",
+          "title": "Na čekanju",
+          "pending_tab_accessibility_label": {
+            "no_pending_orders": "Nemate narudžbine na čekanju",
+            "pending_orders": {
+              "one": "Imate {{count}} nerešenu narudžbinu",
+              "other": "Imate {{count}} nerešenih porudžbina"
+            },
+            "more_than_pagination_length": "Imate više od {{count}} narudžbina na čekanju"
+          },
+          "pending_orders_count_more_than_pagination_length": "{{count}}+",
+          "pagination": {
+            "nav_accessibility_label": "Dugmad za navigaciju \"Narudžbine u pregledu\""
+          }
+        },
+        "order_list_column_headers_location": "Lokacija",
+        "order_list_column_headers_contact": "Kontakt",
+        "order_list_column_headers_status": "Status",
+        "removed_company_contact_tooltip": "Uklonjeno iz preduzeća"
       }
     },
     "errors": {
