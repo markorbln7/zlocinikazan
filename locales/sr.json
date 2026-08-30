@@ -2200,6 +2200,144 @@
       "emirate": "Emirat",
       "governorate": "Pokrajina",
       "confirm": "Da li ste sigurni da želite da obrišete ovu adresu?"
+    },
+    "collections": {
+      "sorting": {
+        "manual": "Izdvojeno",
+        "best_selling": "Najprodavanije",
+        "az": "Abecedno, A-Z",
+        "za": "Abecedno, od Z do A",
+        "price_ascending": "Cena, od niže ka višoj",
+        "price_descending": "Cena, od više ka nižoj",
+        "date_ascending": "Datum, staro ka novom",
+        "date_descending": "Datum, najnovije ka najstarijem",
+        "most_relevant": "Najrelevantnije"
+      }
+    },
+    "errors": {
+      "blank": "ne može biti prazno",
+      "blocked_address": "Ova lokacija nije podržana",
+      "credit_card_session_expired": "Autorizacija kreditne kartice je istekla, molimo Vas da ponovo unesete podatke o plaćanju. Vaša kartica nije zadužena.",
+      "empty": "ne može biti prazno",
+      "invalid_email": "mora biti validna email adresa",
+      "discount_disabled": "Ovaj popust je onemogućen",
+      "discount_expired": "Ovaj popust više ne važi.",
+      "discount_limit_reached": "Ovaj popust je dosegao svoje ograničenje korišćenja",
+      "discount_not_found": "Nismo uspeli da pronađemo važeći popust koji odgovara unetom kodu",
+      "customer_already_used_once_per_customer_discount_notice": "Ovaj popust je dosegao svoje ograničenje korišćenja",
+      "gift_card_already_applied": "Kod je već primenjen na vašu korpu.",
+      "gift_card_code_invalid": "Kod je neispravan",
+      "gift_card_currency_mismatch": "Ova poklon kartica ne može da se koristi za ovu kupovinu. Kontaktirajte prodavnicu %{shop_name} da biste je ponovo izdali.",
+      "gift_card_depleted": "Nema više sredstava na ovoj poklon kartici",
+      "gift_card_disabled": "Poklon kartica je onemogućena",
+      "gift_card_expired": "Poklon kartica je istekla",
+      "invalid": "nije važeće",
+      "bad_domain": "sadrži neispravan naziv domena",
+      "taken": "je već zauzeto",
+      "contains_html_tags": "ne može sadržati HTML tagove",
+      "too_short": "je prekratko (minimum je %{count} karaktera)",
+      "too_long": "je predugačak (maksimum je %{count} karaktera)",
+      "password_mismatch": "mora da se podudara sa unetom lozinkom",
+      "contains_spaces": "počinje ili se završava razmacima.",
+      "invalid_for_country": "nije važeće za %{country}",
+      "invalid_for_country_and_province": "nije važeće za %{province} i %{country}",
+      "invalid_province_in_country": "nije važeća pokrajina u %{country}",
+      "invalid_state_in_country": "nije važeća država u %{country}",
+      "invalid_region_in_country": "nije validan region u %{country}",
+      "less_than_or_equal_to": "mora biti manji ili jednak %{count}",
+      "not_supported": "nije podržan",
+      "full_name_required": "Unesite ime i prezime",
+      "invalid_for_card_type": "nije važeće",
+      "invalid_type": "žao nam je, ne prihvatamo kartice ovog tipa",
+      "invalid_format": "format nije validan",
+      "expired": "istekao je",
+      "invalid_start_date_or_issue_number_for_debit": "potreban je važeći datum početka ili broj izdanja",
+      "invalid_expiry_year": "nije važeća godina isteka roka trajanja",
+      "reset_password_html": "Ova imejl adresa je već povezana sa nalogom. Ako je ovo vaš nalog, možete <a href=\"/account/login#recover\">resetovati lozinku</a>",
+      "verify_email": "Poslali smo e-poštu na %{customer_email}, kliknite na link koji je priložen da biste potvrdili svoju e-adresu.",
+      "product_not_available": "proizvod nije objavljen za ovog kupca.",
+      "shop_404": {
+        "title": "Napravite sajt za e-trgovinu i prodajte putem interneta! Softver za e-trgovinu kompanije Shopify",
+        "title_unavailable": "Prodavnica nedostupna",
+        "heros": {
+          "store_will_be_right_back": "Prodavnica će se odmah vratiti",
+          "store_unavailable": "Prodavnica je trenutno nedostupna.",
+          "store_not_exist": "Ova prodavnica ne postoji.",
+          "no_storefront": "Ova prodavnica još uvek nema veb sajt."
+        },
+        "subtitles": {
+          "store_will_be_right_back": "Shopify radi na tome da ga vrati onlajn što je pre moguće."
+        },
+        "links": {
+          "refresh_page": "Osvežite stranicu",
+          "explore_other_stores": "Istražite druge prodavnice",
+          "start_free_trial": "Započnite besplatnu probu"
+        },
+        "status_card": {
+          "eyebrow": "Pomoć za vlasnike prodavnica",
+          "header": "Proverite status Shopify-ja",
+          "caption": "Proverite da li postoji prekid rada koji pogađa više prodavnica, a ne samo ovu na Shopify platformi.",
+          "link_text": "Pogledajte status Shopify sistema"
+        },
+        "owner_ctas": {
+          "header": "Da li ste vi vlasnik radnje?",
+          "fix_domain": "Dovršite podešavanje svoje nove veb adrese, idite na %{domain_settings_link}. Kliknite na „Poveži domen“ i unesite: %{domain}.<br>Ako imate problema sa ulaskom u svoju prodavnicu, pokušajte na stranici %{forgot_your_store_link}.",
+          "fix_domain_link_text": "vaša podešavanja domena",
+          "forgot_your_store_link_text": "zaboravio/la vašu prodavnicu",
+          "add_storefront": "Možete podesiti svoju veb lokaciju dodavanjem kanala „Onlajn prodavnica“ u %{admin_link}. Ako imate problema sa pristupom svojoj prodavnici, isprobajte stranicu %{forgot_your_store_link}.",
+          "admin_link_text": "administrator"
+        },
+        "ctas": {
+          "sell_in_person": {
+            "header": "Prodajte lično",
+            "caption": "Pribavite funkcije koje su vam potrebne za vođenje vaše maloprodajne radnje, bez obzira da li počinjete ili se širite.",
+            "link_text": "Započnite besplatnu probu"
+          },
+          "open_a_store": {
+            "header": "Otvorite novu Shopify prodavnicu",
+            "caption": "Započnite trodnevni besplatni probni period, a zatim nastavite za 1 USD mesečno u naredna 3 meseca.",
+            "link_text": "Prijavite se odmah"
+          },
+          "editions": {
+            "header": "Pogledajte Shopify Editions",
+            "caption": "Sa više od 100 ažuriranja proizvoda, možete biti produktivniji, kreativniji i moćniji u trgovini nego što ste ikada zamišljali.",
+            "link_text": "Istražite najnovija izdanja"
+          },
+          "store_owner": {
+            "header": "Da li ste vi vlasnik radnje?",
+            "caption": "Imate li problema sa prijavljivanjem u svoju prodavnicu? Probajte funkciju %{forgot_your_store_link}. Ako želite ponovo da aktivirate svoju prodavnicu, kontaktirajte %{shopify_support_link}.",
+            "shopify_support_link_text": "Shopify podrška"
+          }
+        }
+      }
+    },
+    "notices": {
+      "customer": {
+        "password_reset_error": "Greška pri resetovanju lozinke",
+        "subscribe_error": "Greška pri pretplati",
+        "unsubscribe_error": "Greška pri odjavi",
+        "open_tracking_error": "Greška pri praćenju otvaranja",
+        "no_account_found": "Nalog sa tom imejl adresom nije pronađen.",
+        "invalid_credentials": "Netačna adresa e-pošte ili lozinka.",
+        "denylisted_reset_password": "Vašem nalogu nije bilo moguće pristupiti jer trenutna lozinka nije bezbedna. Dobićete imejl za ažuriranje lozinke.",
+        "signup_disabled": "Kreiranje korisničkog naloga je onemogućeno."
+      },
+      "address": {
+        "updated": "Adresa je uspešno ažurirana.",
+        "error_updating": "Greška pri ažuriranju adrese",
+        "created": "Adresa je uspešno kreirana",
+        "error_creating": "Greška pri kreiranju adrese.",
+        "deleted": "Adresa je uspešno obrisana",
+        "error_deleting": "Greška pri brisanju adrese."
+      },
+      "line_item": {
+        "item_status": {
+          "add_variant": "Dodato %{delta}",
+          "increment_item": "Dodato %{delta}",
+          "decrement_item": "Uklonjeno %{delta} od %{total}",
+          "decrement_fulfilled_line_item": "Vraćeno %{delta} od %{total}"
+        }
+      }
     }
   },
   "customer_accounts": {
