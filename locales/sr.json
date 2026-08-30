@@ -1113,7 +1113,32 @@
         "vat_label_html": "Uključujući %{amount} poreza",
         "duties_included_label": "Ukupno uključuje poreze i carine. Nema dodatnih troškova isporuke.",
         "discount_and_gift_card_savings_notice": "Nakon %{discount_amount} popusta i %{gift_card_amount} poklon kartica",
-        "discount_savings_notice": "Nakon %{discount_amount} popusta"
+        "discount_savings_notice": "Nakon %{discount_amount} popusta",
+        "title": "Pregled narudžbine",
+        "product_disclosures": {
+          "title": "Otkrivanje informacija o proizvodu"
+        },
+        "group_title_label": "Deo grupe „%{group_title}“",
+        "for_add_on": "Za: %{group_title}",
+        "from_shop_heading": "Od %{shop_name}",
+        "from_other_stores_heading": "Iz drugih prodavnica",
+        "from_multiple_stores_heading": "Iz više prodavnica",
+        "number_items": {
+          "one": "%{count} stavka",
+          "other": "%{count} stavke"
+        },
+        "view_all_items": {
+          "one": "Pogledajte %{count} stavku",
+          "other": "Prikaži sve stavke (%{count})"
+        },
+        "more_items_modal": {
+          "search_item": "Pretražite",
+          "clear_search": "Obriši pretragu",
+          "empty_results": "Nema rezultata za „%{searchText}“. Proverite pravopis ili koristite drugu reč ili izraz.",
+          "number_items_shown": "%{shownNumber} od %{totalNumber} stavki"
+        },
+        "order_name_label": "Porudžbina %{name}",
+        "shopping_cart_label": "Korpa"
       },
       "delivery_options": {
         "free_total_label": "Slobodan",
@@ -1170,7 +1195,8 @@
           "one": "{{count}} stavka",
           "other": "{{count}} stavki"
         },
-        "checkout_on_shop_label": "Pogledaj na %{shop_name}"
+        "checkout_on_shop_label": "Pogledaj na %{shop_name}",
+        "single_shop_transition": "Preusmeravamo vas na %{advertiser} kako biste dovršili kupovinu."
       },
       "local_pickup": {
         "location_far_away_one_item": {
@@ -1878,6 +1904,146 @@
         "shipping_information_required_notice": "Potrebne su informacije o isporuci. {{link}}.",
         "shipping_information_redirect_link": "Unesite svoje podatke ovde",
         "loading_progressive_rates": "Tražim još cena…"
+      },
+      "stock": {
+        "page_title": "Problemi sa inventarom",
+        "title": "Nema na zalihama",
+        "items_unavailable_notice": "Neke stavke više nisu dostupne.",
+        "product_column_header": "Proizvodi",
+        "quantity_column_header": "Količina",
+        "price_column_header": "Cena",
+        "status_column_header": "Status",
+        "removed_from_cart_notice": "Uklonjeno iz korpe",
+        "sold_out_label": "Rasprodato",
+        "reduced_label": "Smanjeno",
+        "reduced_with_quantity_label": "Ostalo je još samo %{quantity_available}",
+        "remove_from_cart_button_label": "Ukloni iz korpe",
+        "continue_shopping_button_label": "Nastaviti",
+        "go_back_to_cart_button_label": "Vrati se u moju korpu",
+        "remove": "Ukloni",
+        "return_to_store_label": "Povratak u prodavnicu",
+        "continue_cta_label": "Nastavi sa plaćanjem",
+        "item_label": {
+          "one": "{{count}} stavka",
+          "other": "{{count}} stavki"
+        },
+        "empty_cart_label": "Vaša korpa je prazna",
+        "quantity_update": {
+          "page_title": "Ažuriranje količine",
+          "title": "Ažuriranje količine",
+          "description": "Dostupne količine za ove artikle su se promenile i ažurirane su u vašoj korpi."
+        },
+        "unpurchasable_product": {
+          "title": "Proizvod koji se ne može kupiti",
+          "header": "Neke stavke su uklonjene iz vaše korpe",
+          "message": "Ovi artikli nisu dostupni za B2B porudžbine.",
+          "status_column_header": "Nije dostupno"
+        },
+        "unpurchasable_product_generic": {
+          "title": "Proizvod koji se ne može kupiti",
+          "header": "Neke stavke su uklonjene iz vaše korpe",
+          "message": "Ovi artikli nisu dostupni.",
+          "status_column_header": "Nije dostupno"
+        },
+        "unfulfillable_product": {
+          "title": "Dostava nije moguća",
+          "message": {
+            "one": "%{delivery_method} više nije dostupan za ovu stavku.",
+            "other": "%{delivery_method} više nije dostupan za ove artikle."
+          },
+          "default_message": {
+            "one": "Izabrani način isporuke više nije dostupan za ovu stavku.",
+            "other": "Odabrani način isporuke više nije dostupan za ove artikle."
+          }
+        },
+        "unshippable_product": {
+          "title": "Nema dostave",
+          "header": {
+            "one": "Dostava nije moguća za %{count} artikal",
+            "other": "Nema dostupne dostave za %{count} stavki"
+          },
+          "message": {
+            "one": "Ova stavka će biti uklonjena iz vaše korpe jer nema dostupnih metoda isporuke za vašu adresu.",
+            "other": "Ove stavke će biti uklonjene iz vaše korpe jer nema dostupnih opcija isporuke za vašu adresu."
+          },
+          "status_column_header": "Nema isporuke"
+        },
+        "price_update": {
+          "title": "Ažuriranje cena",
+          "description": "Cene ovih artikala su se promenile i ažurirane su u vašoj korpi.",
+          "updated_price": "Ažurirana cena"
+        },
+        "price_and_quantity_update": {
+          "title": "Ažuriranje cene i količine",
+          "description": "Cene i raspoložive količine za ove artikle su promenjene i ažurirane u vašoj korpi."
+        },
+        "out_of_stock": {
+          "description": "Ovi artikli više nisu dostupni i biće uklonjeni iz vaše korpe.",
+          "items_unavailable": "Neki artikli više nisu dostupni i biće uklonjeni iz vaše korpe.",
+          "missing_items": {
+            "title": {
+              "one": "{{count}} stavka više nije dostupna",
+              "other": "{{count}} stavki više nije dostupno"
+            },
+            "some_available_notice": {
+              "one": "Preostale stavke su i dalje dostupne za naplatu. Nedostupna stavka biće uklonjena iz korpe.",
+              "other": "Preostale stavke su i dalje dostupne za poručivanje. Nedostupne stavke će biti uklonjene iz korpe."
+            },
+            "none_available_notice": {
+              "one": "Ova stavka više nije dostupna i uklonjena je iz vaše korpe.",
+              "other": "Ovi artikli više nisu dostupni i uklonjeni su iz vaše korpe."
+            },
+            "mixed_issues_title": "Neki artikli više nisu dostupni"
+          }
+        },
+        "out_of_stock_in_context_label": "Ovaj proizvod nije dostupan u vašoj zemlji/regionu."
+      },
+      "contextual_availability": {
+        "title": {
+          "one": "Nedostupan proizvod",
+          "other": "Nedostupni proizvodi"
+        },
+        "products_not_available": {
+          "one": "Ovaj proizvod biće uklonjen iz vaše korpe jer nije dostupan u vašoj zemlji/regionu.",
+          "other": "Ovi proizvodi će biti uklonjeni iz vaše korpe jer nisu dostupni u vašoj zemlji/regionu."
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "Ovaj proizvod nije dostupan u vašoj zemlji/regionu.",
+          "other": "Ovi proizvodi nisu dostupni u vašoj zemlji/regiji."
+        },
+        "unavailable_label": "Nedostupno"
+      },
+      "merchandise_unavailable_in_buyer_location": {
+        "banner_title": {
+          "some_products_one": "Ovaj proizvod nije dostupan za isporuku na lokaciju %{location_name}.",
+          "some_products_other": "Ovi proizvodi nisu dostupni za isporuku na %{location_name}.",
+          "all_products_one": "Proizvod u Vašoj korpi nije dostupan za isporuku na lokaciju %{location_name}.",
+          "all_products_other": "Proizvodi u vašoj korpi nisu dostupni za dostavu u %{location_name}."
+        },
+        "missing_country_fallback": "tvoja zemlja",
+        "indeterminate_location_fallback": "Vaša lokacija",
+        "cart_updated": "Vaša korpa je ažurirana.",
+        "change_address_only": "Promenite adresu za isporuku da biste nastavili.",
+        "change_address_or_remove": "Promenite adresu za dostavu ili %{remove_action}.",
+        "remove_items_action": {
+          "one": "uklonite nedostupnu stavku",
+          "other": "uklonite nedostupne stavke"
+        },
+        "empty_cart_action": "ispraznite kolica i vratite se u prodavnicu",
+        "unavailable_line_item": "%{product_name} / %{variant_label}"
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "Dostava nije moguća za %{count} artikal",
+            "other": "Nema dostupne dostave za %{count} stavki"
+          },
+          "message": {
+            "one": "Ova stavka će biti uklonjena iz vaše korpe jer nema dostupnih metoda isporuke za vašu adresu.",
+            "other": "Ove stavke će biti uklonjene iz vaše korpe jer nema dostupnih opcija isporuke za vašu adresu."
+          },
+          "label": "Nema isporuke"
+        }
       }
     },
     "pagination": {
