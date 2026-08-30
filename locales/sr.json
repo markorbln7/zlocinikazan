@@ -3068,11 +3068,13 @@
         "loading": "Učitavanje Apple Pay-a",
         "errors": {
           "generic": "Došlo je do problema sa uslugom Apple Pay. Pokušajte ponovo ili koristite drugi način plaćanja.",
-          "not_available": "Apple Pay nije dostupan na ovom uređaju."
+          "not_available": "Apple Pay nije dostupan na ovom uređaju.",
+          "missing_billing_address": "Apple Pay zahteva adresu za naplatu. Dodajte je svom nalogu."
         }
       },
       "update_success": {
-        "done_button": "Nastavi kupovinu"
+        "done_button": "Nastavi kupovinu",
+        "title": "Način plaćanja je ažuriran"
       },
       "add_success": {
         "title": "Način plaćanja dodat",
@@ -3176,6 +3178,122 @@
       "three_d_secure": {
         "title": "3D Secure",
         "verification_failed": "Vaša uplata nije mogla biti verifikovana. Pokušajte ponovo ili koristite drugi način plaćanja."
+      },
+      "store_credit": {
+        "label": "Kredit u prodavnici",
+        "accessibility_label": "Kredit u prodavnici - {{formattedBalance}}",
+        "expirable_amounts_button": "Pogledaj iznose koji ističu",
+        "expirable_amounts_label": "Iznosi kojima ističe rok",
+        "details_modal": {
+          "load_error": "Nije moguće učitati stanje računa.",
+          "title": "Kredit u prodavnici sa rokom važenja",
+          "balance_label": "Ravnoteža",
+          "expiration_date_label": "Datum isteka roka trajanja",
+          "amount_label": "Iznos",
+          "date_label": "Datum",
+          "event_label": "Događaj",
+          "events": {
+            "adjustment": "Podešavanje",
+            "order_payment": "Plaćanje porudžbine",
+            "order_refund": "Povraćaj novca za porudžbinu",
+            "payment_failure": "Neuspela uplata",
+            "payment_returned": "Plaćanje vraćeno",
+            "order_cancellation": "Otkazivanje porudžbine",
+            "tax_finalization": "Zaključenje poreske prijave"
+          },
+          "expirable_balance_info": "Deo vašeg balansa će isteći u budućem datumu",
+          "expirable_amount_label": "Ukupan iznos koji ističe",
+          "expirable_amounts_info": "Iznosi koji ističu ranije primenjuju se prvi prilikom plaćanja",
+          "expirable_amounts_button": "Prikaz",
+          "expired_amounts_button": "Prikaz istaknutih iznosa",
+          "pagination": {
+            "expirable_transactions_loading": "Učitavanje više iznosa koji ističu",
+            "transactions_loading": "Učitavanje još transakcija",
+            "load_more_label": "Prikaži više",
+            "load_more_accessibility_label": "Prikaži više iznosa koji ističu",
+            "load_more_transactions_accessibility_label": "Prikaži više transakcija",
+            "expirable_transactions_loaded": "Učitano više iznosâ koji ističu",
+            "transactions_loaded": "Više transakcija učitano"
+          },
+          "expirable_indicator": "{{formattedAmount}} će isteći",
+          "expirable_indicator_accessibility_label": "{{formattedAmount}} će isteći. Pogledajte iznose kojima ističe rok.",
+          "expirable_indicator_with_date_accessibility_label": "{{formattedAmount}} ističe {{date}}. Pogledajte iznose kojima ističe rok.",
+          "expires_at": "Ističe {{date}}",
+          "expirable_transactions_list_accessibility_label": "Transakcije sa kreditom iz prodavnice koje ističu",
+          "loading_accessibility_message": "Učitavanje detalja o stanju na računu",
+          "transactions_list_accessibility_label": "Transakcije sa kreditom iz prodavnice",
+          "transaction_types": {
+            "credit": "Dodato",
+            "debit": "Potrošeno",
+            "debit_revert": "Refundirano",
+            "expiration": "Isteklo je"
+          }
+        }
+      },
+      "payment_details": {
+        "title": "Detalji načina plaćanja",
+        "credit_card_details_accessibility_label": "sa završetkom na {{lastDigits}}",
+        "billing_title": "Adresa za naplatu",
+        "card_info_title": "Informacije o kartici",
+        "payment_method_expiring_on": "Ističe: {{expiryDate}}",
+        "payment_method_expired_on": "Ističe {{expiryDate}}",
+        "preauthorized_payments": "Unapred ovlašćena plaćanja",
+        "close_payment_modal": "Zatvori",
+        "close_payment_modal_accessibility_label": "Zatvorite modalni prozor sa detaljima o načinu plaćanja",
+        "payment_method_not_found_error": "Nije moguće pronaći način plaćanja",
+        "payment_details_loading": "Učitavanje detalja načina plaćanja",
+        "pre_authorized_payments": "Unapred odobrena plaćanja",
+        "total_amount_of_subscription_line_items_left": "i još {{total}}",
+        "total_amount_of_subscription_line_items_left_accessibility_label": "{{totalItems}} ukupno stavki, prikazano {{totalItemsToDisplay}} stavki.",
+        "next_payment_due": "Sledeća uplata dospeva {{dueDateInMonthDayYear}}",
+        "edit_payment_method_button": "Izmeni",
+        "edit_payment_method_button_accessibility_label": "Izmenite način plaćanja koji se završava na {{lastDigits}}",
+        "loading_shop_pay": "Učitavanje Shop Pay-a",
+        "invalid_payment_method": "Nevažeći način plaćanja",
+        "invalid_payment_method_message": "Upotrebite novu kreditnu karticu da biste nastavili da primate predstojeće porudžbine.",
+        "replace_payment_method": "Zameni način plaćanja",
+        "checkout_card_banner": "Ovaj način plaćanja može se koristiti samo za pre-autorizovana plaćanja. Neće se pojaviti na kasi ako ste prijavljeni u ovoj prodavnici.",
+        "default_checkbox": "Postavi kao podrazumevano",
+        "default_checkbox_accessibility_label": "Postavi ovaj način plaćanja kao podrazumevani",
+        "replace_payment_method_button": "Zameni"
+      },
+      "edit_payment_method": {
+        "title": "Uredite način plaćanja",
+        "save_payment_method_button": "Sačuvaj",
+        "cancel_edit_payment_method_button": "Poništi",
+        "payment_method_updated_toast": "Način plaćanja je ažuriran",
+        "billing_address": "Adresa za naplatu",
+        "billing_address_add_new": "Dodaj novi",
+        "billing_address_choose_from_list": "Izaberite sa liste",
+        "future_purchases_notice": "Ovaj način plaćanja biće sačuvan za buduće kupovine.",
+        "generic_error": "Došlo je do problema sa ažuriranjem. Molimo pokušajte ponovo."
+      },
+      "update_payment_method": {
+        "title": "Ažuriraj način plaćanja",
+        "button_title": "Ažuriraj",
+        "billing_address": "Adresa za naplatu",
+        "disclaimer": "Ovaj način plaćanja biće sačuvan za buduće kupovine i može se koristiti za bilo koju ponavljajuću ili odloženu kupovinu.",
+        "error_message": "Nije moguće ažurirati metod plaćanja",
+        "current": "Trenutno",
+        "subscriptions_title": "Pretplate",
+        "subscriptions_list_accessibility_label": "Lista pretplatničkih proizvoda",
+        "pre_orders_title": "Predstojeće",
+        "pre_orders_list_accessibility_label": "Lista proizvoda porudžbina na čekanju",
+        "resources_list_accessibility_label": "Proizvodi pretplate i proizvodi u obradi porudžbine koji koriste ovaj način plaćanja",
+        "resources_card_scroll": "Skrolujte za još stavki",
+        "resources_card_show_more": "Prikaži više",
+        "resources_card_show_less": "Prikaži manje",
+        "loading_form_accessibility_message": "Učitavanje obrasca za ažuriranje načina plaćanja",
+        "loading_current_payment_method": "Učitavanje trenutnog načina plaćanja",
+        "loading_digital_wallets": "Učitavanje opcija digitalnog novčanika",
+        "loading_card_fields": "Učitavam polja za kreditnu karticu",
+        "loading_resources": "Učitavanje pretplata i predstojećih narudžbina"
+      },
+      "link_expired": {
+        "message": "Ovaj link za ažuriranje vašeg načina plaćanja je istekao.",
+        "update_message": "Ovaj link za ažuriranje vašeg načina plaćanja je istekao.",
+        "add_message": "Ovaj link za dodavanje načina plaćanja je istekao.",
+        "return_home_button": "Povratak na početnu stranicu"
       }
     },
     "order_details": {
@@ -3435,7 +3553,127 @@
       "ideal": "iDEAL",
       "klarna": "Klarna",
       "mobilepay": "MobilePay",
-      "przelewy24": "Przelewy24"
+      "przelewy24": "Przelewy24",
+      "swish": "Zvižduk",
+      "twint": "TWINT",
+      "usdc": "Крипто: USDC"
+    },
+    "privacy_banner": {
+      "cookie_preferences_link": "Podešavanja kolačića"
+    },
+    "ui_components": {
+      "clear": "Obriši",
+      "clipboardCopied": "Kopirano",
+      "clipboardFailedToCopy": "Kopiranje neuspešno",
+      "closeNotification": "Zatvori",
+      "expandNotification": "Pogledajte više",
+      "closeModal": "Zatvori",
+      "submit": "Pošalji",
+      "processing": "Obrada…",
+      "increase": "Povećanje {{type}}",
+      "decrease": "Smanji {{type}}",
+      "minimumReached": "Minimum od {{value}} je dostignut",
+      "maximumReached": "Maksimum od {{value}} je dostignut",
+      "january": "Januar",
+      "february": "Februar",
+      "march": "Mart",
+      "april": "April",
+      "may": "Maj",
+      "june": "jun",
+      "july": "Jul",
+      "august": "Avgust",
+      "september": "Septembar",
+      "october": "Oktobar",
+      "november": "Novembar",
+      "december": "Decembar",
+      "monday": "Ponedeljak",
+      "tuesday": "Utorak",
+      "wednesday": "Sreda",
+      "thursday": "Četvrtak",
+      "friday": "Petak",
+      "saturday": "Subota",
+      "sunday": "Nedelja",
+      "mondayAbbreviation": "Mo",
+      "tuesdayAbbreviation": "Ti",
+      "wednesdayAbbreviation": "Mi",
+      "thursdayAbbreviation": "Ovaj",
+      "fridayAbbreviation": "Gosp.",
+      "saturdayAbbreviation": "Sa",
+      "sundayAbbreviation": "Su",
+      "showNextMonth": "Prikaži sledeći mesec, {{month}} {{year}}",
+      "showPreviousMonth": "Prikaži prethodni mesec, {{month}} {{year}}",
+      "rangeStart": "Početak opsega",
+      "inRange": "U opsegu",
+      "rangeEnd": "Kraj opsega",
+      "autocompleteOptionsAvailable": {
+        "one": "{{count}} stavka na raspolaganju",
+        "other": "{{count}} artikala dostupno"
+      },
+      "removeItem": "Uklonite {{label}}",
+      "removeTag": "Uklonite oznaku",
+      "mapClusterTitle": {
+        "one": "Klaster od {{number}} markera",
+        "other": "Grupa od {{number}} markera"
+      },
+      "expandSheet": "Proširi",
+      "qrCode": "QR kod",
+      "addFile": "Dodaj datoteku",
+      "dropzoneInvalidFileType": "Tip datoteke nije podržan",
+      "dropzoneDraggedOver": "Prevucite datoteku za otpremanje",
+      "external": "Otvara spoljnu veb lokaciju.",
+      "externalNewWindow": "Otvara spoljnu veb lokaciju u novom prozoru.",
+      "loading": "Učitavanje…",
+      "moneyLinesHeaderItem": "Artikal",
+      "moneyLinesHeaderValue": "Vrednost",
+      "newWindow": "Otvara se u novom prozoru.",
+      "productThumbnailQuantityLabel": "Količina",
+      "removeChip": "Ukloni stavku",
+      "reviewItemHeaderChangeValue": "Promeni vrednost",
+      "reviewItemHeaderSection": "Odeljak",
+      "reviewItemHeaderValue": "Vrednost"
+    },
+    "profile_preview_bar": {
+      "badge_active": "Aktivno",
+      "badge_draft": "Nacrt",
+      "badge_launches": "Lansira se {{date}}",
+      "badge_paused": "Pauzirano",
+      "badge_scheduled": "Zakazano",
+      "badge_traffic": "{{percentage}} saobraćaja",
+      "edit": "Izmeni",
+      "exit_preview": "Izađite iz pregleda",
+      "hide_bar_action": "Sakrij traku",
+      "rollout_label": "Primena",
+      "customize_button": "Prilagodite",
+      "hide_bar": "Sakrij traku",
+      "navigate_to_admin": "Idite na administratora",
+      "close_preview": "Zatvori pregled",
+      "previewing": "Pretpregled:",
+      "saved_at": "Sačuvano {{date}} u {{time}}",
+      "viewing": "Trenutno gledate:",
+      "not_available": "Podaci o profilu nisu dostupni",
+      "actions_button": "Akcije"
+    },
+    "active_inspector": {
+      "extension": {
+        "select": "Izaberite ekstenziju pod nazivom {{extensionName}}",
+        "unselect": "Opozovi izbor proširenja po imenu {{extensionName}}",
+        "move_down": "Premesti ekstenziju na sledeću poziciju",
+        "move_up": "Premestite ekstenziju na prethodnu poziciju",
+        "remove": "Ukloni ekstenziju",
+        "move_down_tooltip": "Pređite na sledeću poziciju",
+        "move_up_tooltip": "Pređi na prethodnu poziciju",
+        "remove_tooltip": "Ukloni"
+      }
+    },
+    "editor": {
+      "link_new_tab_confirmation": "Ova veza se ne može otvoriti unutar uređivača. Biće otvorena u novom prozoru ({{resolved_to_link}}). Kliknite OK da nastavite."
+    },
+    "settings": {
+      "title": "Podešavanja",
+      "loading_accessibility_message": "Učitavam stranicu sa podešavanjima",
+      "log_out_everywhere": {
+        "title": "Odjavite se svuda"
+      }
     }
   },
   "content": {
