@@ -1144,7 +1144,141 @@
         "gift_card_label": {
           "one": "Poklon kartica",
           "other": "Poklon kartice"
-        }
+        },
+        "gift_card_resend_button": {
+          "one": "Ponovno pošalji poklon karticu",
+          "other": "Ponovo pošalji poklon kartice"
+        },
+        "gift_resend_success": {
+          "one": "Ponovo poslata poklon kartica",
+          "other": "Poklon kartice ponovo poslate"
+        },
+        "gift_resend_failure": {
+          "one": "Došlo je do problema prilikom ponovnog slanja vaše poklon kartice. Pokušajte ponovo ili nas kontaktirajte.",
+          "other": "Došlo je do problema prilikom ponovnog slanja vaših poklon kartica. Pokušajte ponovo ili nas kontaktirajte."
+        },
+        "confirmed_gift_card_additional_description": {
+          "one": "Poklon kartica će biti poslata u posebnom mejlu.",
+          "other": "Svaka poklon kartica biće poslata u posebnom mejlu."
+        },
+        "confirmed_gift_card_additional_description_text": {
+          "one": "Poklon kartica će biti poslata u posebnoj poruci.",
+          "other": "Svaka poklon kartica biće poslata u zasebnoj poruci."
+        },
+        "status_timestamp": "Ažurirano {{date}}",
+        "estimated_delivery": "Očekivano {{date}}",
+        "expected_by": "Očekuje se do {{date}}",
+        "was_expected_by": "Očekivano do {{date}}",
+        "delivered": "Delivered {{date}}",
+        "buy_with_prime_logo_accessibility_label": "Amazon Kupi sa Prime logotipom",
+        "in_review_label": "U pregledu",
+        "in_review_title": "Vaša porudžbina je na pregledu",
+        "last_updated": "Poslednje ažuriranje: {{date}}",
+        "multiple_shipments_label": "Više pošiljaka",
+        "multiple_statuses_label": "Višestruki statusi narudžbine",
+        "no_tracking_number": "Ne postoji broj za praćenje za ovu pošiljku.",
+        "tracking_number": {
+          "one": "Broj za praćenje",
+          "other": "Brojevi za praćenje"
+        },
+        "on_its_way_label": "Na putu",
+        "out_for_delivery_label": "U isporuci",
+        "resume_tracking": "Praćenje biografije",
+        "submitted_label": "Podneseno",
+        "submitted_description": "Pregledajte porudžbinu i detalje plaćanja.",
+        "there_was_a_problem_label": "Došlo je do problema",
+        "track_shipment": "Praćenje pošiljke",
+        "request_return": "Zahtev za povraćaj",
+        "view_order_for_details": "Pogledajte porudžbinu za detalje",
+        "external_promise_manage_button_label": {
+          "buy_with_prime": "Upravljajte na Amazonu"
+        },
+        "amazon_buy_with_prime": {
+          "order_tracking_link": {
+            "text": "Upravljajte uz Amazon",
+            "new_window_disclaimer": "(otvara se u novom prozoru)"
+          }
+        },
+        "delivery_promise_v2": {
+          "promise_line": {
+            "shop_promise_brand_label": "Isporuka zagarantovana do",
+            "external_promise_brand_label": "Isporučiti do",
+            "not_delivered_by_label": "Isporučeno posle {{date}}",
+            "delivery_guarantee_expired_label": "Garancija isporuke je istekla",
+            "modal_accessibility_button_label": "Detalji obećanja o isporuci",
+            "download_shop_app_button_label": "Preuzmite Shop za praćenje",
+            "track_with_shop_button_label": "Pratite uz kupovinu",
+            "claim_shop_cash_button_label": "Preuzmite novac iz prodavnice"
+          },
+          "details_modal": {
+            "title": "Garancija isporuke",
+            "active_delivery_guarantee_label": "Isporuka do {{date}}",
+            "expired_delivery_guarantee_description": "Istekao je 30-dnevni „Shop Promise“ garantni rok za ovu narudžbinu.",
+            "expired_badge_label": "Isteklo je",
+            "order_includes_guarantees_label": "Vaša porudžbina uključuje {{deliveryAgreementsCount}} garancija",
+            "order_includes_guarantees_description": "Shop Promise garantuje brzu i pouzdanu isporuku. Zatražite Shop Cash ako vaša narudžbina stigne posle {{date}}.",
+            "delivered_after_label": "Isporučeno posle {{date}}",
+            "delivered_after_description": "Pošto je vaša porudžbina stigla kasno, imate pravo na {{amount}} Shop gotovine.",
+            "claimed_shop_cash_description": "<p>Pošto je ova porudžbina kasnila, ostvarili ste {{amount}} Shop Cash.</p>",
+            "eligible_to_claim_shop_cash_description": "Pošto je vaša porudžbina stigla kasno, imate pravo na {{amount}} Shop gotovine.",
+            "learn_more_button_label": "Saznajte više",
+            "claim_shop_cash_button_label": "Preuzmite novac iz prodavnice",
+            "view_balance_in_shop_button_label": "Prikaz stanja u Prodavnici",
+            "scan_to_claim_shop_cash_label": "Skenirajte da preuzmete {{amount}} Shop Cash"
+          }
+        },
+        "delivery_promise": {
+          "promise_line": {
+            "single_brand_label": "Isporuku podržava",
+            "mixed_brands_label": "Isporučivanje zagarantovano",
+            "not_delivered_by_label": "Nije dostavljeno do {{date}}",
+            "modal_accessibility_button_label": "Detalji obećanja o isporuci"
+          },
+          "claim_shop_cash_cta": {
+            "has_shop_app_label": "Preuzmite svoj Shop Cash",
+            "no_shop_app_label": "{{appDownloadLink}} da preuzmete Shop Cash",
+            "download_shop_app_label": "Preuzmite prodavnicu"
+          },
+          "details_modal": {
+            "title": "Isporuku podržava",
+            "modal_accessiblity_label": "Detalji obećanja o isporuci",
+            "delivery_guarantee_label": "Garancija isporuke",
+            "delivery_by_label": "Isporuka do {{date}}",
+            "delivery_guaranteed_by_label": "Isporučeno najkasnije do {{date}}",
+            "shop_cash_claim": {
+              "may_be_eligible_label": "Shop Promise garantuje brzu i pouzdanu dostavu. Zatražite Shop Cash ako vaša porudžbina stigne kasno.",
+              "may_be_eligible_not_authorized_label": "Možda imate pravo na Shop Cash jer je ova porudžbina stigla kasno. Prijavite se da biste videli detalje.",
+              "redeemed_label": "Već ste preuzeli Shop Cash jer je ova porudžbina kasnila.",
+              "expired_label": "Ova porudžbina ne podleže zahtevu za kasnu isporuku jer je istekla 30-dnevna garancija.",
+              "no_shop_cash_label": "Ova porudžbina ne ispunjava uslove za podnošenje žalbe zbog kašnjenja isporuke jer nije plaćena putem Shop Pay-a.",
+              "no_longer_guaranteed_label": "Za ove artikle više ne važi garancija isporuke.",
+              "claim_shop_cash_title": "Skenirajte da biste preuzeli {{amount}} u Shop Cash-u",
+              "claim_shop_cash_description": "Možete koristiti svoj Shop Cash za buduće kupovine u aplikaciji Shop."
+            }
+          }
+        },
+        "arrives": "Stiže {{date}}",
+        "delivery_estimate_backed_by": "Podržan od",
+        "delivery_estimate_delayed_description": "Isporuke za vašu oblast su sporije nego obično. Vaša porudžbina može stići kasno.",
+        "delivery_estimate_delayed_title": "Odloženo",
+        "delivery_estimate_early_description": "Isporuke za vašu oblast su brže nego obično. Ova porudžbina može stići ranije.",
+        "delivery_exception_action_required": "Potrebna akcija",
+        "delivery_exception_attempted_action": "Zakažite novu isporuku",
+        "delivery_exception_attempted_description": "{{link}} sa {{carrier}} ili proverite obaveštenje o isporuci",
+        "delivery_exception_attempted_description_unknown": "{{link}} ili proverite obaveštenje o isporuci",
+        "delivery_exception_attempted_title": "Pokušana isporuka",
+        "delivery_exception_delivery_failed": "Isporuka neuspela",
+        "delivery_exception_failed_action": "Proverite sa {{carrier}}",
+        "delivery_exception_failed_description": "{{link}} ili nas kontaktirajte za više informacija",
+        "delivery_exception_failed_description_unknown": "Kontaktirajte prevoznika za više informacija",
+        "delivery_exception_failed_title": "Nije dostavljeno",
+        "delivery_exception_on_hold_action": "Ažurirajte detalje isporuke",
+        "delivery_exception_on_hold_description": "{{link}} sa {{carrier}} da ponovo pokrenete svoju porudžbinu",
+        "delivery_exception_on_hold_description_unknown": "{{link}} da se vaša narudžbina ponovo pokrene",
+        "delivery_exception_on_hold_title": "Na čekanju",
+        "delivery_exception_returning_to_sender_action": "Kontaktirajte {{carrier}}",
+        "delivery_exception_returning_to_sender_description": "{{link}} za više informacija",
+        "delivery_exception_returning_to_sender_description_unknown": "Kontaktirajte prevoznika za više informacija"
       }
     },
     "addresses": {
