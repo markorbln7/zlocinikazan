@@ -4120,7 +4120,13 @@
       "how_to_use_gift_card": "Upotrebite kod poklon kartice onlajn ili QR kod u prodavnici",
       "title": "Ovo je stanje vaše poklon kartice {{ value }} za {{ shop }}!",
       "subtext": "Vaša poklon kartica",
-      "shop_link": "Posetite internet prodavnicu"
+      "shop_link": "Posetite internet prodavnicu",
+      "add_to_apple_wallet": "Dodajte u Apple Wallet",
+      "qr_image_alt": "QR kod — skenirajte da iskoristite poklon karticu",
+      "copy_code": "Kopiraj kod poklon kartice",
+      "expiration_date": "Ističe {{ expires_on }}",
+      "copy_code_success": "Kod je uspešno kopiran",
+      "expired": "Isteklo je"
     }
   },
   "accessibility": {
@@ -4177,5 +4183,34 @@
     "apply": "Primeni",
     "back": "Nazad",
     "choose": "Izaberite"
+  },
+  "placeholders": {
+    "password": "Lozinka",
+    "search": "Pretražite",
+    "product_title": "Naslov proizvoda",
+    "collection_title": "Naslov kolekcije",
+    "blog_posts": "Objave na blogu",
+    "blog_post_title": "Naslov",
+    "blog_post_author": "Autor",
+    "blog_post_date": "Datum",
+    "blog_post_description": "Isečak sadržaja vašeg blog posta"
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "Dodaj u korpu",
+      "adding_to_cart": "Dodavanje...",
+      "added_to_cart": "Dodato u korpu",
+      "add_to_cart_error": "Greška pri dodavanju u korpu",
+      "quantity_error_max": "Ova stavka ima maksimum od {{ maximum }}",
+      "sold_out": "Rasprodato",
+      "unavailable": "Nedostupno",
+      "quantity": "Količina",
+      "quantity_increments": "{{ increment }} povećanja",
+      "quantity_minimum": "Minimum od {{ minimum }}",
+      "quantity_maximum": "Maximum of {{ maximum }}",
+      "in_cart": "u korpi",
+      "default_title": "Podrazumevani naslov",
+      "sticky_add_to_cart": "Traka za brzo dodavanje u korpu"
+    }
   }
 }
