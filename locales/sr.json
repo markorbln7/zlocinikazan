@@ -769,7 +769,42 @@
         "checkout_a_different_way": "Istražite drugačiji pristup",
         "blocks": {
           "contact_method_title": "Kontakt",
-          "billing_address_title": "Naplata"
+          "billing_address_title": "Naplata",
+          "shipping_address_title": "Isporuči na",
+          "shipping_method_title": "Način slanja",
+          "payment_method_title": "Način plaćanja",
+          "change_link_label": "Izmeni",
+          "change_contact_method_link_label": "Promenite podatke za kontakt",
+          "change_billing_address_link_label": "Promenite adresu za naplatu",
+          "change_company_location_link_label": "Promeni lokaciju kompanije",
+          "change_shipping_address_link_label": "Promenite adresu za dostavu",
+          "change_shipping_method_link_label": "Promeni način isporuke",
+          "change_payment_method_link_label": "Promenite način plaćanja",
+          "pick_up_in_store_shipping_method_html": "Preuzimanje u prodavnici · %{location_name}",
+          "purchase_order_number_title": "Broj narudžbenice",
+          "change_purchase_order_number_label": "Promenite broj porudžbenice",
+          "change_delivery_method_link_label": "Promenite način isporuke",
+          "no_address": "(Nema adrese)",
+          "no_purchase_order_number": "(Nema broja narudžbenice)",
+          "no_purchase_order_number_long": "Bez broja porudžbenice",
+          "due_after_order_reviewed_html": "Dospeva nakon pregleda porudžbine",
+          "review_title_free_order": "Pregledajte i kompletirajte vašu porudžbinu",
+          "payment_method_saved_company_location": "Sačuvajte karticu za ovu lokaciju",
+          "company_location": "Lokacija kompanije",
+          "pickup_items_at": {
+            "one": "Preuzmite %{count} predmet u",
+            "other": "Preuzmite %{count} stvari na"
+          },
+          "ship_items_to": {
+            "one": "Isporučite %{count} artikal na",
+            "other": "Isporučite %{count} proizvoda na"
+          }
+        },
+        "block_title": "Pregledajte svoje informacije",
+        "item_header": {
+          "change_value": "Promeni vrednost",
+          "section": "Odeljak",
+          "value": "Vrednost"
         }
       },
       "order_summary": {
@@ -944,6 +979,287 @@
           "other": "{{count}} stavki"
         },
         "checkout_on_shop_label": "Pogledaj na %{shop_name}"
+      },
+      "local_pickup": {
+        "location_far_away_one_item": {
+          "one": "%{count} lokacija sa vašom stavkom",
+          "other": "%{count} lokacija sa vašim predmetom"
+        },
+        "location_far_away_other_items": {
+          "one": "%{count} lokacija sa vašim predmetima",
+          "other": "%{count} lokacija sa vašim predmetima"
+        },
+        "toggle_location": "Promena lokacije",
+        "toggle_more_locations": {
+          "one": "Još %{count} lokacija",
+          "other": "Još %{count} lokacija"
+        },
+        "toggle_multiple_locations": "još %{count} lokacija",
+        "pick_up_location": "Lokacija preuzimanja",
+        "or": "ILI",
+        "cancel": "Poništi",
+        "your_location": "Vaša lokacija",
+        "search_button": "Pronađite prodavnice",
+        "no_stores_found": "Nema pronađenih prodavnica",
+        "all_stores_far_away": {
+          "title": "Najbliže lokacije su udaljene više od %{distance}",
+          "title_with_item": {
+            "one": "Najbliža lokacija sa vašom stavkom je udaljena više od %{distance} od %{location}",
+            "other": "Najbliža lokacija sa vašim artiklima je udaljena više od %{distance} od %{location}"
+          },
+          "title_with_location": "Najbliža lokacija je više od %{distance} od mesta %{location}",
+          "title_with_specific_location": "Najbliža lokacija sa vašim predmetom je više od %{distance} udaljena od %{location}",
+          "description": "Odaberite lokaciju ili %{ship_to_address_link}",
+          "description_with_location": "%{change_location_link} ili %{ship_to_address_link}",
+          "ship_to_address_link": "Adresa za dostavu",
+          "change_location_link": "Promenite lokaciju"
+        },
+        "selected_pickup_option_no_longer_available": {
+          "title": "Vaša prethodno odabrana lokacija više nije dostupna",
+          "description": "Izabrali smo najbližu lokaciju koja ima vaše artikle na zalihama"
+        },
+        "could_not_resolve_address": "Vaša adresa nije pronađena. Pokušajte ponovo ili koristite drugu adresu",
+        "paginator": {
+          "accessibility_label": "Lokalno preuzimanje – paginacija",
+          "previous": "Prethodna stranica",
+          "next": "Sledeća stranica",
+          "label": {
+            "one": "%{first} - %{last} od %{count} prodavnice",
+            "other": "%{first} - %{last} od %{count} prodavnica"
+          }
+        },
+        "reveal_more_label": {
+          "one": "Prikaži još %{count} lokacija",
+          "other": "Prikaži još %{count} lokacija"
+        },
+        "no_pickup_locations_found": "Nije pronađena nijedna lokacija za preuzimanje",
+        "pickup_unavailable_banner_title": {
+          "one": "Nema lokacija sa vašom stavkom",
+          "other": "Nema lokacija sa vašim stavkama"
+        },
+        "pickup_unavailable_banner_title_with_country": {
+          "one": "Nema lokacija u %{country} sa vašom stavkom",
+          "other": "Nema lokacija u %{country} sa vašim predmetima"
+        },
+        "pickup_unavailable_banner_body": {
+          "try_different_location": "Pokušajte sa drugom lokacijom",
+          "ship_to_address": "Adresa za dostavu",
+          "there_are_no_stores": "Nema prodavnica u blizini vaše adrese ili vaši artikli nisu dostupni za preuzimanje.",
+          "ship_items": "Pošaljite svoje artikle",
+          "search_elsewhere": "tražite drugde",
+          "search_elsewhere_standalone": "Tražite drugde",
+          "ship_items_or_search_elsewhere": "%{ship_items} ili %{search_elsewhere}"
+        },
+        "geolocation": {
+          "permission_not_allowed": "Dozvolite deljenje lokacije ili pretražite umesto toga."
+        }
+      },
+      "split_delivery": {
+        "accessibility": {
+          "status": {
+            "ship_separately": "%{items} biće isporučeni odvojeno.",
+            "pickup_in_store": "%{items} će biti preuzeti u prodavnici.",
+            "remove_items": "%{items} uklonjeno iz korpe."
+          }
+        },
+        "pickup_all_items": "Pokupi sve predmete",
+        "items_for_pickup": "Stvari za preuzimanje",
+        "items_for_shipping": "Stvari za slanje",
+        "items_moved_to_shipping_toast": "Stvari koje se ne mogu pokupiti premeštene su na dostavu",
+        "delivery_method": "Podeljeni metod isporuke",
+        "delivery_method_menu": "Meni za isporuku sa podelom porudžbine",
+        "inventory_issue_banner": {
+          "heading": {
+            "cannot_be_picked_up": {
+              "one": "%{count} stavka ne može biti preuzeta",
+              "other": "%{count} stavki ne može biti preuzeto"
+            },
+            "cannot_be_shipped": {
+              "one": "%{count} stavka ne može da se pošalje",
+              "other": "%{count} stavki ne može da bude isporučeno"
+            }
+          },
+          "remove_item": {
+            "one": "ukloni stavku",
+            "other": "ukloni stavke"
+          },
+          "remove_item_only": {
+            "one": "Ukloni stavku",
+            "other": "Ukloni stavke"
+          },
+          "ship_separately": {
+            "one": "Pošaljite odvojeno",
+            "other": "Pošaljite ih odvojeno"
+          },
+          "pick_them_up_in_store": {
+            "one": "Preuzmite u prodavnici",
+            "other": "Preuzmite ih u prodavnici"
+          },
+          "remove_items_or_ship": "%{ship_separately_link} ili %{remove_items_link}",
+          "remove_items_or_pickup": "%{pickup_in_store_link} ili %{remove_items_link}",
+          "merchandise_line_with_quantity": "%{title} (×%{quantity})"
+        },
+        "cross_border": {
+          "modal": {
+            "heading": "Promeniti državu?",
+            "content": "Lokacije za preuzimanje i slanje moraju biti u istoj državi. Promena države će resetovati sve artikle na isporuku.",
+            "country_changed_heading": "Država je promenjena",
+            "change_country": "Promeni državu"
+          },
+          "banner": "Vaš način isporuke je ažuriran"
+        }
+      },
+      "captcha": {
+        "title": "Dovršite CAPTCHA da biste nastavili dalje",
+        "errors": {
+          "not_solved": "Dovršite CAPTCHA da biste nastavili dalje"
+        }
+      },
+      "clipboard": {
+        "copied": "Kopirano",
+        "failed_to_copy": "Kopiranje neuspešno"
+      },
+      "discount_errors": {
+        "generic_error": "Vaša porudžbina nije mogla biti obrađena jer vaš kod za popust više nije dostupan. Proverite ukupan iznos porudžbine i pokušajte ponovo."
+      },
+      "b2b_errors": {
+        "lost_b2b_purchasing_permissions": "Više nemate dozvolu za B2B porudžbine. %{logout_url} da biste umesto toga naručili za ličnu upotrebu.",
+        "log_out_link_text": "Odjavi se",
+        "lost_permissions_subtitle": "Nemate više dozvolu za B2B porudžbine. Odjavite se da biste postavili ličnu porudžbinu.",
+        "lost_permissions_title": "Nema dozvola za lokaciju"
+      },
+      "shop_pay_external": {
+        "title": "Plaćanje putem Shop Pay-a",
+        "errors": {
+          "problem_loading": "Došlo je do problema prilikom učitavanja Shop Pay-a",
+          "try_again_later": "Proverite vezu ili zatvorite ovaj prozor i pokušajte ponovo za nekoliko trenutaka.",
+          "checkout_has_expired": "Vaša narudžbina je istekla. Zatvorite ovaj prozor i pokušajte ponovo da naručite u prodavnici {{shopName}}."
+        },
+        "return_to_store": "Povratak na {{shopName}}",
+        "return_to_store_simple": "Povratak u prodavnicu"
+      },
+      "wallets": {
+        "return_to_store": "Povratak u prodavnicu",
+        "return_to_checkout": "Povratak na kasu",
+        "redirect_hint": "Biće vam zatraženo da se prijavite koristeći {{walletName}}.",
+        "logged_in": "Povezano sa {{email}}",
+        "shipping_line_label": "Dostava",
+        "payment_in_progress_title": "Plaćanje u toku",
+        "payment_in_progress_body": "Vaša uplata se obrađuje. Vaša porudžbina će uskoro biti završena.",
+        "deceleration": {
+          "one_more_step": "Još samo jedan korak..."
+        },
+        "call_to_action": "Platite putem {{walletName}}",
+        "place_order": "Poruči"
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Pošaljite mi e-poštom novosti i ponude",
+        "post_accept_marketing_checkbox_label": "Pretplaćeni ste na primanje novosti i ponuda putem e-pošte",
+        "pending_accept_marketing_checkbox_label": "Proverite svoju e-poštu da biste potvrdili pretplatu na vesti i ponude",
+        "accept_sms_checkbox_label": "Pišite mi o novostima i ponudama",
+        "disclaimer": {
+          "privacy_policy": "Politika privatnosti",
+          "terms_of_service": "Uslovi korišćenja"
+        },
+        "sms": {
+          "disclaimer": {
+            "privacy_policy": "Politika privatnosti",
+            "terms_of_service": "Uslovi korišćenja",
+            "description_html": "Prijavljivanjem putem SMS-a, slažete se da primate ponavljajuće automatizovane marketinške poruke, uključujući podsetnike o napuštenoj korpi, na navedeni broj telefona. Saglasnost nije uslov kupovine. Odgovorite sa STOP da biste se odjavili. Odgovorite sa HELP za pomoć. Učestalost poruka varira. Mogu se primeniti troškovi slanja poruka i prenosa podataka. Pogledajte našu %{privacy_policy_link} i %{terms_of_service_link}.",
+            "description_transactional_html": "Možete primati tekstualne poruke u vezi sa potvrdom porudžbine i obaveštenjima o isporuci. Odgovorite sa STOP da se odjavite. Odgovorite sa HELP za pomoć. Učestalost poruka varira. Mogu se naplaćivati tarife za poruke i prenos podataka. Pogledajte našu %{privacy_policy_modal_link} i %{terms_of_service_modal_link}."
+          },
+          "mobile_phone_number": "Broj mobilnog telefona",
+          "get_offers_by_text": "Dobijajte ponude putem SMS-a"
+        },
+        "unsubscribe": {
+          "title": "Uspešno ste se odjavili",
+          "description": "Nećete više primati podsetnike o korpi od nas."
+        },
+        "accept_shop_pay_marketing_checkbox_label": "Prijavite me za novosti i ponude ove prodavnice"
+      },
+      "shop_policies": {
+        "policy_label": "Politika",
+        "policies_label": "Pravilnici",
+        "select_policy_label": "Odaberite pravilo",
+        "refund_policy": "Politika povraćaja novca",
+        "privacy_policy": "Politika privatnosti",
+        "terms_of_service": "Uslovi korišćenja",
+        "legal_notice": "Pravno obaveštenje",
+        "shipping_policy": "Dostava",
+        "terms_of_sale": "Uslovi prodaje",
+        "subscription_policy": "Otkazivanje",
+        "purchase_options_policy": "Politika opcija kupovine",
+        "contact_information": "Kontakt",
+        "purchase_options_cancellation_policy": "Otkazivanje",
+        "cookie_preferences": "Kolačići",
+        "terms_and_policies": "Uslovi i pravila"
+      },
+      "remote_policies": {
+        "unavailable_policy": "Nije postavljena %{policy_name} za ovu prodavnicu. Za više informacija, kontaktirajte direktno %{shop_name}."
+      },
+      "mor_policies": {
+        "terms_and_conditions": "Uslovi i odredbe Trgovca za evidenciju",
+        "privacy_policy": "Politika privatnosti Posrednika za obradu plaćanja"
+      },
+      "markets": {
+        "invalid_market_manager_error": "Proverite svoje kontakt podatke pre nego što završite plaćanje"
+      },
+      "notifications": {
+        "title": "Obaveštenja"
+      },
+      "order_payment_collection": {
+        "custom_line_item_description": "Iznos za uplatu za porudžbinu %{order_name}",
+        "changes_summary": {
+          "added": {
+            "one": "Dodato",
+            "other": "Dodato %{count}"
+          },
+          "removed": "Uklonjeno",
+          "subtracted": "Uklonjeno %{count}",
+          "returned": "Vraćeno %{count}",
+          "return_line_item_removed": "Uklonjeno %{count} iz povrata"
+        },
+        "additional_payment_requested": "Potrebno je uplatiti %{total_outstanding}",
+        "checkout_review_and_pay": "Vaša porudžbina %{order_name} je ažurirana. Pregledajte promene, a zatim platite da biste potvrdili porudžbinu.",
+        "order_updated_on": "Vaša porudžbina je ažurirana %{last_edited_at}.",
+        "order_review_and_pay": "Vaša porudžbina je ažurirana. Pregledajte i platite da biste potvrdili porudžbinu.",
+        "pay_now": "Plati odmah"
+      },
+      "change_currency": {
+        "currency_button_label": "%{currency} (%{currency_symbol})",
+        "credit_card_will_be_charged_html": "Vaša kreditna kartica biće zadužena za %{amount}",
+        "payment_total_label": "Ukupna uplata",
+        "conversion_rate": "1 %{from_currency_code} = %{rate} %{to_currency_code}",
+        "change_currency_link": "Promeni u %{currency_name}",
+        "card_provider_fx_charges_warning": "Vaš provajder kartice može naplatiti naknade za transakcije u valuti %{currency_code}.",
+        "currency_not_supported_by_shop": "Izabrana valuta više nije dostupna. Sve cene su sada u %{currency_code}."
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "Vaša korpa je ažurirana na osnovu zemlje isporuke.",
+        "cart_and_currency_updated_based_on_country": "Vaša korpa i valuta su ažurirane na osnovu zemlje isporuke.",
+        "currency_updated_for_country": "Valuta ažurirana za %{country}"
+      },
+      "change_cart_localization": {
+        "verify_shipping_address": "Vaša zemlja/region je ažuriran. Unesite adresu isporuke da biste nastavili sa naplatom."
+      },
+      "tips": {
+        "title": "Dodajte napojnicu",
+        "description": "Pokažite svoju podršku timu u %{shop_name}",
+        "presets_description": "Izaberite procenat napojnice",
+        "custom_label": "Prilagođena napojnica",
+        "add_tip": "Dodajte napojnicu",
+        "update_tip": "Savet za ažuriranje",
+        "message": "Hvala, cenimo to.",
+        "preset_label": "%{tip_percent}%",
+        "no_tip_label": "Nijedan",
+        "not_available_with_spi": "Nije dostupno uz plaćanje putem Shop Pay Rate"
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "zero": "Kupi %{product_name}",
+          "one": "Kupite %{product_name} i još %{count} artikal/artikla",
+          "other": "Kupite %{product_name} i još %{count} drugih artikala"
+        }
       }
     },
     "pagination": {
