@@ -642,7 +642,149 @@
         "no_filtered_results_title": "Nema filtriranih rezultata",
         "order_link": "Prikaz porudžbine {{name}}",
         "order_number": "Naručite {{name}}",
-        "orders_title": "Potvrđeno"
+        "orders_title": "Potvrđeno",
+        "pagination": {
+          "nav_accessibility_label": "Dugmad za navigaciju naloga",
+          "next": "Dalje",
+          "next_accessibility_label": "Sledeće narudžbine",
+          "previous": "Prethodno",
+          "previous_accessibility_label": "Prethodne narudžbine",
+          "load_more": "Prikaži više",
+          "load_more_accessibility_label": "Prikaži više narudžbi"
+        },
+        "order_status_message": {
+          "list_view": {
+            "view_order_for_details": "Pogledajte porudžbinu za detalje",
+            "estimated_delivery": "Očekivano {{date}}",
+            "last_updated": "Poslednje ažuriranje: {{date}}"
+          },
+          "table_view": {
+            "estimated_delivery": "Predviđena isporuka {{date}}"
+          }
+        },
+        "payment_status": {
+          "gallery_view": {
+            "overdue": "Zakašnjenje sa plaćanjem",
+            "due": "Plaćanje dospeva {{date}}",
+            "due_today": "Uplata dospeva danas",
+            "due_without_date": "Rok plaćanja",
+            "due_on_fulfillment": "Plaćanje po ispunjenju obaveze",
+            "pay_to_confirm": "Platite da potvrdite",
+            "payment_not_due": "Plaćanje još nije dospelo"
+          },
+          "list_view": {
+            "overdue": "Zastarelo",
+            "due": "Dospeva {{date}}",
+            "due_today": "Dospeva danas",
+            "paid": "Plaćeno",
+            "due_without_date": "Zbog",
+            "due_on_fulfillment": "Dospeva po ispunjenju",
+            "pay_to_confirm": "Platite da potvrdite",
+            "payment_not_due": "Još uvek nije dospeo"
+          }
+        },
+        "sort_by": "Poređaj po: {{option}}",
+        "sort_options_accessibility_label": "Opcije sortiranja za potvrđene porudžbine",
+        "sort_hide_options_accessibility_label": "Sakrij opcije sortiranja za potvrđene porudžbine.",
+        "sort_show_options_accessibility_label": "Prikaži opcije sortiranja za potvrđene porudžbine.",
+        "sort_currently_sorted_by_accessibility_label": "Trenutno sortirano po: {{option}}",
+        "sort": {
+          "date": {
+            "newest": "Od najnovijeg ka najstarijem",
+            "oldest": "Od najstarijeg do najnovijeg"
+          },
+          "location": {
+            "ascending": "Lokacija (A-Z)",
+            "descending": "Lokacija (Z-A)"
+          },
+          "order_number": {
+            "ascending": "Broj porudžbine (od najmanjeg ka najvećem)",
+            "descending": "Broj porudžbine (od najvećeg ka najmanjem)"
+          },
+          "order_total": {
+            "ascending": "Ukupan iznos narudžbine (od najmanjeg ka najvećem)",
+            "descending": "Ukupna vrednost narudžbine (od veće ka manjoj)"
+          }
+        },
+        "location_filter_picker": {
+          "all_location": "Sve lokacije",
+          "current_location": "Trenutna lokacija",
+          "switch_view": "Promenite prikaz"
+        },
+        "filter": {
+          "clear_section": "Obriši odeljak",
+          "apply": "Primeni",
+          "date_section_accessibility_label": "Filtriraj po {{sectionTitle}}",
+          "date": {
+            "start_date": "Datum početka",
+            "end_date": "Datum završetka",
+            "title": "Datum porudžbine",
+            "today": "Danas",
+            "last_7_days": "Poslednjih 7 dana",
+            "last_30_days": "Poslednjih 30 dana",
+            "last_90_days": "Poslednjih 90 dana",
+            "last_365_days": "Poslednjih 12 meseci",
+            "custom": "Prilagođeno"
+          }
+        },
+        "show_order_actions_accessibility_label": "Prikaži radnje za porudžbinu {{name}}",
+        "view_order": "Prikaži porudžbinu",
+        "view_order_accessibility_label": "Pregledaj narudžbinu {{orderName}}"
+      },
+      "order_status": {
+        "fulfillment_tracking": {
+          "delivery_progress_heading": "Napredak isporuke",
+          "status": {
+            "attempted_delivery": "Pokušana dostava",
+            "buyer_action_required": "Potrebna akcija",
+            "carrier_picked_up": "Prevoznik je preuzeo pošiljku",
+            "confirmed": "Potvrđeno",
+            "delayed": "Odloženo",
+            "delivered": "Dostavljeno",
+            "exception": "Problem sa isporukom",
+            "failure": "Problem sa isporukom",
+            "in_transit": "Na putu",
+            "label_printed": "Štampana etiketa",
+            "label_purchased": "Nalepnica kupljena",
+            "out_for_delivery": "U isporuci",
+            "picked_up": "Preuzeto",
+            "ready_for_pickup": "Spremno za preuzimanje",
+            "ready_for_recipient_pickup": "Spremno za preuzimanje",
+            "returning_to_sender": "Vraćanje pošiljaocu"
+          }
+        },
+        "attempted_delivery_label": "Pokušana dostava",
+        "attempted_to_deliver_label": "Pokušana isporuka",
+        "preparing_for_shipping_label": "Spremam se za otpremu",
+        "ready_for_pickup_label": "Spremno za preuzimanje",
+        "ready_for_pickup_description": "Ovi artikli su spremni za preuzimanje. Molimo ponesite potvrdu narudžbine kada preuzimate svoju porudžbinu.",
+        "ready_for_pickup_location": "Vaša porudžbina je spremna za preuzimanje na lokaciji",
+        "ready_for_pickup_show_qr_description": "Pokažite ovaj QR kod kada preuzimate porudžbinu.",
+        "picked_up_label": "Preuzeto",
+        "canceled_label": "Otkazano",
+        "canceled_title": "Vaša porudžbina je otkazana",
+        "come_back": "Vraćajte se na ovu stranicu kako biste proverili status vaše pošiljke.",
+        "company_tracking_number": "{{company}} broj za praćenje:",
+        "confirmed_label": "Potvrđeno",
+        "confirmed_title": "Vaša porudžbina je potvrđena",
+        "confirmed_description_pickup": "Pripremamo ove artikle za preuzimanje.",
+        "confirmed_description_shipping": "Pripremamo ove stvari za isporuku.",
+        "confirmed_description_digital": "Dobićete mejl kada vaša narudžbina bude spremna.",
+        "confirmed_description_gift_card_text": "Dobićete poruku kada vaša porudžbina bude spremna.",
+        "complete_label": "Završi",
+        "delivered_label": "Dostavljeno",
+        "delivered_description_gift_card": {
+          "one": "Poklon kartica je poslata putem mejla.",
+          "other": "Poklon kartice su poslate imejlom."
+        },
+        "delivered_description_gift_card_text": {
+          "one": "Poklon kartica je poslata SMS-om.",
+          "other": "Poklon kartice su poslate tekstualnom porukom."
+        },
+        "gift_card_label": {
+          "one": "Poklon kartica",
+          "other": "Poklon kartice"
+        }
       }
     },
     "addresses": {
@@ -774,6 +916,120 @@
       "location_selection": {
         "continue_to_store": "Nastaviti da čuvate"
       }
+    }
+  },
+  "content": {
+    "page_placeholder_title": "Naslov stranice",
+    "page_placeholder_content": "Izaberite stranicu za prikaz njenog sadržaja.",
+    "pagination": {
+      "nav_label": "Navigacija po stranicama",
+      "previous": "Prethodno",
+      "next": "Dalje",
+      "page": "Strana {{ page }}"
+    },
+    "pickup_available_at_html": "Preuzimanje dostupno u <b>{{ location }}</b>",
+    "pickup_available_in": "Preuzimanje dostupno, {{ pickup_time }}",
+    "pickup_not_available": "Preuzimanje trenutno nije dostupno",
+    "powered_by": "Ovaj sajt će pokretati",
+    "price": "Cena",
+    "price_compare_at": "Uporedite po ceni",
+    "price_from": "Od {{ price }}",
+    "price_regular": "Redovna cena",
+    "price_sale": "Prodajna cena",
+    "price_filter_html": "The highest price is {{ price }}",
+    "product_image": "Slika proizvoda",
+    "product_information": "Informacije o proizvodu",
+    "product_subtotal": "Međuzbir proizvoda",
+    "product_total": "Ukupno proizvoda",
+    "product_badge_sold_out": "Rasprodato",
+    "product_badge_sale": "Prodaja",
+    "product_card_placeholder": "Naslov proizvoda",
+    "placeholder_image": "Slika za rezervirano mesto",
+    "quantity": "Količina",
+    "quantity_per_item": "/ea",
+    "recently_viewed_products": "Nedavno pregledano",
+    "remove_all": "Ukloni sve",
+    "remove_all_items_confirmation": "Ukloniti svih {{ count }} stavki iz vaše korpe?",
+    "remove_one_item_confirmation": "Ukloniti 1 stavku iz vaše korpe?",
+    "reviews": "recenzije",
+    "read_more": "Pročitaj više...",
+    "search_input_label": "Pretražite",
+    "search_input_placeholder": "Pretražite",
+    "search": "Pretražite",
+    "search_results": "Rezultati pretrage",
+    "search_results_label": "Rezultati pretrage",
+    "search_results_no_results": "Nema rezultata za „{{ terms }}”. Pokušajte sa drugom pretragom.",
+    "search_results_no_results_check_spelling": "Nema rezultata za \"{{ terms }}\". Proverite pravopis ili koristite drugu reč ili frazu.",
+    "search_results_resource_articles": "Objave na blogu",
+    "search_results_resource_collections": "Kolekcije",
+    "search_results_resource_pages": "Stranice",
+    "search_results_resource_products": "Proizvodi",
+    "search_results_resource_products_count": {
+      "one": "{{ count }} proizvod",
+      "other": "{{ count }} proizvoda"
+    },
+    "search_results_resource_queries": "Predlozi pretrage",
+    "total_items": "Ukupno stavki",
+    "variant": "Varijanta",
+    "variant_total": "Ukupna varijanta",
+    "view_cart": "Pogledajte korpu",
+    "your_cart": "Vaša korpa",
+    "items_added_to_cart": {
+      "one": "1 artikal dodat u korpu",
+      "other": "{{ count }} stavki dodato u korpu"
+    },
+    "search_results_view_all": "Prikaži sve",
+    "search_results_view_all_button": "Prikaži sve",
+    "seller_note": "Posebna uputstva",
+    "shipping_policy": "Dostava se obračunava prilikom plaćanja.",
+    "shipping_policy_html": "<a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">Isporuka</a> se obračunava na kasi.",
+    "store_owner_link_html": "Da li ste vlasnik prodavnice? <a href=\"{{%20link%20}}\">Prijavite se ovde</a>",
+    "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Porezi, popusti i <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">poštarina</a> obračunati na kasi.",
+    "taxes_at_checkout_shipping_at_checkout_with_policy_without_discounts_html": "Porezi i <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">dostava</a> se obračunavaju prilikom plaćanja.",
+    "taxes_at_checkout_shipping_at_checkout_without_policy": "Porezi, popusti i poštarina biće obračunati pri plaćanju.",
+    "taxes_at_checkout_shipping_at_checkout_without_policy_without_discounts": "Porezi i dostava se obračunavaju prilikom plaćanja.",
+    "taxes_included": "Porezi uključeni.",
+    "taxes_included_shipping_at_checkout_with_policy_html": "Porezi uključeni. Popusti i <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">dostava</a> se obračunavaju prilikom plaćanja.",
+    "taxes_included_shipping_at_checkout_with_policy_without_discounts_html": "Porezi uključeni. Dostava se obračunava na blagajni.",
+    "taxes_included_shipping_at_checkout_without_policy": "Porezi uključeni. Popusti i poštarina biće obračunati na kasi.",
+    "taxes_included_shipping_at_checkout_without_policy_without_discounts": "Porezi uključeni. Dostava se obračunava na blagajni.",
+    "unavailable": "Nedostupno",
+    "use_fewer_filters_html": "Pokušajte da koristite manje filtera, ili <a class=\"&lt;span class='notranslate'&gt;{{ class }}&lt;/span&gt;\" href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">obrišite sve filtere</a>.",
+    "view_more_details": "Pogledajte više detalja",
+    "volume_pricing_available": "Dostupne su količinske cene",
+    "volume_pricing": "Cene na veliko",
+    "at_price_each": "po {{ price }}/kom",
+    "each": "{{ price }}/kom",
+    "each_abbreviation": "ea",
+    "price_at": "u",
+    "price_range": "Raspon cena",
+    "your_cart_is_empty": "Vaša korpa je prazna",
+    "product_count": "Broj proizvoda",
+    "errors": "Greške",
+    "wrong_password": "Pogrešna lozinka",
+    "recipient_form_send_to": "Pošalji na",
+    "recipient_form_email_label": "E-pošta primaoca",
+    "recipient_form_email_label_my_email": "Moj mejl",
+    "recipient_form_email_address": "Email adresa primaoca",
+    "recipient_form_name_label": "Ime primaoca (opciono)",
+    "recipient_form_message": "Poruka (opcionalno)",
+    "recipient_form_characters_used": "{{ used_chars }}/{{ max_chars }} karaktera iskorišćeno",
+    "recipient_form_send_on": "ГГГГ-ММ-ДД",
+    "recipient_form_send_on_label": "Pošalji (opciono)",
+    "recipient_form_fields_visible": "Polja obrasca primaoca su sada vidljiva",
+    "recipient_form_fields_hidden": "Polja za primaoca su sada skrivena",
+    "recipient_form_error": "Došlo je do greške prilikom slanja obrasca",
+    "product_custom_property_character_count": "{{ used_chars }}/{{ max_chars }} karaktera iskorišćeno"
+  },
+  "fields": {
+    "separator": "za"
+  },
+  "gift_cards": {
+    "issued": {
+      "how_to_use_gift_card": "Upotrebite kod poklon kartice onlajn ili QR kod u prodavnici",
+      "title": "Ovo je stanje vaše poklon kartice {{ value }} za {{ shop }}!",
+      "subtext": "Vaša poklon kartica",
+      "shop_link": "Posetite internet prodavnicu"
     }
   }
 }
