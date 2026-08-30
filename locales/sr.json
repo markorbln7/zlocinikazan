@@ -1015,6 +1015,176 @@
       },
       "location_selection": {
         "continue_to_store": "Nastaviti da čuvate"
+      },
+      "draft_order_details": {
+        "payment_status": {
+          "pay_now_accessibility_label": "Platite odmah za porudžbinu {{orderName}}",
+          "title": "Status uplate"
+        },
+        "order_timeline": {
+          "expand_events_label": "Prikaži detalje",
+          "expand_events_accessibility_label": "Prikažite detalje nacrta porudžbine",
+          "hide_events_label": "Sakrij detalje",
+          "hide_events_accessibility_label": "Sakrij detalje nacrta porudžbine"
+        },
+        "subtitle": "Poslato {{date}}",
+        "title": "Naručite {{name}}"
+      },
+      "payment_methods": {
+        "payment_delete": {
+          "description_without_replacement": "Ovaj način plaćanja više neće biti dostupan za buduće kupovine sa ove lokacije.",
+          "description_with_replacement": "Brisanje ovog načina plaćanja uticaće na prethodno autorizovana plaćanja za ovu lokaciju. Zamenite ga alternativnim načinom plaćanja kako biste nastavili da primate buduće porudžbine."
+        },
+        "payment_details": {
+          "order_label": "Naručite {{name}}",
+          "draft_label": "Nacrt naloga {{name}}"
+        }
+      },
+      "purchase_order_number": {
+        "add_accessibility_label": "Dodajte broj porudžbine",
+        "add_modal_title": "Dodajte broj porudžbine",
+        "cancel": "Poništi",
+        "close_modal_accessibility_label": "Zatvorite modalni prozor sa brojem narudžbenice",
+        "discard": "Odbaci",
+        "discard_changes_modal_title": "Odbaciti promene?",
+        "edit_accessibility_label": "Izmenite broj porudžbenice",
+        "edit_modal_title": "Izmenite broj porudžbenice",
+        "empty_state": "Nema broja narudžbenice",
+        "modal_po_number_input_label": "Broj narudžbenice",
+        "modal_po_number_input_max_length_error": "Brojevi narudžbenica imaju maksimalno {{maxLength}} karaktera.",
+        "save": "Sačuvaj",
+        "title": "Narudžbenica #{{poNumber}}"
+      }
+    },
+    "errors": {
+      "address_deletion_error": {
+        "description": "Došlo je do problema sa brisanjem ove adrese. Pokušajte ponovo ili osvežite stranicu."
+      },
+      "addresses_loading_issue": {
+        "description": "Greška u povezivanju. Proverite svoju internet vezu i pokušajte ponovo."
+      },
+      "banner_title": {
+        "one": "Postoji {{count}} greška",
+        "other": "Postoji {{count}} grešaka"
+      },
+      "failed_address_creation": {
+        "description": "Došlo je do problema prilikom kreiranja vaše adrese. Pokušajte da osvežite ovu stranicu ili proverite internet konekciju."
+      },
+      "failed_address_update": {
+        "description": "Došlo je do problema prilikom ažuriranja vaše adrese. Pokušajte da osvežite ovu stranicu ili proverite internet vezu."
+      },
+      "load_address_form_error": {
+        "title": "Nije moguće učitati formular za adresu",
+        "description": "Nije moguće učitati obrazac adrese.",
+        "refresh_button": "Osveži stranicu"
+      },
+      "load_orders_error": {
+        "title": "Nije moguće učitati porudžbine",
+        "description": "Pokušajte ponovo ili dođite kasnije.",
+        "retry_button": "Pokušajte ponovo"
+      },
+      "load_paypal_error": {
+        "description": "Došlo je do problema prilikom učitavanja usluge PayPal. Pokušajte ponovo."
+      },
+      "logout_everywhere": {
+        "description": "Nešto je pošlo naopako prilikom odjavljivanja. Molimo pokušajte ponovo."
+      },
+      "no_access_to_locations": {
+        "description": "Nemate pristup nijednoj lokaciji"
+      },
+      "not_found": {
+        "description": "Proverite URL adresu ili pokušajte ponovo za nekoliko minuta.",
+        "title": "Došlo je do problema pri učitavanju stranice"
+      },
+      "order_not_found": {
+        "description": "Ova porudžbina ne postoji ili nemate dozvolu da je pregledate.",
+        "title": "Narudžbina nije pronađena"
+      },
+      "profile_update_error": {
+        "description": "Došlo je do problema prilikom ažuriranja vašeg profila. Pokušajte da osvežite ovu stranicu ili proverite internet konekciju."
+      },
+      "profile_name_update_error": {
+        "description": "Došlo je do problema prilikom ažuriranja imena. Pokušajte da osvežite ovu stranicu ili proverite internet vezu."
+      },
+      "retry_action_label": "Pokušajte ponovo",
+      "resend_link": {
+        "too_many_requests": "Previše zahteva. Pokušajte ponovo kasnije.",
+        "generic": "Neuspeli zahtev"
+      },
+      "load_extension_error": {
+        "title": "Greška",
+        "description": "Osvežite ovu stranicu ili pokušajte ponovo za nekoliko minuta.",
+        "refresh_button": "Osveži stranicu"
+      },
+      "already_upgraded": "Korisnički nalozi su već nadograđeni.",
+      "failed_to_upgrade": "Nije uspelo ažuriranje podešavanja korisničkog naloga.",
+      "not_upgraded": "Nalozi kupaca nisu nadograđeni.",
+      "failed_to_revert": "Nije uspelo vraćanje postavki korisničkog naloga.",
+      "revert_window_expired": "Istekao je rok za vraćanje."
+    },
+    "throttle": {
+      "too_many_attempts": {
+        "message": "Previše pokušaja",
+        "description": "Pokušajte ponovo za nekoliko minuta"
+      }
+    },
+    "payment_methods": {
+      "replacement_payment_method_title": "Zamena načina plaćanja",
+      "title": "Načini plaćanja",
+      "add_payment_method_button": "Dodaj način plaćanja",
+      "add_payment_method_dropdown": {
+        "bank_account_consent": "Dodavanjem načina plaćanja, ovlašćujete naplatu sa vaše kartice ili zaduženje vašeg bankovnog računa za buduće kupovine koje odobrite, sve dok ne otkažete."
+      },
+      "bank_account": {
+        "loading_accessibility_message": "Dugme bankovnog računa se učitava",
+        "iframe_title_accessibility_label": "Otvaranje bankovnog računa",
+        "display_name": "Bankovni račun",
+        "generic_error": "Nije bilo moguće dodati bankovni račun. Pokušajte ponovo kasnije."
+      },
+      "add_payment_method_banner": "Dodajte način plaćanja za bržu naplatu ili unapred ovlašćene usluge",
+      "no_payment_methods_banner": "Nijedan način plaćanja nije dodat",
+      "edit_payment_method_button_accessibility_label": "Uredite {{paymentMethodName}} koji se završava na {{lastDigits}}",
+      "edit_payment_method_brand_button_accessibility_label": "Izmeni {{paymentMethodName}}",
+      "delete_payment_method_button": "Izbriši",
+      "delete_payment_method_button_accessibility_label": "Izbrišite {{paymentMethodName}}",
+      "back_button": "Nazad",
+      "back_button_accessibility_label": "Nazad na {{paymentMethodStepTitle}}",
+      "default": "Podrazumevano",
+      "generic_card": "Kartica",
+      "expiration_warning_button_accessibility_label": "Prikaži upozorenje o isteku za {{paymentMethodName}} koje se završava sa {{lastDigits}}",
+      "expires_soon": "Ova kartica uskoro ističe",
+      "expired": "Ova kartica je istekla",
+      "expired_badge_label": "Isteklo je",
+      "expiring_badge_label": "Ističe",
+      "card_update_consent": "Ovaj način plaćanja biće sačuvan za buduće kupovine.",
+      "card_update_consent_subscriptions": "Ovaj način plaćanja biće sačuvan za buduće kupovine i može se koristiti za bilo koju ponavljajuću ili odloženu kupovinu.",
+      "digital_wallet_title": "Digitalni novčanik",
+      "credit_or_debit_card_title": "Kreditna ili debitna kartica",
+      "credit_card_title": "Kreditna kartica",
+      "additional_payment_methods": "Dodatni načini plaćanja",
+      "or": "ILI",
+      "google_pay": {
+        "iframe_title_accessibility_label": "Dodajte način plaćanja Google Pay",
+        "loading_accessibility_message": "Učitavanje usluge Google Pay",
+        "loading": "Učitavanje usluge Google Pay",
+        "errors": {
+          "generic": "Došlo je do problema sa Google Pay-om. Pokušajte ponovo ili koristite drugi metod plaćanja.",
+          "missing_billing_address": "Google Pay zahteva adresu za naplatu. Dodajte je svom nalogu."
+        }
+      },
+      "pay_pal": {
+        "iframe_title_accessibility_label": "Dodajte PayPal kao metod plaćanja",
+        "loading_accessibility_message": "Učitavanje PayPal-a",
+        "errors": {
+          "generic": "Došlo je do problema sa PayPal-om. Pokušajte ponovo ili koristite drugi način plaćanja."
+        }
+      },
+      "apple_pay": {
+        "loading": "Učitavanje Apple Pay-a",
+        "errors": {
+          "generic": "Došlo je do problema sa uslugom Apple Pay. Pokušajte ponovo ili koristite drugi način plaćanja.",
+          "not_available": "Apple Pay nije dostupan na ovom uređaju."
+        }
       }
     }
   },
