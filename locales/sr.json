@@ -1,0 +1,383 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "shopify": {
+    "sentence": {
+      "words_connector": ", ",
+      "two_words_connector": "i ",
+      "last_word_connector": ", i "
+    },
+    "checkout": {
+      "ucp": {
+        "standard_errors": {
+          "item_unavailable": "Predmet se ne može kupiti"
+        }
+      },
+      "general": {
+        "page_title": "Kasa",
+        "error_page_title": "Greška",
+        "skip_to_content": "Pređi na sadržaj",
+        "breadcrumb": "Putanjica",
+        "continue_button_label": "Nastaviti",
+        "complete_purchase_button_label": "Završena porudžbina",
+        "pay_now_button_label": "Plati odmah",
+        "finalize_order_accessibility_label": "Završi porudžbinu",
+        "authenticate_purchase_button_label": "Potvrdite plaćanje",
+        "edit_link_label": "Izmeni",
+        "all_rights_reserved": "Sva prava zadržana %{shop_name}",
+        "print_policies_link_label": "Štampaj",
+        "cart": "Korpa",
+        "close_modal_label": "Zatvori",
+        "close_notice_label": "Zatvori",
+        "expand_notice_label": "Pogledajte više",
+        "continue_to_shipping_method": "Nastavi sa isporukom",
+        "continue_to_payment_method": "Nastavi na plaćanje",
+        "continue_to_review": "Pregled porudžbine",
+        "back_to_cart": "Povratak u korpu",
+        "back_to_contact_information": "Povratak na informacije",
+        "back_to_shipping_method": "Povratak na isporuku",
+        "back_to_payment_method": "Vrati se na plaćanje",
+        "choose_shipping_method": "Odaberite način dostave",
+        "choose_payment_method": "Odaberite način plaćanja",
+        "choose_billing_address": "Odaberite adresu za naplatu",
+        "contact_us_html": "Kontaktirajte nas za više informacija",
+        "autocomplete_title": "Predlozi",
+        "autocomplete_single_item": "Dostupna 1 stavka",
+        "autocomplete_multi_item": "{{number}} stavki dostupno",
+        "autocomplete_close": "Zatvori predloge",
+        "forwarding_indicator": {
+          "new_window": "Otvara se u novom prozoru.",
+          "external": "Otvara spoljnu veb lokaciju.",
+          "external_and_new_window": "Otvara spoljnu veb lokaciju u novom prozoru."
+        },
+        "checkout_context": {
+          "step_one": "%{shop_name} - Plaćanje"
+        },
+        "tooltip_accessibility_label": "Više informacija",
+        "qr_code": "QR kod",
+        "errors": {
+          "only_empty_terms_accepted": "Ova politika prihvata samo prazne termine.",
+          "session_identifier_not_unique_error": "Nešto nije u redu sa vašom porudžbinom, pokušajte da ponovo izvršite kupovinu.",
+          "line_item_limit_reached": "Dostignut je maksimalan broj stavki.",
+          "session_is_already_finished": "Ova sesija naplate je već završena.",
+          "merchandise": {
+            "only_value_constraint": "Dozvoljene su samo tačne vrednosti u unosu za robu.",
+            "merchandise_not_found": "Proizvod nije pronađen.",
+            "merchandise_variant_not_found": "Varijanta proizvoda nije pronađena.",
+            "merchandise_not_applicable": "Varijanta proizvoda se ne može kupiti.",
+            "mixed_currencies": "Korpa sadrži stavke sa različitim valutama.",
+            "bundle_products_not_supported_for_b2b": "Povezane stavke ne mogu da se dodaju B2B narudžbinama za ovu lokaciju.",
+            "gift_card_quantity_mismatch": "Prilikom navođenja kodova poklon-kartica, količina stavke i broj kodova poklon-kartica moraju se podudarati.",
+            "gift_card_not_supported": "Poklon kartice nisu podržane na ovoj naplati.",
+            "gift_card_not_unique": "Poklon kartica sa kodom {{code}} se pojavljuje više puta u ovoj naplati. Kodovi se formatiraju pre poređenja.",
+            "gift_card_used": "Kod poklon kartice {{code}} je već dodeljen poklon kartici. Kodovi se formatiraju pre poređenja.",
+            "gift_card_invalid": "Šifra poklon kartice {{code}} je nevažeća.",
+            "gift_card_code_changed": "Kod poklon kartice {{proposed_code}} promenjen je u {{formatted_code}} da bi se uskladio sa pravilima formatiranja.",
+            "gift_card_with_attributes_not_supported": "Poklon kartice sa prilagođenim atributima nisu podržane na ovom plaćanju.",
+            "gift_card_with_components_not_supported": "Poklon kartice sa komponentama nisu podržane na ovom plaćanju.",
+            "selling_plan_mismatch": "Pretplata je ažurirana.",
+            "selling_plan_not_supported": "Pretplate nisu podržane.",
+            "selling_plan_not_supported_b2b": "Pretplate nisu podržane za B2B naplatu.",
+            "price_mismatch": "Prethodno predložena cena za ovu robu nije bila validna i ažurirana je.",
+            "inventory_not_found": "Nema zaliha za ovu robu.",
+            "product_not_published": "Proizvod nije objavljen.",
+            "product_not_published_in_buyer_location": "Proizvod nije dostupan na lokaciji trenutnog kupca.",
+            "duplicated_stable_id": "Ova linija robe ima isti stabilni ID kao i druga linija.",
+            "minimum_quantity_not_met": "Količina nekih artikala ne ispunjava minimalno traženu.",
+            "maximum_quantity_exceeded": "Količina nekih artikala je veća od maksimalno dozvoljene.",
+            "quantity_increment_not_met": "Količina nekih artikala ne odgovara ograničenjima narudžbine.",
+            "quantity_rules_not_met": "Količina nekih artikala ne odgovara ograničenjima narudžbine.",
+            "bundle_requires_components": "Ova kompletna roba nema komponenti.",
+            "combined_listing_parent_not_purchasable": "Kombinovani roditeljski proizvodi sa liste se ne mogu direktno kupiti.",
+            "title_too_long": "Naslov proizvoda je predugačak.",
+            "title_empty": "Naslov artikla je prazan."
+          },
+          "buyer_identity": {
+            "business_customer_does_not_match_company": "Kontakt kompanije nema pristup kompaniji.",
+            "customer_account_required": "Morate se prijaviti da biste nastavili.",
+            "company_location_required": "Korisnik mora da izabere lokaciju kompanije kako bi nastavio.",
+            "company_purchase_permission_required": "Kupac nema dozvolu za naručivanje robe za preduzeće.",
+            "personal_order_not_allowed": "Lične porudžbine nisu dozvoljene za ovu prodavnicu.",
+            "lost_access_to_company": "Korisnik je izgubio pristup svim kompanijama.",
+            "contact_info_does_not_match_customer_account": "Podaci za kontakt moraju odgovarati nalogu na koji ste prijavljeni.",
+            "phone_number_does_not_match_expected_pattern": "Navedeni broj telefona ne odgovara očekivanom obrascu.",
+            "email_required": "Potrebna je e-pošta kada se roba kupuje putem pretplate.",
+            "email_domain_is_invalid": "Ovaj navedeni domen ne može se razrešiti.",
+            "missing_contact_method": "Nedostaje važeći metod kontakta.",
+            "checkout_completion_target_is_missing": "Ciljani nalog za naplatu nedostaje.",
+            "invalid_customer_profile": "Obezbeđen je nevažeći korisnički profil.",
+            "customer_profile_access_restricted": "Plaćanje nema dozvolu za pristup profilu korisnika.",
+            "checkout_completion_target_is_invalid_proc": "Nevažeći cilj završetka kupovine.",
+            "buyer_identity_presentment_currency_does_not_match": "Došlo je do problema prilikom obrade vaše narudžbine. Pokušajte ponovo za nekoliko minuta."
+          },
+          "delivery": {
+            "only_one_delivery_line_allowed": "Korpa mora imati samo jednu stavku za dostavu.",
+            "wrong_number_of_delivery_lines": "Linija isporuke mora biti navedena za svaku grupu robe.",
+            "external_delivery_promise_error": "Greška pri preuzimanju obećanja o spoljnoj isporuci.",
+            "options_instructions_invalid": "Navedena uputstva ne odgovaraju očekivanom obrascu.",
+            "destination_address_required": "Adresa odredišta je obavezna za nastavak.",
+            "pickup_points_unavailable": "Preuzimanje na paketomatima trenutno nije moguće.",
+            "local_pickup_delivery_line_detail_changed": "Postojeću strategiju isporuke sa preuzimanjem na licu mesta (local pickup) moramo promeniti kako bismo nastavili.",
+            "selected_pickup_option_no_longer_available": "Prethodno odabrana opcija preuzimanja više nije dostupna.",
+            "local_pickup_no_delivery_strategy_available": "Nije pronađena strategija isporuke za lokalno preuzimanje."
+          }
+        }
+      },
+      "field_errors": {
+        "tips_invalid_tip_amount": "Unesite napojnicu manju od %{amount}",
+        "gift_card_already_applied": "Ova poklon kartica je već primenjena na vašu narudžbinu",
+        "gift_card_disabled": "Ova poklon kartica više nije dostupna",
+        "gift_card_expired": "Ova poklon kartica je istekla",
+        "gift_card_depleted": "Na ovoj poklon kartici nema više sredstava",
+        "gift_card_currency_mismatch": "Mogu se koristiti samo poklon kartice u valuti %{checkout_currency} za ovu porudžbinu",
+        "gift_cards_not_supported_with_deferred_purchase_options": "Poklon kartice nisu podržane uz opcije odloženog plaćanja.",
+        "gift_card_buying_gift_card": "Ne možete koristiti poklon karticu za kupovinu druge poklon kartice",
+        "payment_gateway_missing": "Izaberite način plaćanja.",
+        "payment_gateway_needs_paid_plan_error": "Ovaj način plaćanja trenutno nije dostupan u prodavnici",
+        "payment_gateway_not_in_test_mode": "nije podešeno za testiranje porudžbina. Ova prodavnica ne može da prima prave porudžbine ili prava plaćanja.",
+        "payment_gateway_incompatible_with_multi_currency": "Da biste dovršili ovu kupovinu u lokalnoj valuti, morate platiti kreditnom karticom.",
+        "payment_gateway_unsupported_for_subscriptions": "Ovaj način plaćanja nije dostupan za porudžbine pretplate.",
+        "payment_gateway_unsupported_for_deferred_purchase_options": "Ovaj način plaćanja nije dostupan za opcije odložene kupovine.",
+        "payment_gateway_unsupported_for_country": "Ovaj način plaćanja nije dostupan za Vašu zemlju isporuke.",
+        "payment_gateway_unsupported_for_development_store_html": "Da biste kreirali probnu porudžbinu, moraćete da koristite probni gateway za plaćanje. Saznajte više o <a href=\"%{docs_link}\">testiranju porudžbina u razvojnim prodavnicama</a>.",
+        "payment_gateway_unsupported_for_order_above_maximum_orders_html": "Dostigli ste limit za narudžbine prodavnica za razvoj kod ovog procesora plaćanja. Da biste izvršili drugu porudžbinu, moraćete da koristite testni pristupnik za plaćanje. Saznajte više o <a href=\"%{docs_link}\">testiranju narudžbina u prodavnicama za razvoj</a>.",
+        "purchase_options_agreement_blank": "Da biste nastavili kupovinu, prihvatite uslove odložene ili ponavljajuće kupovine.",
+        "physical_gift_card_invalid_quantity": "Stavke za fizičke poklon kartice moraju imati količinu koja odgovara broju kodova poklon kartica.",
+        "physical_gift_card_duplicate_code": "Stavka fizičke poklon kartice sadrži dupli kod.",
+        "physical_gift_card_invalid_code": "Kod fizičke poklon kartice je nevažeći.",
+        "email_blank": "Unesite imejl",
+        "phone_blank": "Unesite broj telefona",
+        "address_country_invalid": "Odaberite zemlju/region sa liste",
+        "address_zip_invalid": "Unesite validan poštanski broj",
+        "gift_card_invalid": "Poklon kartica \"••••%{last_four_characters}\" više nije važeća",
+        "vaulting_agreement_blank": "Vaš način plaćanja mora biti sačuvan jer se plaćanje ostatka iznosa za ovu porudžbinu očekuje kasnije.",
+        "sms_marketing_phone_invalid": "Unesite važeći broj telefona",
+        "shipping_method_invalid_phone_number": "Ažurirajte broj telefona u adresi za dostavu da biste videli dostupne metode slanja.",
+        "address_suggestion_did_you_mean_html": "Da li ste mislili %{html}?",
+        "split_cart_international_shipping_not_supported": "Sve stavke moraju koristiti isti način isporuke prilikom međunarodnog slanja. Ažurirajte način isporuke ili kreirajte više porudžbina.",
+        "invalid_delivery_address_reference_handle": "Referenca ručke adrese za isporuku ne može se podudariti sa nijednom dostupnom adresom za isporuku.",
+        "must_use_available_delivery_address": "Adresa za dostavu mora biti odabrana iz dostupnih adresa za dostavu.",
+        "must_use_available_shipping_rate": "Cena dostave mora biti izabrana iz dostupnih cena dostave.",
+        "split_by_delivery_method_not_allowed": "Deljenje po načinu isporuke nije dozvoljeno za ovu sesiju ili prodavnicu.",
+        "split_by_delivery_method_requires_merchandise_from_single_location": "Podela po metodi isporuke zahteva da se pojedinačne linije robe ispunjavaju sa jedne lokacije.",
+        "split_by_delivery_method_unsupported_method_type": "Podela po načinu isporuke pokušana je sa nepodržanim tipom načina isporuke."
+      },
+      "store_credit_errors": {
+        "generic_error": "Došlo je do problema sa vašim kreditom za kupovinu. Pokušajte ponovo ili ponovo učitajte stranicu."
+      },
+      "redeemable_errors": {
+        "gift_card": {
+          "duplicate": "Poklon kartica je već primenjena na vašu porudžbinu",
+          "insufficient_funds": "Na ovoj poklon kartici nema više sredstava",
+          "expired": "Ova poklon kartica je istekla",
+          "not_available": "Ova poklon kartica više nije dostupna",
+          "invalid": "Unesite ispravnu poklon karticu",
+          "currency_mismatch": "Prihvataju se samo poklon kartice u valuti %{shop_currency}",
+          "generic": "Poklon kartica nije mogla biti dodata na naplatu",
+          "throttle_limit_exceeded": "Prekoračili ste maksimalan broj pokušaja. Pokušajte ponovo kasnije.",
+          "no_longer_available": "Ovu poklon karticu više nije moguće koristiti sa ovim plaćanjem"
+        }
+      },
+      "merchant_instruction_errors": {
+        "empty_stable_id": "Uputstvo za robu za %{position} %{name} sadrži prazan stabilni ID.",
+        "invalid_stable_id_target": "Uputstvo za robu za poziciju %{position} %{name} referencira stabilni ID %{stable_id}, ali taj stabilni ID nije u linijama robe.",
+        "duplicate_variant_id": "Uputstvo za proizvod %{position} %{name} sadrži duplirani ID varijante %{variant_id}.",
+        "invalid_variant_id_target": "Instrukcija za robu %{name} se odnosi na ID varijante %{variant_id}, ali ta varijanta nije u robnim stavkama.",
+        "invalid_price_override_target": "Uputstvo za zaobilaženje cene artikla za stavku %{stable_id} je nevažeće pošto je to komponenta paketa.",
+        "discount_not_supported": "Uputstvo trgovca za primenu popusta na robu ne podržava ovu vrstu popusta."
+      },
+      "payment_errors": {
+        "currency": {
+          "no_longer_supported": "Valuta prodavnice više nije podržana."
+        },
+        "amount_too_small": "Minimalni iznos uplate mora biti veći od 0,50 USD. Pokušajte ponovo sa većim iznosom.",
+        "method_not_available": "Traženi način plaćanja nije dostupan. Odaberite drugi način plaćanja i pokušajte ponovo.",
+        "available_methods_updated": "Dostupni načini plaćanja su ažurirani.",
+        "generic_error": "Došlo je do greške prilikom obrade vaše uplate. Pokušajte ponovo ili upotrebite drugi način plaćanja.",
+        "custom_redeemable_no_longer_available": "Ova ponuda više nije dostupna.",
+        "rejected_transaction": "Vaša uplata je odbijena. Pokušajte ponovo ili koristite drugi način plaćanja.",
+        "credit_card_processing": "Vaša uplata ne može biti obrađena zbog tehničkih razloga. Pokušajte ponovo za nekoliko minuta ili koristite drugi način plaćanja.",
+        "checkout_amount_changed": "Vaša uplata nije mogla biti obrađena jer se iznos za plaćanje na kasi promenio. Proverite porudžbinu i pokušajte ponovo.",
+        "deferred_payment_not_allowed": "Odložena plaćanja nisu dozvoljena. Proverite porudžbinu i pokušajte ponovo.",
+        "deferred_payment_required": "Ova porudžbina zahteva odloženo plaćanje. Proverite porudžbinu i pokušajte ponovo.",
+        "deferred_amount_changed": "Vaša uplata nije mogla biti obrađena jer se iznos odloženog plaćanja promenio. Proverite porudžbinu i pokušajte ponovo.",
+        "deferred_date_changed": "Vaša uplata nije mogla biti obrađena jer se datum odložene uplate promenio. Proverite porudžbinu i pokušajte ponovo.",
+        "order_total_changed": "Ukupan iznos vaše porudžbine se promenio. Pregledajte i pokušajte ponovo.",
+        "payment_processing": "Vaša uplata ne može biti obrađena iz tehničkih razloga. Pokušajte ponovo ili koristite drugi način plaćanja.",
+        "payment_processing_no_retry": "Vaša uplata ne može biti obrađena zbog tehničkih razloga. Pokušajte sa drugim načinom plaćanja.",
+        "paypal_zero_amount": "Ne možete koristiti PayPal za porudžbine veće od %{amount}. Potvrdite da je porudžbina tačna i završite kupovinu bez PayPala.",
+        "paypal_invalid_token": "PayPal nije bio dostupan. Pokušajte ponovo ili koristite drugu opciju plaćanja.",
+        "pay_later_failed": "Došlo je do greške pri obradi plaćanja opcijom „Plati kasnije“. Izaberite drugi način plaćanja i pokušajte ponovo.",
+        "three_d_secure_failed": "Vaša uplata nije mogla biti potvrđena. Pokušajte ponovo ili koristite drugi način plaćanja.",
+        "three_d_secure_failed_duplicate": "3D Secure autentifikacija kreditne kartice nije uspela jer je druga autentifikacija već u toku.",
+        "three_d_secure_failed_payment_method": "Vaša kartica nije mogla biti verifikovana. Pokušajte ponovo ili dodajte drugu karticu.",
+        "three_d_secure_throttled": "Previše pokušaja; sačekajte pre nego što pokušate ponovo",
+        "subscription_agreement_blank": "Da biste kupili pretplatu, podaci o plaćanju moraju biti sačuvani. Da biste nastavili, potvrdite da se slažete ili uklonite stavke pretplate iz svoje porudžbine.",
+        "installments_payment_method_incompatible": "Izabrani način plaćanja se ne može koristiti za plaćanje na rate. Izaberite drugi način plaćanja.",
+        "insufficient_funds": "Vaša uplata je odbijena zbog nedovoljnih sredstava. Pokušajte ponovo ili koristite drugi način plaćanja.",
+        "multiple_deferred_payment_not_allowed": "Dozvoljeno je samo jedno odloženo plaćanje po zahtevu. Proverite zahtev i pokušajte ponovo.",
+        "shipping_must_match_billing": "Adresa za naplatu mora da odgovara adresi za isporuku. Koristite drugi način plaćanja.",
+        "shipping_company_required_error": "{{shopName}} zahteva naziv kompanije za adresu za dostavu.",
+        "decision_rule_block": "Došlo je do problema prilikom obrade vaše uplate. Kontaktirajte vlasnika prodavnice.",
+        "cancelled_payment": "Vaša uplata je otkazana. Pokušajte ponovo ili koristite drugi metod plaćanja.",
+        "pick_up_card": "Vaša kartica je odbijena. Pokušajte ponovo ili koristite drugi način plaćanja.",
+        "cannot_verify": "Vaši podaci za plaćanje nisu mogli biti potvrđeni. Proverite podatke o kartici i pokušajte ponovo.",
+        "invalid_number": "Unesite važeći broj kartice",
+        "invalid_expiry_date": "Unesite važeći datum isteka",
+        "invalid_cvc": "Unesite validan sigurnosni kod",
+        "missing_cvc": "Unesite sigurnosni kod",
+        "expired_card": "Vaša kartica je istekla. Koristite drugi metod plaćanja.",
+        "payment_method_not_applicable": "Ovaj način plaćanja nije primenljiv. Koristite drugi način plaćanja.",
+        "card_declined": "Vaša kartica je odbijena. Pokušajte ponovo ili koristite drugi način plaćanja.",
+        "processing_error": "Došlo je do greške prilikom obrade vaše uplate. Pokušajte ponovo ili upotrebite drugi način plaćanja.",
+        "processing_error_checkout_as_guest": "<p>Došlo je do problema pri obradi vaše uplate. Pokušajte ponovo sa drugim načinom plaćanja ili {{checkout_as_guest_link}}.</p>",
+        "selected_payment_method": "Došlo je do problema sa izabranim načinom plaćanja i niste zaduženi. Pokušajte ponovo ili koristite drugi način plaćanja.",
+        "payment_method_billing_address": "Došlo je do problema sa adresom za naplatu za izabrani način plaćanja. Proverite adresu i pokušajte ponovo ili koristite drugi način plaćanja.",
+        "call_issuer": "Vaša kartica je odbijena. Koristite drugi način plaćanja ili kontaktirajte svoju banku za više informacija.",
+        "test_mode_live_card": "Ova prodavnica ne može primati stvarne narudžbine niti stvarne uplate.",
+        "test_mode_enabled_only_test_cards": "Test režim je omogućen, mogu se dodavati samo test kreditne kartice."
+      }
+    }
+  },
+  "customer_accounts": {
+    "account_information": {
+      "profile_card": {
+        "email_help_text": "Imejl ne može da se izmeni",
+        "editable_email_help_text": "Ova adresa e-pošte koristi se za prijavu i obaveštenja o porudžbinama.",
+        "first_name": "Ime",
+        "last_name": "Prezime",
+        "email": "Imel",
+        "no_name_provided_accessibility_label": "Nema dodato ime",
+        "phone_number_help_text": "Broj telefona se ne može urediti",
+        "save": "Sačuvaj",
+        "save_accessibility_label": "Sačuvaj profil",
+        "title": "Profil",
+        "errors": {
+          "name_too_long": "{{fieldName}} je predugačko (maksimalno je 255 karaktera)",
+          "name_cannot_contain_url": "{{fieldName}} ne može da sadrži URL",
+          "name_cannot_contain_html_tags": "{{fieldName}} ne može da sadrži HTML tagove",
+          "email_cant_be_blank": "Mejl adresa ne može biti prazna",
+          "invalid_email_format": "Unesite ispravnu e-adresu"
+        }
+      },
+      "verify_current_email_modal": {
+        "cancel_button": "Poništi",
+        "cancel_button_accessibility_label": "Odustani od uređivanja profila",
+        "description": "Unesite šestocifreni kod poslat na vašu originalnu imejl adresu:",
+        "email_resend_button_accessibility_label": "Ponovo pošalji verifikacioni kod",
+        "title": "Potvrdite da ste to vi",
+        "verify_button": "Dalje",
+        "verify_button_accessibility_label": "Potvrdite svoj trenutni email"
+      },
+      "verify_new_email_modal": {
+        "title": "Potvrdite svoju novu imejl adresu",
+        "description": "Sada unesite šestocifreni kod koji je poslat na vašu novu imejl adresu:",
+        "one_time_password_label": "6-ocifreni kod",
+        "email_resend_button": "Ponovo pošalji kod",
+        "email_resend_button_accessibility_label": "Ponovo pošalji verifikacioni kod",
+        "verify_button": "Proverite",
+        "verify_button_accessibility_label": "Potvrdite jednokratnu lozinku",
+        "cancel_button": "Poništi",
+        "cancel_button_accessibility_label": "Odustani od uređivanja profila",
+        "email_resend_button_success_toast_message": "Verifikacioni kod je poslat",
+        "email_resend_button_failure_banner_message": "Nije moguće poslati verifikacioni kod"
+      },
+      "marketing_preferences": {
+        "email_label": "Imel",
+        "pending_confirmation": "Kliknite na link u svom imejlu da potvrdite.",
+        "resend_email": "Ponovo pošalji imejl",
+        "resend_email_success": "Poslat link",
+        "title": "Podešavanja za marketing",
+        "unsubscribe_confirmation": {
+          "cancel": "Poništi",
+          "description": "Više nećete primati marketinške poruke e-pošte od {{shopName}}",
+          "title": "Odjavite se sa mejlova?",
+          "unsubscribe": "Odjavite se"
+        },
+        "update_error": {
+          "description": "Došlo je do problema prilikom ažuriranja vaših marketinških preferenci. Pokušajte da osvežite ovu stranicu ili proverite internet vezu."
+        },
+        "update_success": "Preferencije marketinga ažurirane"
+      },
+      "email_update_success_modal": {
+        "title": "Proveri imejl",
+        "description": "Imel je uspešno ažuriran. Preusmeravam vas na stranicu za prijavu."
+      },
+      "profile_update_confirmation_message": "Profil ažuriran",
+      "email_update_confirmation_message": "Email adresa ažurirana na {{email}}",
+      "title": "Profil",
+      "people": {
+        "pagination": {
+          "load_more": "Prikaži više",
+          "load_more_accessibility_label": "Prikaži još ljudi",
+          "loading_accessibility_label": "Utovar ljudi"
+        }
+      },
+      "add_button": "Dodaj"
+    },
+    "orders": {
+      "list_layout_accessibility_label": "Opcije izgleda",
+      "list_title": "Porudžbine",
+      "list_title_confirmed_orders_accessibility_label": "Porudžbine: potvrđene",
+      "list_title_pending_orders_accessibility_label": "Nalozi: na čekanju",
+      "switch_order_type_pending_orders_accessibility_label": "Promenite tip porudžbine, trenutno pregledate porudžbine na čekanju",
+      "switch_order_type_confirmed_orders_accessibility_label": "Promeni tip narudžbine, trenutno pregledaš potvrđene narudžbine",
+      "order_list": {
+        "column_headers": {
+          "order": "Porudžbina",
+          "total": "Ukupno",
+          "actions_accessibility_label": "Akcije",
+          "products_accessibility_label": "Proizvodi"
+        },
+        "delivered": "Delivered {{date}}",
+        "empty_state_order_source_description": "Ovde će se prikazati samo porudžbine koje je poslao {{email}}.",
+        "empty_state_redesign_cta": "Kupite sada",
+        "empty_state_redesign_subtitle": "Spremni za kupovinu?",
+        "empty_state_redesign_welcome": "Dobrodošli",
+        "empty_state_redesign_welcome_with_name": "Dobrodošli, {{firstName}}",
+        "empty_state_title": "Nema porudžbina još uvek",
+        "empty_state_with_location_title": "Nema narudžbina za {{locationName}}",
+        "empty_state_title_for_pending_orders": "Nema narudžbina na čekanju",
+        "no_order_banner": "Da biste testirali svoje proširenje na stranici statusa porudžbine, kreirajte porudžbinu.",
+        "estimated_shortform": "Osnovano {{date}}",
+        "estimated_delivery": "Očekivano {{date}}",
+        "one_images_accessibility_label": "Porudžbina uključuje {{lineItemName1}}",
+        "two_images_accessibility_label": "Porudžbina uključuje {{lineItemName1}}, {{lineItemName2}}",
+        "three_images_accessibility_label": "Porudžbina uključuje {{lineItemName1}}, {{lineItemName2}}, {{lineItemName3}}",
+        "four_images_accessibility_label": "Porudžbina uključuje {{lineItemName1}}, {{lineItemName2}}, {{lineItemName3}}, {{lineItemName4}}",
+        "more_than_three_products_accessibility_label": "Narudžbina uključuje {{lineItemName1}}, {{lineItemName2}} i još {{numberOfAdditionalProducts}} proizvoda",
+        "more_than_four_products_accessibility_label": "Narudžbina uključuje {{lineItemName1}}, {{lineItemName2}}, {{lineItemName3}}, i još {{numberOfAdditionalProducts}} proizvoda",
+        "plus_more": "+{{numberOfAdditionalProducts}}",
+        "plus_more_products": "+{{numberOfAdditionalProducts}} proizvoda",
+        "carousel": {
+          "one_products_accessibility_label": "Porudžbina obuhvata {{lineItemName1}} količina {{lineItemQuantity1}}",
+          "two_products_accessibility_label": "Porudžbina uključuje {{lineItemName1}} količinu {{lineItemQuantity1}}, {{lineItemName2}} količinu {{lineItemQuantity2}}",
+          "three_products_accessibility_label": "Narudžbina uključuje {{lineItemName1}} količina {{lineItemQuantity1}}, {{lineItemName2}} količina {{lineItemQuantity2}}, {{lineItemName3}} količina {{lineItemQuantity3}}",
+          "four_products_accessibility_label": "Narudžbina uključuje {{lineItemName1}} količina {{lineItemQuantity1}}, {{lineItemName2}} količina {{lineItemQuantity2}}, {{lineItemName3}} količina {{lineItemQuantity3}}, {{lineItemName4}} količina {{lineItemQuantity4}}",
+          "five_products_accessibility_label": "Porudžbina uključuje {{lineItemName1}} količina {{lineItemQuantity1}}, {{lineItemName2}} količina {{lineItemQuantity2}}, {{lineItemName3}} količina {{lineItemQuantity3}}, {{lineItemName4}} količina {{lineItemQuantity4}}, {{lineItemName5}} količina {{lineItemQuantity5}}",
+          "six_products_accessibility_label": "Porudžbina uključuje {{lineItemName1}} količina {{lineItemQuantity1}}, {{lineItemName2}} količina {{lineItemQuantity2}}, {{lineItemName3}} količina {{lineItemQuantity3}}, {{lineItemName4}} količina {{lineItemQuantity4}}, {{lineItemName5}} količina {{lineItemQuantity5}}, {{lineItemName6}} količina {{lineItemQuantity6}}",
+          "six_and_more_products_accessibility_label": "Narudžbina uključuje {{lineItemName1}} količina {{lineItemQuantity1}}, {{lineItemName2}} količina {{lineItemQuantity2}}, {{lineItemName3}} količina {{lineItemQuantity3}}, {{lineItemName4}} količina {{lineItemQuantity4}}, {{lineItemName5}} količina {{lineItemQuantity5}}, {{lineItemName6}} količina {{lineItemQuantity6}} i još toga",
+          "view_order_details": "Pogledajte detalje narudžbine",
+          "previous": "Prethodno",
+          "next": "Dalje"
+        },
+        "items": {
+          "one": "{{count}} stavka",
+          "other": "{{count}} stavki"
+        },
+        "no_filtered_results_description": "Uklonite ili podesite filtere da biste videli svoje porudžbine",
+        "no_filtered_results_title": "Nema filtriranih rezultata",
+        "order_link": "Prikaz porudžbine {{name}}",
+        "order_number": "Naručite {{name}}",
+        "orders_title": "Potvrđeno"
+      }
+    }
+  }
+}
