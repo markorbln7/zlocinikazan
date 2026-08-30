@@ -128,6 +128,79 @@
             "selected_pickup_option_no_longer_available": "Prethodno odabrana opcija preuzimanja više nije dostupna.",
             "local_pickup_no_delivery_strategy_available": "Nije pronađena strategija isporuke za lokalno preuzimanje."
           }
+        },
+        "submit_for_review_button_label": "Dostavi na pregled",
+        "submit_for_review_notice_label": "Plaćanje neće dospeti dok se vaša porudžbina ne pregleda",
+        "continue_to_payment_plans_button_label": "Nastavite na planove plaćanja",
+        "back_button_label": "Povratak",
+        "choose_delivery_strategy": "Izaberite način isporuke",
+        "autocomplete_zero_item": "Nema dostupnih stavki",
+        "autocomplete_powered_by_google": "Pokreće {{brandName}}",
+        "submit": "Pošalji",
+        "processing": "Obrada…",
+        "stepper": {
+          "increase": "Povećanje {{type}}",
+          "decrease": "Smanji {{type}}",
+          "minimum_reached": "Minimum od {{value}} je dostignut",
+          "maximum_reached": "Maksimum od {{value}} je dostignut"
+        },
+        "remove_chip": "Ukloni stavku",
+        "remove_item": "Ukloni %{label}",
+        "remove_tag": "Uklonite oznaku",
+        "dates": {
+          "weekdays": {
+            "monday": "Ponedeljak",
+            "tuesday": "Utorak",
+            "wednesday": "Sreda",
+            "thursday": "Četvrtak",
+            "friday": "Petak",
+            "saturday": "Subota",
+            "sunday": "Nedelja"
+          },
+          "weekdays_abbreviation": {
+            "monday": "Mo",
+            "tuesday": "Ti",
+            "wednesday": "Mi",
+            "thursday": "Ovaj",
+            "friday": "Gosp.",
+            "saturday": "Sa",
+            "sunday": "Su"
+          },
+          "months": {
+            "january": "Januar",
+            "february": "Februar",
+            "march": "Mart",
+            "april": "April",
+            "may": "Maj",
+            "june": "jun",
+            "july": "Jul",
+            "august": "Avgust",
+            "september": "Septembar",
+            "october": "Oktobar",
+            "november": "Novembar",
+            "december": "Decembar"
+          }
+        },
+        "datepicker": {
+          "show_previous_month": "Prikaži prethodni mesec, {{month}} {{year}}",
+          "show_next_month": "Prikaži sledeći mesec, {{month}} {{year}}",
+          "range_start": "Početak opsega",
+          "in_range": "U opsegu",
+          "range_end": "Kraj opsega"
+        },
+        "map": {
+          "cluster_title": {
+            "one": "Klaster od {{number}} markera",
+            "other": "Grupa od {{number}} markera"
+          }
+        },
+        "sheet": {
+          "expand": "Proširi"
+        },
+        "dropzone": {
+          "add_file": "Dodaj datoteku",
+          "invalid_file_type": "Tip datoteke nije podržan",
+          "dragged_over": "Prevucite datoteku za otpremanje"
         }
       },
       "field_errors": {
@@ -243,7 +316,200 @@
         "call_issuer": "Vaša kartica je odbijena. Koristite drugi način plaćanja ili kontaktirajte svoju banku za više informacija.",
         "test_mode_live_card": "Ova prodavnica ne može primati stvarne narudžbine niti stvarne uplate.",
         "test_mode_enabled_only_test_cards": "Test režim je omogućen, mogu se dodavati samo test kreditne kartice."
+      },
+      "embed": {
+        "header": {
+          "review_order": "Pregledajte svoju porudžbinu"
+        },
+        "shipping": {
+          "shipping_options": "Pogledajte sve opcije isporuke"
+        },
+        "payment": {
+          "payment_options": "Pogledajte sve opcije plaćanja"
+        }
+      },
+      "payment_collection": {
+        "cancelled": "Ovo plaćanje više nije potrebno. Posetite stranicu porudžbine za detalje.",
+        "paid": "Ova uplata je već podneta. Posetite stranicu narudžbine za detalje."
+      },
+      "contact": {
+        "title": "Informacije",
+        "address_title": "Adresa",
+        "shipping_used_as_billing_notice": "Ovo će se takođe koristiti kao vaša adresa za naplatu za ovu porudžbinu.",
+        "delivery_option_title": "Način isporuke",
+        "contact_method_title": "Kontakt",
+        "email_label": "Imel",
+        "email_rollup_accessibility_label": "Opcije e-pošte",
+        "email_placeholder": "Imel",
+        "email_or_phone_label": "Adresa e-pošte ili broj mobilnog telefona",
+        "email_or_phone_placeholder": "Adresa e-pošte ili broj mobilnog telefona",
+        "field_saved_label": "Sačuvano",
+        "field_tooltip_helper_text": "Koristi se za potvrdu porudžbine i podsetnike o napuštenoj korpi",
+        "field_tooltip_accessibility_label": "Više informacija o tome kako se koriste vaši kontakt podaci",
+        "stored_addresses_label": "Sačuvane adrese",
+        "available_addresses_label": "Dostupne adrese",
+        "new_address_label": "Koristi novu adresu",
+        "first_name_label": "Ime",
+        "optional_first_name_label": "Ime (opciono)",
+        "last_name_label": "Prezime",
+        "company_label": "Preduzeće",
+        "storefront_link": "veb-sajt trgovca",
+        "company_attention_label": "Firma/Pažnja",
+        "optional_company_attention_label": "Firma/Pažnja (opciono)",
+        "optional_company_label": "Firma (opciono)",
+        "address1_label": "Adresa",
+        "street_name_label": "Ulica",
+        "optional_street_name_label": "Ulica (opciono)",
+        "street_number_label": "Broj zgrade",
+        "optional_street_number_label": "Broj zgrade (opciono)",
+        "address2_label": "Apartman, apartman (u hotelu) itd.",
+        "optional_address2_label": "Apartman, apartmanska jedinica itd. (opciono)",
+        "neighborhood_label": "Kvart",
+        "optional_neighborhood_label": "Kvart (opciono)",
+        "barangay_label": "Barangaj",
+        "optional_barangay_label": "Barangay (opciono)",
+        "colony_label": "Kolonija",
+        "optional_colony_label": "Kolonija (opciono)",
+        "commune_label": "Opština",
+        "optional_commune_label": "Opština (opciono)",
+        "district_label": "Okrug",
+        "optional_district_label": "Opština (opciono)",
+        "subdistrict_label": "Podokrug"
+      },
+      "too_many_requests": {
+        "return_to_cart": "Povratak u korpu"
+      },
+      "required_extensions": {
+        "errors": {
+          "interaction_required": "Za dovršetak kupovine potrebna je interakcija sa proširenjem."
+        }
+      },
+      "taxes": {
+        "tax_details": "Dodatni detalji o porezima",
+        "vat_number": {
+          "field": {
+            "label": "PIB (opciono)",
+            "tooltip": "Proverava PDV broj i automatski primenjuje obrnuto oporezivanje na porudžbine kada je to moguće"
+          },
+          "add": "Dodajte PDV broj",
+          "vaulted": "PIB: %{number}",
+          "badge": "PIB: %{number}",
+          "domestic_order": "Izuzeće od reverse charge-a primenjuje se samo na prekogranične porudžbine unutar EU. Standardni PDV se naplaćuje za lokalne porudžbine.",
+          "status": {
+            "invalid_format": {
+              "at": "Austrijski PDV brojevi sadrže „AT“ i 9 karaktera",
+              "be": "Belgijski PDV brojevi sadrže BE i 10 znakova",
+              "bg": "Bugarski PDV brojevi sadrže BG i 9-10 karaktera",
+              "hr": "Hrvatski PDV brojevi sadrže HR i 11 karaktera",
+              "cy": "Kiparski PDV brojevi sadrže CY i 9 znakova",
+              "cz": "Češki PDV brojevi sadrže CZ i 8-10 karaktera",
+              "dk": "Danski PDV brojevi sadrže DK i 8 znakova",
+              "ee": "Estonski PDV brojevi sadrže EE i 9 znakova.",
+              "fi": "Finski PDV brojevi sadrže FI i 8 znakova",
+              "fr": "Francuski PDV brojevi sadrže FR i 11 znakova",
+              "de": "Nemački PDV brojevi sadrže DE i 9 karaktera",
+              "gr": "Grčki PDV brojevi sadrže EL i 9 karaktera",
+              "hu": "Mađarski PDV brojevi sadrže HU i 8 znakova",
+              "ie": "Irski PDV brojevi sadrže IE i 8-9 znakova",
+              "it": "Italijanski PDV brojevi sadrže IT i 11 znakova",
+              "lv": "Letonski PDV brojevi sadrže LV i 11 znakova",
+              "lt": "Litvanski PDV brojevi sadrže LT i 9-12 karaktera.",
+              "lu": "Luksemburški PDV brojevi sadrže LU i 8 znakova",
+              "mt": "Malteški PDV brojevi sadrže MT i 8 znakova",
+              "nl": "Holandski PDV brojevi sadrže NL i 12 znakova",
+              "pl": "Poljski PDV brojevi sadrže PL i 10 karaktera",
+              "pt": "Portugalski PDV brojevi sadrže PT i 9 znakova",
+              "ro": "Rumunski PDV brojevi sadrže RO i 10 karaktera",
+              "sk": "Slovački PDV brojevi sadrže SK i 10 znakova",
+              "si": "Slovenački PDV brojevi sadrže oznaku SI i 8 karaktera",
+              "es": "Španski PDV brojevi sadrže ES i 9 znakova",
+              "se": "Švedski PDV brojevi sadrže SE i 12 znakova",
+              "gb": "PDV brojevi Ujedinjenog Kraljevstva sadrže GB ili XI i 5–12 znakova"
+            },
+            "invalid_number": {
+              "at": "Unesite važeći austrijski PDV broj",
+              "be": "Unesite validan belgijski PDV broj",
+              "bg": "Unesite validan bugarski PDV broj",
+              "hr": "Unesite važeći hrvatski PDV broj",
+              "cy": "Unesite važeći PDV broj sa Kipra",
+              "cz": "Unesite ispravan češki PDV broj",
+              "dk": "Unesite važeći danski PDV broj",
+              "ee": "Unesite važeći estonski PDV broj",
+              "fi": "Unesite važeći finski PDV broj",
+              "fr": "Unesite ispravan francuski PDV broj",
+              "de": "Unesite važeći nemački PDV broj",
+              "gr": "Unesite validan grčki PDV broj",
+              "hu": "Unesite validan mađarski PDV broj",
+              "ie": "Unesite važeći irski PDV broj",
+              "it": "Unesite važeći PDV broj za Italiju",
+              "lv": "Unesite važeći PDV broj Letonije",
+              "lt": "Unesite validan litvanski PDV broj",
+              "lu": "Unesite važeći luksemburški PDV broj",
+              "mt": "Unesite važeći malteški PDV broj",
+              "nl": "Unesite važeći PDV broj Holandije",
+              "pl": "Unesite validan poljski PDV broj",
+              "pt": "Unesite važeći portugalski PDV broj",
+              "ro": "Unesite važeći PDV broj Rumunije",
+              "sk": "Unesite validan slovački PDV broj",
+              "si": "Unesite važeći slovenački PDV broj",
+              "es": "Unesite važeći španski PDV broj",
+              "se": "Unesite važeći švedski PDV broj",
+              "gb": "Unesite važeći UK PDV broj"
+            },
+            "service_unavailable": "Servis za validaciju nije dostupan",
+            "service_error": "Servis za validaciju nije dostupan"
+          },
+          "accessibility": {
+            "status": {
+              "validating": "Validacija PDV broja je u toku",
+              "valid": "PDV broj je validan",
+              "applied": "Primenjeno je oslobođenje od PDV-a",
+              "domestic": "PDV izuzeće nije primenjeno",
+              "invalid_number": "Izuzimanje od PDV-a neuspešno",
+              "service_unavailable": "Nije moguće proveriti izuzeće od PDV-a",
+              "service_error": "Nije moguće proveriti izuzeće od PDV-a"
+            }
+          }
+        }
+      },
+      "address_management": {
+        "saved_with_store": "Sačuvano sa ovom prodavnicom"
       }
+    },
+    "pagination": {
+      "previous": "Prethodno",
+      "next": "Dalje"
+    },
+    "links": {
+      "powered_by_shopify": "Pokreće Shopify",
+      "learn_more": "Saznajte više"
+    },
+    "feed": {
+      "more": "Više"
+    },
+    "attributes": {
+      "email": "imail",
+      "password": "lozinka",
+      "password_confirmation": "Potvrda lozinke",
+      "first_name": "ime",
+      "last_name": "prezime",
+      "body": "telo",
+      "signature": "Adresa"
+    },
+    "addresses": {
+      "zip_code": "Poštanski broj",
+      "postal_code": "Poštanski broj",
+      "postcode": "Poštanski broj",
+      "pincode": "Poštanski broj",
+      "region": "Region",
+      "prefecture": "Prefektura",
+      "province": "Pokrajina",
+      "state": "Navedi",
+      "state_and_territory": "Država/teritorija",
+      "county": "Okrug",
+      "emirate": "Emirat",
+      "governorate": "Pokrajina",
+      "confirm": "Da li ste sigurni da želite da obrišete ovu adresu?"
     }
   },
   "customer_accounts": {
@@ -377,6 +643,136 @@
         "order_link": "Prikaz porudžbine {{name}}",
         "order_number": "Naručite {{name}}",
         "orders_title": "Potvrđeno"
+      }
+    },
+    "addresses": {
+      "default_address": {
+        "title": "Osnovna adresa",
+        "title_accessibility_label": "Podrazumevana adresa: {{address}}"
+      },
+      "delete_button": "Izbriši",
+      "delete_button_accessibility_label": "Obriši {{address}}",
+      "delete_confirmation_button": "Obriši adresu",
+      "delete_confirmation_button_accessibility_label": "Obriši {{address}}",
+      "delete_confirmation_message": "Izbrisati adresu? Postojeće porudžbine neće biti promenjene.",
+      "delete_confirmation_title": "Izbrisati adresu?",
+      "delete_confirmation_description": "Postojeće porudžbine nisu pogođene.",
+      "edit_button": "Izmeni",
+      "edit_button_accessibility_label": "Uredite {{address}}",
+      "edit_section_accessibility_label": "Uredite {{address}}",
+      "edit_modal_title": {
+        "default": "Uredi adresu",
+        "billing": "Izmeni adresu za naplatu",
+        "shipping": "Uredi adresu za dostavu"
+      },
+      "loading_accessibility_message": "Učitavanje adrese",
+      "loading_addresses_accessibility_message": "Učitavanje adresa",
+      "loading_billing_accessibility_message": "Učitavanje adrese za naplatu",
+      "loading_finished_accessibility_message": "Učitana je nova stranica adresa",
+      "loading_shipping_accessibility_message": "Učitavanje adrese za isporuku",
+      "pagination": {
+        "load_more": "Prikaži više",
+        "load_more_accessibility_label": "Prikažite još adresa"
+      },
+      "save_new_address_accessibility_label": "Sačuvaj adresu",
+      "title": "Adrese",
+      "billing_address_dropdown_placeholder": "Adresa za naplatu"
+    },
+    "address_form": {
+      "attention": "Pažnja",
+      "attention_company": "Firma/pažnja",
+      "attention_help_text": "Ime osobe ili odeljenja",
+      "auto_complete_close_accessibility_label": "Zatvori predloge",
+      "auto_complete_title": "Predlozi",
+      "billing_address": "Koristi kao adresu za naplatu",
+      "cancel": "Poništi",
+      "cancel_accessibility_label": "Odustani od izmene adrese {{address}}",
+      "creation_success_notification": "Adresa dodata",
+      "default_address": "Ovo je moja podrazumevana adresa",
+      "default_address_creation_success_notification": "Podrazumevana adresa dodata",
+      "default_address_update_success_notification": "Podrazumevana adresa je ažurirana",
+      "loading_add_form_accessibility_message": "Učitavam novi formular za adresu",
+      "loading_edit_form_accessibility_message": "Učitavam formu za izmenu adrese",
+      "loading_form_accessibility_message": "Učitavanje obrasca za adresu",
+      "loading_finished_accessibility_message": "Obrazac za adresu je učitan",
+      "save": "Sačuvaj",
+      "save_accessibility_label": "Sačuvaj adresu {{address}}",
+      "section_title_accessibility_label": "Dodajte adresu",
+      "update_success_notification": "Adresa ažurirana"
+    },
+    "account_menu": {
+      "signed_out_state": {
+        "sheet_title": "Prijavite se ili kreirajte nalog",
+        "section_divider": "Više načina za prijavu",
+        "alternate_divider": "ILI",
+        "use_email_button": "Umesto toga, koristite imejl",
+        "email_field_label": "Imel",
+        "orders_button": "Porudžbine",
+        "profile_button": "Profil",
+        "shop_login_button": "Prijavite se putem Shopa",
+        "continue_with_google": "Nastavi sa Google-om",
+        "continue_with_facebook": "Nastavi sa Facebookom"
+      },
+      "signed_in_state": {
+        "greeting_with_name": "Zdravo, {{first_name}}",
+        "greeting_without_name": "Nalog",
+        "orders_button": "Porudžbine",
+        "profile_button": "Profil"
+      },
+      "location_picker": {
+        "sheet_title": "Lokacije",
+        "search_field_placeholder": "Pretražite"
+      },
+      "aria_labels": {
+        "close_menu": "Zatvori meni",
+        "back_to_main_menu": "Povratak na glavni meni iz {{title}}",
+        "open_submenu": "{{title}}, otvara podmeni",
+        "loading_menu": "Učitavanje menija",
+        "account": "Nalog",
+        "sign_in_with_email": "Prijavite se putem imejla",
+        "sign_in": "Prijavljivanje"
+      }
+    },
+    "B2B": {
+      "account_information": {
+        "company_card_name_label": "Naziv kompanije",
+        "company_card_section_accessibility_label": "Preduzeće"
+      },
+      "locations": {
+        "contact_contact": "Kontakt",
+        "contact_email": "Imel",
+        "contact_list_title": "Ljudi",
+        "contact_name": "Ime",
+        "contact_permissions": "Dozvole",
+        "contact_phone_number": "Broj telefona",
+        "location_picker_label": "Naziv lokacije",
+        "location_picker_accessibility_label": "Naziv lokacije: {{locationName}}",
+        "net_payment_terms_description": "{{name}}: uplate dospevaju za {{numberOfDays}} dana",
+        "deposit_percentage": "{{percentage}} depozita",
+        "own_role_contact_name": "Vi",
+        "pagination": {
+          "load_more": "Prikaži više",
+          "load_more_accessibility_label": "Prikaži još lokacija"
+        },
+        "payment_details_title": "Podaci o plaćanju",
+        "payment_terms": "Uslovi plaćanja",
+        "permissions_label": "Vaše dozvole",
+        "permissions_title": "Dozvole",
+        "section_title": "Lokacija",
+        "shipping_address_required": "Dodajte adresu za dostavu ovoj lokaciji da biste počeli da šaljete porudžbine",
+        "staff_and_permissions_title": "Osoblje i dozvole",
+        "tax_details_title": "Poreski detalji",
+        "tax_id": "Poreski identifikacioni broj",
+        "tax_exemptions": "Poreska oslobađanja",
+        "multiple_tax_exemptions": "{{taxExemptionsCount}} više",
+        "multiple_tax_exemptions_and": "i",
+        "tax_exemptions_modal_close": "Zatvori",
+        "taxes_none": "Nijedan",
+        "tax_exemption_not_applicable": "N/A",
+        "tax_exemptions_modal_button_accessibility_label": "Prikažite sva poreska izuzeća"
+      },
+      "location_selection": {
+        "continue_to_store": "Nastaviti da čuvate"
       }
     }
   }
