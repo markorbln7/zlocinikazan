@@ -574,6 +574,150 @@
       },
       "address_management": {
         "saved_with_store": "Sačuvano sa ovom prodavnicom"
+      },
+      "thank_you": {
+        "choose_payment_method_later": "Izaberite način plaćanja kasnije",
+        "picked_up_title": "Vaša porudžbina je preuzeta",
+        "picked_up_description_html": "Vaša porudžbina je preuzeta u %{location_name} dana %{date}.",
+        "contact_us": "Kontaktirajte nas",
+        "contact_us_lowercase": "Kontaktirajte nas",
+        "contact_us_html": "Potrebna vam je pomoć? %{contact_us}",
+        "updated_time": "Ažurirano pre %{time_ago}",
+        "failure": "Nije dostavljeno",
+        "failed_title": "Vaša porudžbina nije mogla biti isporučena",
+        "failed_contact_merchant": "Kontaktirajte kompaniju %{company} da dogovorite isporuku.",
+        "failed_contact_merchant_no_company": "Kontaktirajte nas da bismo dogovorili dostavu.",
+        "non_shippable_title": "Vaša porudžbina je kompletna.",
+        "let_us_know": "Obavestite nas",
+        "login_title": "Prijavite se da biste videli sve detalje porudžbine",
+        "login_description": "Broj porudžbine možete pronaći u potvrdi koju ste dobili putem imejla.",
+        "login_description_phone": "Broj porudžbine možete pronaći na računu koji ste dobili putem SMS poruke.",
+        "login_not_customer_html": "Niste %{name}? Možete da %{link}",
+        "login_reorder_link_text": {
+          "one": "kupi i ovaj proizvod",
+          "other": "kupite i ove proizvode"
+        },
+        "customer_information_hidden_fields_message": "Prijavite se da biste videli sve informacije o klijentima.",
+        "cancelled_title": "Vaša porudžbina je otkazana",
+        "cancelled_description": "Vaša porudžbina je otkazana %{date}. Kontaktirajte nas ako imate bilo kakvih pitanja.",
+        "order_number_label": "Broj porudžbine",
+        "customer_validation_error": "Unesite važeću imejl adresu ili broj porudžbine.",
+        "customer_validation_error_phone": "Unesite validan broj telefona ili narudžbine.",
+        "login": "Prijavljivanje",
+        "unfulfilled_items_title": "Spremam se za otpremu",
+        "unfulfilled_items_description": "Trenutno pripremamo ove artikle za isporuku.",
+        "marker": {
+          "current": "Trenutna lokacija pošiljke",
+          "shipping": "Adresa za dostavu"
+        },
+        "pick_up_in_store_marker": {
+          "current": "Trenutna lokacija pošiljke",
+          "shipping": "Lokacija preuzimanja"
+        },
+        "fulfillment": {
+          "fulfilled_table_title": "Stavke u ovoj pošiljci",
+          "unfulfilled_table_title": "Artikli se spremaju za otpremu",
+          "product_image_label": "Slika proizvoda",
+          "description_label": "Opis",
+          "quantity_label": "Količina"
+        },
+        "order_updates_description_missing": "Ne primate obaveštenja o isporuci.",
+        "order_updates_subscribe_to_email_notifications": "Dobijajte obaveštenja o isporuci putem imejla",
+        "order_updates_subscribe_to_email_or_phone_notifications": "Primajte obaveštenja o isporuci putem mejla ili poruke",
+        "order_updates_subscribe_to_phone_notifications": "Dobijajte obaveštenja o isporuci putem SMS-a",
+        "order_updates_submit_subscription": "Pošalji",
+        "track_shipment": "Praćenje pošiljke",
+        "other_options": "Druge opcije",
+        "delivery_information_label": "Informacije o isporuci:",
+        "gift_card_sent_confirmation": "Poslate poklon kartice",
+        "qr_code": {
+          "send_link_to_phone": "Ili pošaljite link na vaš telefon",
+          "title": "Prati na telefonu"
+        },
+        "shop_qr_with_sms_upsell": {
+          "qr_code": {
+            "title": "Skenirajte telefonom"
+          },
+          "sms": {
+            "title": "Ili pošaljite link na vaš telefon"
+          }
+        },
+        "view_business_customer_account": "Prikaži nalog",
+        "breadcrumbs_submitted": "Podneseno",
+        "breadcrumbs_in_review": "U pregledu",
+        "breadcrumbs_confirmed": "Potvrđeno",
+        "missing_shipping_address_banner": {
+          "title": "Narudžbina nema adresu za isporuku",
+          "text_html": "%{contact_us} da dodate svoju adresu",
+          "contact_us": "Kontaktirajte nas"
+        },
+        "first_payment_complete": "Prva uplata je završena",
+        "in_store_purchase": "Kupovina u prodavnici",
+        "company_location_section_title": "Firma i lokacija",
+        "thank_you_ready_for_picked_up": "Vaša porudžbina je preuzeta na %{address}.",
+        "ready_for_delivery": "Spremno za isporuku",
+        "order_updates_subscribe_to_email_notifications_failed": "Ne možemo da sačuvamo ovu e-poštu za ažuriranja. Pokušajte ponovo ili koristite drugu e-poštu.",
+        "order_updates_subscribe_to_email_notifications_email_already_exists": "Uneti imejl već postoji.",
+        "subscriptions_management": {
+          "title": "Pretplata",
+          "description": "Nastavite na svoj nalog da biste pregledali pretplate i upravljali njima.",
+          "button_label": "Upravljajte svojom pretplatom"
+        },
+        "manage_order_label": "Upravljajte svojom porudžbinom",
+        "gift_card_confirmation_by_text_typ": {
+          "one": "Dobićete poruku sa vašom poklon karticom za nekoliko minuta.",
+          "other": "Primićete poruku sa svojim poklon karticama za nekoliko minuta."
+        },
+        "gift_card_confirmation_by_email_typ": {
+          "one": "Dobićete imejl sa vašom poklon karticom za nekoliko minuta.",
+          "other": "Uskoro ćete primiti e-poruku sa svojim poklon karticama."
+        },
+        "gift_card_email_title": {
+          "one": "Poklon kartica je poslata e-poštom",
+          "other": "Poklon kartice su poslate imejlom"
+        },
+        "gift_card_text_title": {
+          "one": "Poklon kartica je poslata SMS porukom",
+          "other": "Poklon-kartice su poslate putem SMS poruke"
+        },
+        "resend_gift_cards_by_email": "Ponovo pošalji imejl",
+        "resend_gift_cards_by_text": "Ponovo pošalji tekstualnu poruku",
+        "gift_card_resent_confirmation": {
+          "one": "Poklon kartica je ponovo poslata.",
+          "other": "Poklon kartice su ponovo poslate."
+        },
+        "gift_card_resend_failure": {
+          "one": "Došlo je do problema prilikom ponovnog slanja vaše poklon kartice. Pokušajte ponovo ili nas kontaktirajte.",
+          "other": "Došlo je do problema prilikom ponovnog slanja vaših poklon kartica. Pokušajte ponovo ili nas kontaktirajte."
+        },
+        "vat_invoices": {
+          "title": "PDV fakture"
+        },
+        "verify_shop_account_title": "Verifikujte svoj Shop nalog",
+        "verify_shop_account_message": "Vaši podaci su sačuvani uz Shop, verifikujte svoj nalog da biste ih automatski koristili u milionima prodavnica.",
+        "verify_shop_account_cta": "Potvrdite nalog",
+        "verify_shop_account_confirmation": "Podaci o kupovini sačuvani",
+        "announcement": {
+          "close": "Zatvori",
+          "expand": "Proširi",
+          "collapse": "Skupiti"
+        }
+      },
+      "vaulted": {
+        "change_button": "Izmeni",
+        "loading_section": "Učitavanje {{section}}…"
+      },
+      "review": {
+        "title": "Recenzija",
+        "review_title": "Kompletirajte svoju porudžbinu",
+        "review_and_confirm_title": "Pregledajte i potvrdite",
+        "checkout_as_guest": "Kupovina kao gost",
+        "account_more_actions": "Više radnji za ovaj nalog",
+        "checkout_a_different_way": "Istražite drugačiji pristup",
+        "blocks": {
+          "contact_method_title": "Kontakt",
+          "billing_address_title": "Naplata"
+        }
       }
     },
     "pagination": {
