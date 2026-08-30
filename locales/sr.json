@@ -1018,7 +1018,105 @@
         "delivered_title": "Vaša porudžbina je isporučena",
         "delivered_description_html": "Vaša porudžbina je isporučena na adresu koju ste naveli. Ako je niste primili ili imate drugih problema, %{contact_us}.",
         "delivered_local_title": "Vaša porudžbina je isporučena",
-        "delivered_local_description_html": "Niste primili porudžbinu? %{let_us_know}."
+        "delivered_local_description_html": "Niste primili porudžbinu? %{let_us_know}.",
+        "title": "Hvala vam na kupovini!",
+        "confirmation_email_sent_text": "Potvrdni mejl je poslat na %{email}",
+        "return_to_store_link_label": "Nastavi kupovinu",
+        "print_link_label": "Odštampaj račun",
+        "payment_information_title": "Podaci za plaćanje",
+        "shipping_information_title": "Podaci o isporuci",
+        "page_title": "Hvala, %{display_name}!",
+        "page_title_no_name": "Hvala!",
+        "purchase_order_number_title": "Broj narudžbenice: #%{purchase_order_number}",
+        "cancelled_page_title": "Porudžbina otkazana",
+        "failed_pending_payment_page_title": "Došlo je do problema sa vašom uplatom",
+        "customer_information_title": "Detalji porudžbine",
+        "contact_information_title": "Kontakt podaci",
+        "billing_address_title": "Adresa za naplatu",
+        "cashback_notice": "Dobijate svoj povraćaj novca nakon 30 dana",
+        "company_location_title": "Lokacija",
+        "shipping_address_title": "Adresa za dostavu",
+        "shipping_address_map_title": "Google mapa sa prikazanom tačnom adresom za isporuku: %{address}",
+        "payment_method_title": "Način plaćanja",
+        "payment_method_not_charged": "Nije naplaćeno",
+        "shipping_method_title": "Način slanja",
+        "tracking_number": "Broj za praćenje:",
+        "company_tracking_number": "Broj za praćenje pošiljke kompanije %{company}:",
+        "estimated_arrival": "Procenjeni datum isporuke: ",
+        "estimated_delivery": "Procenjeni datum isporuke: ",
+        "re-order": "Preuredite iste stavke",
+        "confirmed": "Potvrđeno",
+        "confirmed_items_count": "Potvrđeno je %{confirmed_count} od %{total_count} stavki",
+        "items_fulfilled_by_store": {
+          "one": "Stavke koje ste kupili dobićete od prodavnice %{remote_shop_name}.",
+          "other": "Stavke koje ste kupili doći će iz drugih prodavnica."
+        },
+        "gift_card_confirmation_by_text": "Ako niste primili, ponovo pošaljite poruku ili nas kontaktirajte.",
+        "gift_card_confirmation_by_email": "Ako je niste primili, pošaljite e-poruku ponovo ili nas kontaktirajte.",
+        "gift_card_title": "Poklon kartice",
+        "resend_gift_cards": "Ponovo pošalji poklon kartice",
+        "thank_you_title": "Vaša porudžbina je potvrđena",
+        "thank_you_title_payment": "Vaša uplata je potvrđena",
+        "thank_you_title_review": "Vaša porudžbina je predata na pregled",
+        "thank_you_title_payments_app_pending_default": "Vaša uplata je u obradi",
+        "thank_you_title_payments_app_pending_buyer_action_required": "Vaša porudžbina je primljena",
+        "thank_you_title_payments_app_failed_pending_payment": "Vaša uplata nije mogla biti obrađena",
+        "thank_you_confirmed_with_email_description": {
+          "single_store": "Uskoro ćete primiti e-poruku za potvrdu",
+          "multi_store": "Uskoro ćete primiti odvojene poruke e-pošte za potvrdu iz svake prodavnice."
+        },
+        "thank_you_confirmed_with_phone_description": {
+          "single_store": "Uskoro ćete dobiti potvrdnu poruku.",
+          "multi_store": "Uskoro ćete dobiti zasebne potvrdne poruke od svake prodavnice."
+        },
+        "thank_you_confirmed_with_email_and_phone_description": {
+          "single_store": "Uskoro ćete primiti e-poruku za potvrdu",
+          "multi_store": "Uskoro ćete primiti odvojene poruke e-pošte za potvrdu iz svake prodavnice."
+        },
+        "thank_you_confirmed_order_with_email": "Uskoro ćete dobiti potvrdni imejl sa brojem vaše porudžbine.",
+        "thank_you_confirmed_order_with_phone": "Uskoro ćete dobiti potvrdnu poruku sa brojem vaše porudžbine.",
+        "thank_you_confirmed_order_with_email_and_phone": "Uskoro ćete dobiti potvrdni imejl sa brojem vaše porudžbine.",
+        "thank_you_confirmed_orders_with_email": "Uskoro ćete dobiti zasebne imejlove potvrde sa brojevima narudžbina",
+        "thank_you_confirmed_orders_with_phone": "Uskoro ćete dobiti zasebne SMS poruke sa potvrdama porudžbina i brojevima.",
+        "thank_you_confirmed_orders_with_email_and_phone": "Uskoro ćete dobiti zasebne imejlove potvrde sa brojevima narudžbina",
+        "thank_you_confirmed_order_with_email_payment": "Uplatili ste porudžbinu %{date}.",
+        "thank_you_confirmed_order_with_phone_payment": "Uplatili ste porudžbinu %{date}.",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "Uplatili ste porudžbinu %{date}.",
+        "thank_you_confirmed_order_with_email_pick_up": "Dobićete e-poruku kada vaša porudžbina bude spremna za preuzimanje.",
+        "thank_you_confirmed_order_with_phone_pick_up": "Dobićete poruku kada vaša porudžbina bude spremna za preuzimanje.",
+        "thank_you_confirmed_order_with_email_and_phone_pick_up": "Dobićete e-poruku kada vaša porudžbina bude spremna za preuzimanje.",
+        "thank_you_confirmed_order_with_missing": "Kontaktirajte nas putem e-pošte ili telefona kako biste primili potvrdu porudžbine.",
+        "thank_you_confirmed_order_with_missing_payment": "Kontaktirajte nas putem e-pošte ili telefona kako biste primili potvrdu porudžbine.",
+        "thank_you_confirmed_order_with_missing_pick_up": "Kontaktirajte nas putem e-pošte ili telefona kako biste primili potvrdu porudžbine.",
+        "thank_you_confirmed_order_with_draft": "Obavestićemo vas ako nam bude trebalo više informacija ili kada vaša porudžbina bude potvrđena.",
+        "thank_you_confirmed_order_with_draft_payment": "Obavestićemo vas ako nam bude trebalo više informacija ili kada vaša porudžbina bude potvrđena.",
+        "thank_you_confirmed_order_with_draft_pick_up": "Obavestićemo vas ako nam bude trebalo više informacija ili kada vaša porudžbina bude potvrđena.",
+        "thank_you_unconfirmed_items_heading": {
+          "one": "1 stavka nije potvrđena",
+          "other": "Neke stavke nisu potvrđene"
+        },
+        "thank_you_unconfirmed_items_description": {
+          "one": "Nije vam ovo naplaćeno",
+          "other": "Nije vam ovo naplaćeno."
+        },
+        "thank_you_item_label": {
+          "one": "%{count} stavka",
+          "other": "%{count} stavke"
+        },
+        "thank_you_from_shop": "Od %{shop_name}",
+        "thank_you_from_other_store": "Iz druge radnje",
+        "thank_you_payments_app_failed_pending_payment": "Vaša porudžbina nije naplaćena. Vratite se u korpu da pregledate porudžbinu i ponovo izvršite plaćanje.",
+        "thank_you_payments_app_failed_pending_payment_payment": "Vaša porudžbina nije naplaćena. Vratite se u korpu da pregledate porudžbinu i ponovo izvršite plaćanje.",
+        "thank_you_payments_app_failed_pending_payment_pick_up": "Vaša porudžbina nije naplaćena. Vratite se u korpu da pregledate porudžbinu i ponovo izvršite plaćanje.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing": "Kontaktirajte nas putem e-pošte ili telefona kako biste primili potvrdu porudžbine.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_payment": "Kontaktirajte nas putem e-pošte ili telefona kako biste primili potvrdu porudžbine.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_pick_up": "Kontaktirajte nas putem e-pošte ili telefona kako biste primili potvrdu porudžbine.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone": "Uskoro ćete dobiti potvrdni imejl sa brojem vaše porudžbine.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_payment": "Uskoro ćete dobiti potvrdni imejl sa brojem vaše porudžbine.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_pick_up": "Uskoro ćete dobiti potvrdni imejl sa brojem vaše porudžbine.",
+        "thank_you_payments_app_pending_payment_description_default_with_email": "Uskoro ćete dobiti potvrdni imejl sa brojem vaše porudžbine.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_payment": "Uskoro ćete dobiti potvrdni imejl sa brojem vaše porudžbine.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_pick_up": "Uskoro ćete dobiti potvrdni imejl sa brojem vaše porudžbine."
       },
       "vaulted": {
         "change_button": "Izmeni",
@@ -2164,6 +2262,28 @@
         "manual_payment_gateway_label": "Priručnik",
         "billing_address_title": "Adresa za naplatu",
         "free_label": "Slobodan"
+      },
+      "payment_gateway": {
+        "login_prompt": {
+          "no_access": {
+            "link": "Prijavi se"
+          }
+        },
+        "direct_payment_terms": "Imate {{translatedName}} uslove. Vaša kartica će biti naplaćena {{dueDate}}.",
+        "fixed_direct_payment_terms": "Vaša kartica će biti naplaćena {{dueDate}}.",
+        "order_due_on_fulfillment_choose_later": "Vaše plaćanje dospeva kada vaša porudžbina bude ispunjena.",
+        "order_due_on_fulfillment_payment": "Vaša kartica će biti naplaćena nakon što narudžbina bude ispunjena.",
+        "order_due_on_receipt_choose_later": "Vaša uplata će biti dospela po prijemu.",
+        "order_deposit_due_now": "{{depositAmount}} dospeva danas. Saldo je po uslovima {{translatedName}} i dospeva {{dueDate}}.",
+        "order_deposit_due_on_fulfillment": "{{depositAmount}} dospeva danas. Ostatak iznosa će dospeti kada se vaša porudžbina ispuni.",
+        "order_deposit_due_on_receipt": "{{depositAmount}} dospeva danas. Ostatak iznosa dospeva kasnije.",
+        "order_deposit_due_on_fixed_date": "{{depositAmount}} dospeva danas. Ostatak iznosa dospeva {{dueDate}}.",
+        "draft_order_payment_due_later_no_terms": "Vaša uplata će dospeti nakon potvrde porudžbine.",
+        "draft_order_payment_due_later_no_terms_payment_selected": "Vaša kartica će biti zadužena kada vaša porudžbina bude potvrđena.",
+        "draft_order_payment_due_later_terms": "Bićete na {{translatedName}} uslovima kada se vaša porudžbina potvrdi.",
+        "draft_order_payment_due_on_fulfillment": "Vaša uplata će dospeti kada vaša porudžbina bude potvrđena i isporučena.",
+        "draft_order_deposit_due_later": "{{depositAmount}} će dospeti na naplatu kada vaša porudžbina bude potvrđena. Ostatak će biti po {{translatedName}} uslovima.",
+        "draft_order_deposit_due_on_fulfillment": "{{depositAmount}} će biti dospeo kada vaša porudžbina bude potvrđena. Preostali iznos će biti plaćen nakon što vaša porudžbina bude isporučena."
       }
     },
     "pagination": {
