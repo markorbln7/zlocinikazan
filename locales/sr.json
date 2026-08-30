@@ -1820,11 +1820,18 @@
             "instruction_html": "Izvršite uplatu putem Multibanco-a ili onlajn koristeći detalje navedene u nastavku. Za pitanja ili ažuriranje podataka za plaćanje, %{contact_us}.",
             "entity": "Entitet",
             "reference": "Referenca",
-            "amount": "Iznos"
+            "amount": "Iznos",
+            "find_nearest_atm": "Pronađite najbliži bankomat"
+          },
+          "oxxo": {
+            "reference_number": "Referentni broj:",
+            "pay": "Plati %{amount}",
+            "expiry_date_time": "%{date} у %{time}"
           }
         },
         "gift_card_store_credit": {
-          "manage_label": "Upravljanje poklon karticama ili kreditom prodavnice"
+          "manage_label": "Upravljanje poklon karticama ili kreditom prodavnice",
+          "add_label": "Dodajte poklon-karticu ili kredit u prodavnici"
         },
         "gift_card_checkbox_label": "Iskoristite poklon karticu",
         "custom_onsite_payment_method_modal": {
@@ -1876,6 +1883,137 @@
         "vault_for_payment_later": {
           "pay_button_label": "Poruči",
           "notice": "Nećete biti naplaćeni sada. Nastavkom plaćanja saglasni ste da će vaš način plaćanja biti naplaćen kada se vaša porudžbina obradi."
+        },
+        "update_payment_method": "Ažuriraj način plaćanja",
+        "order_covered_by_store_credit_notice": "Vaša porudžbina je pokrivena vašim kreditom u prodavnici.",
+        "order_covered_by_redeemables_notice": "Vaša porudžbina je pokrivena.",
+        "store_credit": {
+          "label": "Kredit u prodavnici",
+          "apply_label": "Iskoristi kupone",
+          "add_label": "Dodajte kredit za kupovinu",
+          "manage_label": "Upravljaj kreditom u prodavnici",
+          "buying_gift_card": "Ne možete koristiti povraćaj novca iz prodavnice za kupovinu poklon kartice",
+          "no_fixed_selling_plans": "Ne možete koristiti kredit iz prodavnice uz opcije odloženog plaćanja"
+        },
+        "clear": "Obriši",
+        "billing_must_match_shipping_notice": "Adresa za naplatu načina plaćanja mora odgovarati adresi za isporuku.",
+        "same_billing_address_checkbox_label": "Koristite adresu za dostavu kao adresu za naplatu",
+        "location_billing_address_label": "Adresa za naplatu lokacije",
+        "fact_billing_address_label": "Adresa za naplatu",
+        "location_shipping_address_label": "Adresa isporuke",
+        "use_order_billing_address_label": "Koristite adresu za naplatu narudžbine",
+        "use_location_billing_address_label": "Koristite adresu za naplatu lokacije",
+        "use_location_shipping_address_label": "Koristi lokaciju adrese za dostavu",
+        "no_working_method_error": "Ova prodavnica trenutno ne može da prima uplate. Osvežite ovu stranicu ili se vratite kasnije.",
+        "brand_not_available": "Ova prodavnica ne prihvata {{brand}}. Koristite drugu karticu za plaćanje.",
+        "shipping_rate_updated": "Dostupni načini dostave su ažurirani. Potvrdite svoj izbor pre nego što izvršite plaćanje.",
+        "billing_address_invalid_phone": "Ažurirajte broj telefona u adresi za naplatu za {{label}} {{last_digits}} da biste nastavili.",
+        "billing_address_invalid_phone_no_card": "Ažurirajte broj telefona u adresi za naplatu da biste nastavili.",
+        "preview_not_available": {
+          "title": "Pregled nije dostupan",
+          "content": "Ne brinite, ovo ekspresno plaćanje funkcioniše za vaše kupce.",
+          "button": "U redu"
+        },
+        "card_fields": {
+          "errors": {
+            "required": {
+              "issue_date": "Unesite važeći datum izdavanja",
+              "issue_number": "Unesite važeći broj problema"
+            },
+            "invalid": {
+              "verification_value": "Unesite validan CVV ili sigurnosni kod"
+            }
+          }
+        },
+        "simulated_checkout": "Najava uskoro",
+        "simulated_express_checkout": "Novčanici su nedostupni u pregledu uređivača zbog vaše regije ili pregledača",
+        "vaulting_agreement_label": "Sačuvajte moje podatke za plaćanje sa %{company} za bržu naplatu",
+        "business_customer_vaulting_payment_label": "Sačuvajte ovaj način plaćanja na blagajni i ovlastite %{company} da ga tereti za buduće kupovine za ovu lokaciju. Svi kontakti dodeljeni ovoj lokaciji mogu da koriste ovaj način plaćanja.",
+        "business_customer_with_bank_account_vaulting_payment_label": "Sačuvajte ovaj način plaćanja na stranici za plaćanje i ovlastite kompaniju %{company} da tereti vaš račun za buduće kupovine koje odobrite za ovu lokaciju, sve dok ne otkažete. Svi kontakti dodeljeni ovoj lokaciji mogu da koriste ovaj način plaćanja.",
+        "purchase_options_and_vaulting_agreement_label": "Jedna ili više stavki u vašoj korpi je odložena kupovina ili kupovina pretplate. Nastavkom plaćanja, saglasni ste da će se vašem načinu plaćanja automatski naplaćivati cena i učestalost navedena na ovoj stranici dok se ne završi ili dok je ne otkažete. Sva otkazivanja podležu %{cancellation_policy_label}.",
+        "purchase_options_cancellation_policy_label": "politika otkazivanja",
+        "use_different_credit_card_label": "Koristite drugu karticu",
+        "saved_credit_card": "Sačuvana kreditna kartica",
+        "saved_credit_card_info": "Poslednje četiri cifre",
+        "saved_credit_card_cvv_verification": "Radi verifikacije, unesite sigurnosni kod vaše kartice.",
+        "saved_credit_card_actions": {
+          "edit": "Izmeni",
+          "delete": "Izbriši"
+        },
+        "saved_credit_cards_modal": {
+          "view_all_label": "Pogledaj sve sačuvane kartice",
+          "done": "Gotovo",
+          "cancel": "Poništi"
+        },
+        "add_credit_card_modal": {
+          "title": "Dodajte karticu",
+          "save": "Sačuvaj",
+          "cancel": "Poništi"
+        },
+        "delete_credit_card_modal": {
+          "title": "Obriši karticu",
+          "confirmation": "Da li ste sigurni da želite da izbrišete {{brandName}} koja se završava sa {{lastDigits}}?",
+          "cancel": "Poništi",
+          "delete": "Izbriši"
+        },
+        "edit_credit_card_modal": {
+          "title": "Uredi karticu",
+          "done": "Gotovo",
+          "cancel": "Poništi",
+          "description": "Možete samo da izmenite adresu za naplatu vaše kartice.",
+          "fields": {
+            "default": "Postavi kao podrazumevano",
+            "card_number": "Broj kartice",
+            "expiry": "Datum isteka roka trajanja",
+            "security_code": "Sigurnosni kod",
+            "name": "Ime na kartici",
+            "billing": "Bill to"
+          }
+        },
+        "expired_cards_info": {
+          "one": "Postoji %{count} istekla kartica, koje možete pregledati i urediti na svom nalogu.",
+          "other": "Postoji %{count} isteklih kartica, koje možete pregledati i urediti na svom nalogu."
+        },
+        "local_payment_method_receiver_notice": "Nakon što naručite, dobićete detalje za uplatu. Uplatite novac na bankomatu ili onlajn u roku od {{dueDays}} dana.",
+        "order_edit_banner_title": "Potrebna je uplata od {{amount_owed}}",
+        "order_edit_banner_subtitle": "Vaša porudžbina {{order_number}} je ažurirana. Pregledajte ove izmene, a zatim platite da biste potvrdili svoju porudžbinu.",
+        "order_edit_banner_items_added": {
+          "one": "Dodato",
+          "other": "Dodato %{count}"
+        },
+        "order_edit_banner_items_removed": {
+          "in_full": "Uklonjeno",
+          "with_quantities": "Uklonjeno je {{delta}} od {{quantity}}"
+        },
+        "order_edit_banner_items_returned": {
+          "in_full": "Vraćeno {{quantity}}",
+          "with_quantities": "Vraćeno {{delta}} od {{quantity}}"
+        },
+        "order_edit_banner_items_return_line_item_removed": {
+          "in_full": "Uklonjeno iz povraćaja",
+          "with_quantities": "Uklonjeno {{delta}} iz povrata"
+        },
+        "order_edit_banner_single_item_added": "Dodato",
+        "order_edit_banner_multiple_items_added": "Dodato {{amount}}",
+        "order_edit_banner_single_item_removed": "Uklonjeno",
+        "order_edit_banner_multiple_items_removed": "Uklonjeno {{amount}}",
+        "order_edit_banner_single_item_returned": "Vraćeno",
+        "order_edit_banner_multiple_items_returned": "Vraćeno {{amount}}",
+        "order_edit_banner_single_item_return_line_item_removed": "Uklonjeno iz povraćaja",
+        "order_edit_banner_multiple_items_return_line_item_removed": "Uklonjeno {{amount}} iz povrata",
+        "order_edit_banner_single_item_updated": "Ažurirano",
+        "order_edit_banner_updated_order_label": "Ažurirana porudžbina",
+        "order_edit_banner_previous_taxes_label": "Prethodni porezi:",
+        "order_edit_banner_new_taxes_label": "Novi porezi:",
+        "order_edit_banner_no_taxes_label": "Nijedan",
+        "gift_card_wrapper": {
+          "heading": "Poklon kartica",
+          "apply_gift_card_label": "Primenite poklon karticu",
+          "apply_another_gift_card_label": "Primeni drugu poklon karticu",
+          "gift_card_label": "Poklon kartica %{identifier}",
+          "payment_tag": "Poklon kartica",
+          "add_label": "Dodajte poklon-karticu",
+          "manage_label": "Upravljaj poklon karticama"
         }
       },
       "note": {
