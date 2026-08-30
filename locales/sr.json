@@ -464,7 +464,44 @@
         "reduction_code_gift_card_unusable": "Ne možete koristiti poklon karticu za kupovinu druge poklon kartice",
         "reduction_code_gift_cards_not_supported_with_deferred_purchase_options": "Poklon kartice nisu podržane uz opcije odloženog plaćanja.",
         "shipping_line_phone_blank": "Unesite broj telefona da biste koristili ovaj metod isporuke",
-        "shipping_line_phone_invalid": "Unesite važeći broj telefona"
+        "shipping_line_phone_invalid": "Unesite važeći broj telefona",
+        "handle_phone_invalid": "Unesite važeći broj telefona",
+        "handle_email_invalid": "Unesite ispravnu e-adresu",
+        "email_invalid": "Unesite ispravnu e-adresu",
+        "email_or_phone_blank": "Unesite e-adresu ili broj telefona",
+        "email_or_phone_invalid": "Unesite validnu imejl adresu ili broj mobilnog telefona",
+        "address_first_name_blank": "Unesite ime",
+        "address_first_name_too_long": "Ime je predugačko (maksimum je 255 znakova)",
+        "address_first_name_contains_emojis": "Ime ne može sadržati emotikone",
+        "address_first_name_contains_html_tags": "Ime ne može da sadrži HTML tagove.",
+        "address_first_name_contains_url": "Ime ne sme sadržati URL adresu",
+        "address_first_name_contains_mathematical_symbols": "Ime ne može da sadrži matematičke simbole",
+        "address_last_name_blank": "Unesite prezime",
+        "address_last_name_too_long": "Prezime je predugačko (maksimalno 255 karaktera)",
+        "address_last_name_contains_emojis": "Prezime ne sme sadržati emotikone",
+        "address_last_name_contains_html_tags": "Prezime ne sme sadržati HTML tagove.",
+        "address_last_name_contains_url": "Prezime ne može sadržati URL adresu",
+        "address_last_name_contains_mathematical_symbols": "Prezime ne može sadržati matematičke simbole",
+        "address_address1_blank": "Unesite adresu",
+        "address_address1_too_long": "Prva linija adrese je predugačka (najviše 255 karaktera)",
+        "address_address1_contains_emojis": "Adresa1 ne može sadržati emotikone",
+        "address_address1_contains_html_tags": "Adresa 1 ne može sadržati HTML tagove.",
+        "address_address1_contains_mathematical_symbols": "Prva linija adrese ne sme sadržati matematičke simbole",
+        "address_street_name_blank": "Unesite naziv ulice",
+        "address_street_name_too_long": "Ulica je predugačka (maksimalno je {{count}} znakova)",
+        "address_street_name_contains_emojis": "Ulica ne može sadržati emotikone",
+        "address_street_name_contains_html_tags": "Ulica ne može da sadrži HTML tagove.",
+        "address_street_name_contains_mathematical_symbols": "Ulica ne može da sadrži matematičke simbole",
+        "address_street_number_blank": "Unesite broj zgrade",
+        "address_street_number_too_long": "Broj zgrade je predugačak (maksimalno {{count}} znakova)",
+        "address_street_number_contains_emojis": "Broj zgrade ne može sadržati emotikone",
+        "address_street_number_contains_html_tags": "Broj zgrade ne može sadržati HTML tagove.",
+        "address_street_number_contains_mathematical_symbols": "Broj zgrade ne sme da sadrži matematičke simbole",
+        "address_line2_blank": "Uđite u stan, apartman, itd.",
+        "address_line2_too_long": "Druga linija adrese je predugačka (maksimalno {{count}} karaktera)",
+        "address_line2_contains_emojis": "Druga linija adrese ne može sadržati emotikone",
+        "address_line2_contains_html_tags": "Druga linija adrese ne može sadržati HTML tagove.",
+        "address_line2_contains_mathematical_symbols": "Druga linija adrese ne može sadržati matematičke simbole"
       },
       "store_credit_errors": {
         "generic_error": "Došlo je do problema sa vašim kreditom za kupovinu. Pokušajte ponovo ili ponovo učitajte stranicu."
@@ -1687,6 +1724,60 @@
             "reference": "Referenca",
             "amount": "Iznos"
           }
+        },
+        "gift_card_store_credit": {
+          "manage_label": "Upravljanje poklon karticama ili kreditom prodavnice"
+        },
+        "gift_card_checkbox_label": "Iskoristite poklon karticu",
+        "custom_onsite_payment_method_modal": {
+          "title": "Potvrda prilagođenog plaćanja na licu mesta"
+        },
+        "markets_pro_disclaimer_label": "Slanjem porudžbine saglasni ste sa kupovinom od Global-e kao trgovca i nosioca prodaje, u skladu sa Global-e %{markets_pro_terms} i %{privacy_policy}, i saglasni ste sa deljenjem vaših informacija sa %{shop_name}.",
+        "markets_pro_disclaimer_terms_and_conditions": "Odredbe i uslovi",
+        "markets_pro_disclaimer_privacy_policy": "Politika privatnosti",
+        "markets_pro_disclaimer_terms_and_conditions_title": "Uslovi i odredbe Trgovca za evidenciju",
+        "markets_pro_disclaimer_privacy_policy_title": "Politika privatnosti Posrednika za obradu plaćanja",
+        "purchase_order_number": {
+          "title": "Broj narudžbenice",
+          "label": "Broj narudžbenice (opciono)"
+        },
+        "alternative_payment_currency_total_notice": "Napomena: biće vam naplaćeno %{amount_due}.",
+        "alternative_payment_currency_total_manual_payment_notice": "Napomena: Ukupan konvertovani iznos je %{amount_due}.",
+        "waiting_on_taxes_message": "Ako se porezi ne obračunaju u narednih nekoliko sekundi, osvežite stranicu.",
+        "waiting_on_taxes_notice": "Obračun poreza",
+        "payment_method": "Način plaćanja",
+        "payment_method_rollup_accessibility_label": "Opcije metoda plaćanja",
+        "expired_payment_method": "Odabrani metod plaćanja je istekao.",
+        "payment_method_update_failed": "Ažuriranje načina plaćanja nije uspelo.",
+        "payment_method_incompatible_with_payment_terms": "Metod plaćanja je nekompatibilan sa uslovima plaćanja.",
+        "proposed_gateway_unavailable": "Predloženi sistem za plaćanje nije dostupan",
+        "pay_in_installments_split_pay_short": "4 uplate po %{amount}",
+        "gift_cards_unavailable": "Vaša poklon-kartica se više ne može primeniti na ovu porudžbinu i uklonjena je",
+        "payment_flexibility_terms_id_mismatch": "ID neslaganje uslova fleksibilnosti plaćanja",
+        "payment_option": {
+          "accessibility_label": "Odaberite opciju plaćanja"
+        },
+        "bank_account_type": {
+          "checking": "Proveravam",
+          "savings": "Štednja"
+        },
+        "new_bank_account_disclaimer": "Završetkom porudžbine ovlašćujete %{shop_name} da zaduži niže navedeni račun putem ACH-a za prikazani iznos i u prikazano vreme.",
+        "bank_account_disclaimer": "ACH plaćanja mogu potrajati do 4 radna dana za obradu.",
+        "bank_account_choose": "Odaberite nalog da biste bezbedno završili kupovinu",
+        "bank_account_connect_another": "Poveži drugi bankovni račun",
+        "bank_account_connect": "Povežite bankovni račun",
+        "bank_account_missing": "Bankovni račun mora biti povezan",
+        "bank_account_generic_error": "Nije bilo moguće dodati bankovni račun. Pokušajte ponovo kasnije.",
+        "separate_payments_label": "Vaše stavke su iz više prodavnica. Biće vam naplaćeno putem %{separate_payments_link}.",
+        "separate_payments_text": "odvojena plaćanja",
+        "payments": "Uplate",
+        "add_payment_method": "Dodaj način plaćanja",
+        "add_new_payment_method": "Dodajte novi način plaćanja",
+        "choose_new_payment_method": "Izaberite novi način plaćanja",
+        "multiple_primary_payment_not_allowed": "Nevažeći načini plaćanja",
+        "vault_for_payment_later": {
+          "pay_button_label": "Poruči",
+          "notice": "Nećete biti naplaćeni sada. Nastavkom plaćanja saglasni ste da će vaš način plaćanja biti naplaćen kada se vaša porudžbina obradi."
         }
       },
       "note": {
@@ -2044,6 +2135,35 @@
           },
           "label": "Nema isporuke"
         }
+      },
+      "billing": {
+        "billing_address_title": "Bill to",
+        "billing_address_rollup_accessibility_label": "Opcije za naplatu",
+        "same_as_shipping": "Isto kao adresa za isporuku",
+        "add_address": "Koristite drugu adresu",
+        "edit": "Izmeni",
+        "delete": "Izbriši",
+        "address_more": "Više opcija za ovu adresu",
+        "address_edit": "Uredi adresu",
+        "address_delete": "Obriši adresu",
+        "address_confirm": "Da li ste sigurni da želite da izbrišete ovu adresu sa vašeg naloga?",
+        "address_form": {
+          "add_address": "Dodajte adresu",
+          "save": "Sačuvaj",
+          "cancel": "Poništi"
+        }
+      },
+      "company_location": {
+        "location_title": "Lokacija kompanije",
+        "location_rollup_accessibility_label": "Opcije lokacije kompanije"
+      },
+      "payment_summary": {
+        "gift_card_current_balance_notice": "Trenutno stanje %{amount}",
+        "credit_card_expires_on_notice": "Ističe %{month}/%{year}",
+        "express_payment_gateway_label": "Ekspres",
+        "manual_payment_gateway_label": "Priručnik",
+        "billing_address_title": "Adresa za naplatu",
+        "free_label": "Slobodan"
       }
     },
     "pagination": {
