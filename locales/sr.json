@@ -1150,7 +1150,8 @@
     "addresses": {
       "default_address": {
         "title": "Osnovna adresa",
-        "title_accessibility_label": "Podrazumevana adresa: {{address}}"
+        "title_accessibility_label": "Podrazumevana adresa: {{address}}",
+        "badge_label": "Podrazumevano"
       },
       "delete_button": "Izbriši",
       "delete_button_accessibility_label": "Obriši {{address}}",
@@ -1178,7 +1179,18 @@
       },
       "save_new_address_accessibility_label": "Sačuvaj adresu",
       "title": "Adrese",
-      "billing_address_dropdown_placeholder": "Adresa za naplatu"
+      "billing_address_dropdown_placeholder": "Adresa za naplatu",
+      "add_button": "Dodajte adresu",
+      "add_button_text": "Dodaj",
+      "add_button_accessibility_label": "Dodajte adresu",
+      "back_button": "Nazad",
+      "back_button_accessibility_label": "Nazad na uređivanje adrese {{address}}",
+      "add_address_banner": "Dodajte adrese za korišćenje pri plaćanju",
+      "no_addresses_banner": "Nema dodatih adresa",
+      "address_deleted_notification": "Adresa obrisana",
+      "cancel_adding_address_accessibility_label": "Otkaži dodavanje adrese",
+      "cancel_deletion_button": "Poništi",
+      "cancel_deletion_button_accessibility_label": "Poništi brisanje {{address}}"
     },
     "address_form": {
       "attention": "Pažnja",
@@ -1446,6 +1458,116 @@
           "not_available": "Apple Pay nije dostupan na ovom uređaju."
         }
       }
+    },
+    "order_details": {
+      "marketing_checkbox_label": "Pošaljite mi e-poštom novosti i ponude",
+      "marketing_checkmark_label": "Pretplaćeni ste na primanje novosti i ponuda putem e-pošte",
+      "marketing_pending_confirmation": "Kliknite na link u svom imejlu da potvrdite.",
+      "marketing_resend_email": "Ponovo pošalji imejl",
+      "marketing_resend_email_success": "Poslat link",
+      "returns": {
+        "expand_events_label": "Prikaži detalje",
+        "hide_events_label": "Sakrij detalje",
+        "ineligible_return_message": "Nijedan artikal u ovoj porudžbini nije moguće vratiti.",
+        "ineligible_return_message_when_returned": "Nijedna dodatna stavka u ovoj porudžbini ne podleže povraćaju.",
+        "print_shipping_label": "Odštampaj otpremnicu",
+        "return_and_refund_modal_header": "Politika povraćaja novca",
+        "tracking_number": "Broj za praćenje:",
+        "exchange_header": "Razmena predmeta",
+        "exchange_subheader": "Artikli za zamenu biće dodati porudžbini nakon završetka povrata."
+      },
+      "shipping": {
+        "address": "Adresa za dostavu",
+        "address_map_marker": "Adresa za dostavu",
+        "method": "Način slanja",
+        "method_short": "Metodologija",
+        "ship_to": "Isporuči na",
+        "summary": "Dostava",
+        "free": "Slobodan",
+        "free_shipping_discount": "Besplatna dostava",
+        "one_time": "Jednokratna isporuka",
+        "subscription": "Isporuka pretplate"
+      },
+      "pickup": {
+        "pickup": "Preuzimanje",
+        "pickup_location": "Lokacija preuzimanja",
+        "pickup_point": "Mesto preuzimanja"
+      },
+      "show_items": "Prikažite stavke",
+      "total_savings": "Ukupne uštede",
+      "show_order_summary": "Prikaži sažetak narudžbine",
+      "hide_order_summary": "Sakrij rezime porudžbine",
+      "subtitle": "Potvrđeno {{date}}",
+      "subtotal": "Međuzbir",
+      "subtotal_label_with_quantity": {
+        "one": "Međuzbir",
+        "other": "Međuzbir · {{count}} stavki"
+      },
+      "summary_list_title_accessibility_label": "Naruči stavke",
+      "summary_title": "Pregled narudžbine",
+      "summary_totals_title_accessibility_label": "Ukupno porudžbine",
+      "shop_order_tracking": {
+        "download_shop_to_track": "Preuzmite Shop za praćenje paketa",
+        "open_in": "Otvorite u",
+        "open_in_shop": "Otvori u Prodavnici",
+        "track_order_with_shop": "Prati porudžbinu uz Shop",
+        "title_header": "Skenirajte telefonom",
+        "real_time_delivery_updates": "Prodavnica će vam poslati obaveštenja o dostavi u realnom vremenu kada vaša porudžbina bude poslata.",
+        "real_time_delivery_updates_with_gift": "Dobijajte ažuriranja o isporuci u realnom vremenu i poklon od {{promoAmount}} koji možete potrošiti u aplikaciji Shop.",
+        "shop_app_promo_amount_off": "Dobijte poklon od {{promoAmount}}",
+        "shop_app_promo_text": "{{amountOff}} za trošenje u aplikaciji Shop"
+      },
+      "edit_summary": {
+        "added": "Dodato",
+        "added_with_quantity": "Dodato {{quantity}}",
+        "removed": "Uklonjeno",
+        "removed_with_quantity": "Uklonjeno {{quantity}}",
+        "updated_at": "Vaša porudžbina je ažurirana {{date}}",
+        "returned": "Vraćeno",
+        "returned_with_quantities": "Vraćeno {{delta}} od {{total}}",
+        "removed_with_quantities": "Uklonjeno {{delta}} od {{total}}",
+        "return_line_item_removed": "Uklonjeno iz povraćaja",
+        "return_line_item_removed_with_quantities": "Uklonjeno {{delta}} iz povrata"
+      },
+      "shop_pay": {
+        "order_completed_with": "Narudžbina uspešno završena sa",
+        "learn_more": "Saznajte više",
+        "usdc_rewards_terms": "Pogledajte uslove za USDC nagrade"
+      },
+      "taxes": "Porezi",
+      "taxes_included": "Uključujući {{amount}} poreza",
+      "duties_and_taxes_included": "Ukupna cena uključuje carine i poreze. Bez dodatnih troškova pri isporuci.",
+      "duties": "Dužnosti",
+      "ok_duties_tooltip": "Ova porudžbina se šalje iz druge zemlje, tako da su dažbine dodate vašem ukupnom iznosu porudžbine.",
+      "error_duties_tooltip": "Ova porudžbina se šalje iz druge države, tako da se carine i porezi mogu naplatiti prilikom isporuke.",
+      "zero_duties_tooltip": "Ova porudžbina se isporučuje iz druge zemlje. Na porudžbine ove vrednosti ne plaćaju se carine.",
+      "tip": "Savet",
+      "title": "Naručite {{name}}",
+      "total": "Ukupno",
+      "unit_price": "{{price}}/kom.",
+      "pagination": {
+        "load_more": "Prikaži više",
+        "load_more_accessibility_label": "Prikaži više stavki",
+        "loading_accessibility_label": "Učitavanje stavki"
+      },
+      "login_to_view_all_order_details": "Prijavite se da biste videli sve detalje porudžbine.",
+      "log_in": "Prijavljivanje",
+      "logged_in_account_no_permission_to_order": "Prijavljeni ste kao {{email}}. Ovaj nalog nema dozvolu za upravljanje ovom porudžbinom.",
+      "log_in_to_a_different_account": "Prijavite se na drugi nalog",
+      "fees": {
+        "restocking_fee": "Naknada za popunjavanje zaliha",
+        "return_shipping_fee": "Povratna dostava"
+      },
+      "vat_invoices": {
+        "label": "PDV"
+      },
+      "link_sent": "Poslat link",
+      "cash_rounding": "Zaokruživanje iznosa gotovine",
+      "adjusted_payment": "Usklaćena uplata",
+      "adjusted_total": "Korigovan zbir",
+      "due_on_date": "Dospeva {{date}}",
+      "due_on_fulfillment": "Dospeva po ispunjenju",
+      "due_on_receipt": "Dospeva po prijemu"
     }
   },
   "content": {
