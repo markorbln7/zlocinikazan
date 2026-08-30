@@ -2068,8 +2068,23 @@
         "delivery_exception_on_hold_title": "Na čekanju",
         "delivery_exception_returning_to_sender_action": "Kontaktirajte {{carrier}}",
         "delivery_exception_returning_to_sender_description": "{{link}} za više informacija",
-        "delivery_exception_returning_to_sender_description_unknown": "Kontaktirajte prevoznika za više informacija"
-      }
+        "delivery_exception_returning_to_sender_description_unknown": "Kontaktirajte prevoznika za više informacija",
+        "delivery_exception_returning_to_sender_title": "Nije dostavljeno",
+        "delivery_exception_shop_promise_delivered_late_description": "Vaša porudžbina je pokrivena uslugom Shop Promise. Pošto je stigla kasno, zatražite {{amount}} u Shop Cash-u.",
+        "delivery_exception_shop_promise_delivered_late_title": "Isporučeno kasno",
+        "pickup_address_map_link_accessibility_label": "Pogledajte lokaciju preuzimanja na {{address}} na mapi (otvara se u novom prozoru)",
+        "pickup_location_label": "Lokacija preuzimanja:",
+        "pickup_qr_code_accessibility_label": "QR kod za skeniranje u prodavnici kada preuzimate svoju porudžbinu",
+        "predicted_by_shop": "Predviđeno od strane Shop-a"
+      },
+      "status_mark_as_delivered": "Označi kao isporučeno",
+      "fulfillment_status_title": "Status isporuke: {{status}}",
+      "buy_again": "Kupite ponovo",
+      "buy_again_accessibility_label": "Kupi ponovo za porudžbinu {{orderId}}",
+      "manage": "Upravljajte",
+      "manage_accessiblity_label": "Upravljajte porudžbinom {{orderId}}",
+      "group_title_label": "Deo: {{groupTitle}}",
+      "group_title_label_with_parent": "Za: {{groupTitle}}"
     },
     "addresses": {
       "default_address": {
@@ -2597,7 +2612,126 @@
       "adjusted_total": "Korigovan zbir",
       "due_on_date": "Dospeva {{date}}",
       "due_on_fulfillment": "Dospeva po ispunjenju",
-      "due_on_receipt": "Dospeva po prijemu"
+      "due_on_receipt": "Dospeva po prijemu",
+      "shipment_timeline": {
+        "expand_events_label": "Prikaži detalje",
+        "expand_events_accessibility_label": "Prikaži detalje pošiljke narudžbine",
+        "hide_events_label": "Sakrij detalje",
+        "hide_events_accessibility_label": "Sakrij detalje o otpremi porudžbine"
+      },
+      "addresses_section_title": "Naplata i isporuka",
+      "order_details": "Detalji porudžbine",
+      "order_details_skeleton_accessibility_label": "Prijavite se da biste videli sve detalje porudžbine.",
+      "billing_address": "Adresa za naplatu",
+      "card_ending_with": "koji se završava sa {{lastDigits}}",
+      "contact": "Kontakt",
+      "company": "Preduzeće",
+      "fully_refunded_label": "Vraćeno sredstva",
+      "fulfillment_images": {
+        "one_products_accessibility_label": "Ispunjavanje uključuje {{lineItemName1}} količina {{lineItemQuantity1}}",
+        "two_products_accessibility_label": "Ispunjenje uključuje {{lineItemName1}} količina {{lineItemQuantity1}}, {{lineItemName2}} količina {{lineItemQuantity2}}",
+        "three_products_accessibility_label": "Isporuci uključuje {{lineItemName1}} količina {{lineItemQuantity1}}, {{lineItemName2}} količina {{lineItemQuantity2}}, {{lineItemName3}} količina {{lineItemQuantity3}}",
+        "four_products_accessibility_label": "Isporučenje uključuje {{lineItemName1}} količina {{lineItemQuantity1}}, {{lineItemName2}} količina {{lineItemQuantity2}}, {{lineItemName3}} količina {{lineItemQuantity3}}, {{lineItemName4}} količina {{lineItemQuantity4}}",
+        "five_products_accessibility_label": "Ispuna uključuje {{lineItemName1}} količina {{lineItemQuantity1}}, {{lineItemName2}} količina {{lineItemQuantity2}}, {{lineItemName3}} količina {{lineItemQuantity3}}, {{lineItemName4}} količina {{lineItemQuantity4}}, {{lineItemName5}} količina {{lineItemQuantity5}}",
+        "six_products_accessibility_label": "Ispunjavanje uključuje {{lineItemName1}} količina {{lineItemQuantity1}}, {{lineItemName2}} količina {{lineItemQuantity2}}, {{lineItemName3}} količina {{lineItemQuantity3}}, {{lineItemName4}} količina {{lineItemQuantity4}}, {{lineItemName5}} količina {{lineItemQuantity5}}, {{lineItemName6}} količina {{lineItemQuantity6}}",
+        "six_and_more_products_accessibility_label": "Isporuci je uključeno: {{lineItemName1}} količina {{lineItemQuantity1}}, {{lineItemName2}} količina {{lineItemQuantity2}}, {{lineItemName3}} količina {{lineItemQuantity3}}, {{lineItemName4}} količina {{lineItemQuantity4}}, {{lineItemName5}} količina {{lineItemQuantity5}}, {{lineItemName6}} količina {{lineItemQuantity6}} i više"
+      },
+      "group_title_label": "Deo: {{groupTitle}}",
+      "group_title_label_with_parent": "Za: {{groupTitle}}",
+      "view_controls": {
+        "gallery": "Галерија",
+        "list": "Lista"
+      },
+      "grouped_view_components": {
+        "expand_line_items": "Prikaži {{count}} stavki",
+        "collapse_line_items": "Sakrij {{count}} stavki",
+        "line_item_summary_list_accessibility_label": "Stavke u paketu {{productTitle}}"
+      },
+      "discount": "Popust",
+      "discount_order_stacking": {
+        "one": "Popust na porudžbinu",
+        "other": "Popusti na porudžbine"
+      },
+      "price_before_discount_accessibility_label": "Originalna cena",
+      "price_after_discount_accessibility_label": "Snižena cena",
+      "compare_at_sale": "Prodaja ({{saleAmount}})",
+      "hide_items": "Sakrij stavke",
+      "loading": "Učitavanje detalja porudžbine",
+      "loading_finished_accessibility_message": "Detalji porudžbine su učitani",
+      "location": "Lokacija",
+      "image_gallery": {
+        "next": "Prikaži sledeće stavke",
+        "previous": "Prikaži prethodne stavke",
+        "load_more_items": {
+          "one": "Prikaži još {{count}} stavki",
+          "other": "Prikaži još {{count}} stavki"
+        }
+      },
+      "mobile_summary_toggle_button": {
+        "open": "Prikaži sažetak narudžbine",
+        "closed": "Sakrij rezime porudžbine"
+      },
+      "no_data": "Nijedan",
+      "no_data_provided_accessibility_label": "{{fieldName}} je prazno",
+      "not_applicable": "N/A",
+      "paid_amount": "Plaćeno",
+      "partially_refunded_label": "DELIMIČNO VRAĆENO",
+      "payment_confirmation": {
+        "payment_received": "Hvala! Vaša uplata u iznosu od {{amount}} je primljena.",
+        "full_payment_received": "Hvala vam! Vaša uplata u iznosu od {{amount}} je primljena i ova porudžbina je sada u potpunosti plaćena.",
+        "payment_authorized": "Hvala! Saldo će biti ažuriran kada uplata bude primljena.",
+        "dismiss_label": "Odbaci potvrdu o plaćanju"
+      },
+      "payment": {
+        "status_in_review": "Plaćanje po pregledu/recenziji",
+        "status_unpaid": "Plaćanje dospijeva {{date}}",
+        "title": "Plaćanje",
+        "payment_type": {
+          "gift_card": "Poklon kartica",
+          "store_credit": "Kredit u prodavnici",
+          "money_order": "Uputnica",
+          "cash_on_delivery": "Plaćanje pouzećem (PP)",
+          "bank_deposit": "Bankovni Depozit",
+          "manual": "Priručnik"
+        },
+        "shop_pay_installments": {
+          "summary": "Kupovina na rate",
+          "view_schedule": "Pogledajte raspored"
+        },
+        "transactions": {
+          "show_all": "Prikaži sve",
+          "show_less": "Prikaži manje",
+          "details": "Detalji",
+          "payment_details": "Detalji plaćanja"
+        },
+        "emv_details": {
+          "auth": "OVLAŠĆENJE:",
+          "aid": "POMOĆ:",
+          "source": "IZVOR:"
+        }
+      },
+      "paid_with_shop_pay_installments_card": {
+        "title": "Podsetnici za plaćanje za rate putem Shop Pay-a",
+        "paid_with_shop_pay_installments": "Plaćeno putem Shop Pay rata",
+        "description": "Pratite svoj raspored plaćanja uz podsetnike u aplikaciji Shop.",
+        "payment_reminders_button": "Primajte podsetnike za plaćanje",
+        "desktop_qr_code_content": {
+          "title": "Skeniraj podsetnike",
+          "description": "Dobijajte podsetnike za rate uz Shop."
+        }
+      },
+      "refunded_amount": "Refundirano",
+      "request_return_failed": "Došlo je do problema prilikom obrade vašeg zahteva. Pokušajte ponovo.",
+      "login_card": {
+        "title": "Pristupite detaljima narudžbine",
+        "resend_link_and_login": "Da biste pregledali detalje porudžbine, prijavite se ili pošaljite novu vezu na imejl ili broj telefona koji ste koristili prilikom plaćanja.",
+        "resend_link_only": "Da biste pogledali detalje svoje porudžbine, pošaljite novu vezu na imejl ili broj telefona korišćen prilikom plaćanja.",
+        "log_in": "Prijavljivanje",
+        "resend_link": "Pošalji novi link",
+        "link_expired": "Link je istekao"
+      },
+      "remaining_amount": "Preostali",
+      "marketing_section_title": "Vesti i ponude"
     },
     "payment_method_brands": {
       "visa": "Viza",
