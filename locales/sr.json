@@ -1724,6 +1724,160 @@
       "tooltip": {
         "accessibility_label_context": "Više informacija o %{context}",
         "additional_payment_methods": "Dodatni načini plaćanja"
+      },
+      "shipping": {
+        "shipping_method_recurring_shipments_group_title": {
+          "one": "Ponavljajuća pošiljka",
+          "other": "Ponavljajuće pošiljke"
+        },
+        "subscription_shipping": "Isporuka pretplate",
+        "subscription_local_delivery": "Lokalna dostava pretplate",
+        "subscription_pickup": "Preuzimanje pretplate",
+        "waiting_on_rate_notice": "Preuzimanje dostupnih cena dostave…",
+        "waiting_on_pickup_location_notice": "Pribavljanje dostupnih lokacija za preuzimanje…",
+        "no_rates_for_cart_or_destination_notice": "Nema dostupnih načina isporuke za vašu korpu ili adresu",
+        "no_pickup_location_notice": "Barem jedan od vaših proizvoda nije dostupan za preuzimanje.",
+        "no_rates_for_country_notice": "Nema dostupnih cena isporuke za ovu adresu.",
+        "no_rates_contact_notice": "Kontaktirajte nas za više informacija",
+        "free_rate_label": "Slobodan",
+        "cheapest_rate_label": "Najjeftinije",
+        "estimated_delivery_date": {
+          "one": "%{count} radni dan",
+          "other": "%{count} radnih dana"
+        },
+        "estimated_delivery_date_range": "%{minimum} do %{maximum} radnih dana",
+        "delivery_date_range": "%{min_time}–%{max_time}",
+        "estimated_delivery_time": "Procenjena isporuka %{time}",
+        "estimated_delivery_time_range": "Procenjena dostava %{min_time}–%{max_time}",
+        "delivery_today": "Isporuka istog dana %{time}",
+        "delivery_tomorrow": "Isporuka sledećeg dana %{time}",
+        "two_day_delivery": "Dostava za 2 dana %{time}",
+        "delivery": "Isporuka %{time}",
+        "delivery_to": "Dostava za",
+        "arrives_time": "Stiže %{time}",
+        "arrives_time_range": "Stiže %{min_time}–%{max_time}",
+        "estimated_time": "Procenjeno %{time}",
+        "estimated_time_range": "Procenjeno %{min_time}–%{max_time}",
+        "default_description": "Šalje se za 1 radni dan",
+        "unbranded_default_description": "Spremno za isporuku",
+        "unbranded_description_same_day": "Šalje se istog radnog dana",
+        "unbranded_description_with_fulfillment_days": {
+          "one": "Šaljemo narednog radnog dana",
+          "other": "Isporuka za %{count} radnih dana"
+        },
+        "unbranded_description_with_fulfillment_weeks": {
+          "one": "Isporučuje se za %{count} sedmicu",
+          "other": "Isporuka za %{count} nedelje"
+        },
+        "shipping_line_phone_label": "Broj mobilnog telefona (obavezno)",
+        "shipping_line_phone": "Vaš kurir može koristiti ovaj broj da vas kontaktira.",
+        "shipping_line_delivery_phone_label": "Broj mobilnog telefona",
+        "shipping_line_delivery_phone": "Možda ćete biti kontaktirani sa novostima o vašoj isporuci.",
+        "optional_shipping_line_delivery_instructions_label": "Uputstva za dostavu (opciono)",
+        "shipping_line_delivery_instructions": "Unesite potrebne informacije, kao što su šifre za vrata ili uputstva za isporuku.",
+        "other_method": {
+          "zero": "Nema drugih dostupnih metoda",
+          "one": "Dostupno još %{count} metoda na",
+          "other": "%{count} drugih dostupnih metoda počevši od"
+        },
+        "shipping_rate_discounted_amount": "Bilo: %{original_amount}. Sada: %{amount}",
+        "local_delivery": "Lokalna dostava",
+        "prime_not_available": {
+          "default": "Prime dostava nije dostupna za vašu porudžbinu. Vaše opcije dostave su ažurirane."
+        },
+        "subscription_delivery_description": {
+          "free_shipping_cycles": {
+            "one": "Besplatna dostava za još %{count} porudžbina",
+            "other": "Besplatna dostava za još %{count} isporuka"
+          },
+          "free_shipping_cycles_delivery_not_included": {
+            "one": "Besplatna dostava za %{count} pošiljaka",
+            "other": "Besplatna dostava za %{count} isporuke"
+          },
+          "first_n_order_free_with_cycle": {
+            "one": "Besplatna dostava za još %{count} isporuka, a zatim %{recurring_order_shipping_price}",
+            "other": "Besplatna isporuka za još %{count} narudžbine, zatim %{recurring_order_shipping_price}"
+          },
+          "first_n_order_free_with_cycle_delivery_not_included": {
+            "one": "Besplatna dostava za %{count} narudžbinu, a zatim %{recurring_order_shipping_price}",
+            "other": "Besplatna isporuka za %{count} isporuka, zatim %{recurring_order_shipping_price}"
+          },
+          "max_cycles_base_shipping": {
+            "one": "Još %{count} isporuka za %{shipping_price}",
+            "other": "Još %{count} isporuka za %{shipping_price} svaka"
+          },
+          "max_cycles_base_shipping_delivery_not_included": {
+            "one": "%{count} dostava za %{shipping_price}",
+            "other": "Još %{count} isporuka za %{shipping_price} svaka"
+          },
+          "prepaid_free_shipping_with_cycles": {
+            "one": "Besplatna poštarina za prvih %{cycle}, a zatim %{recurring_order_shipping_price}",
+            "other": "Besplatna poštarina za prvih %{cycle}, a zatim %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_one_cycle": {
+            "one": "%{shipping_price} za još %{count} dostava",
+            "other": "%{shipping_price} za još %{count} isporuka (%{per_delivery_cost})"
+          },
+          "prepaid_order_one_cycle_delivery_not_included": {
+            "one": "%{shipping_price} za %{count} dostava",
+            "other": "%{shipping_price} za %{count} isporuka (%{per_delivery_cost})"
+          },
+          "prepaid_order_no_cycle": {
+            "one": "%{shipping_price} za još %{count} isporuka, nakon čega sledi %{recurring_order_shipping_price}",
+            "other": "%{shipping_price} za još %{count} isporuka (%{per_delivery_cost}), nakon čega sledi %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_no_cycle_delivery_not_included": {
+            "one": "%{shipping_price} za isporuku od %{count} proizvoda, nakon čega sledi %{recurring_order_shipping_price}",
+            "other": "%{shipping_price} za %{count} isporuka (%{per_delivery_cost}), a nakon toga %{recurring_order_shipping_price}"
+          },
+          "subscription_free_with_frequency_label": "Besplatna dostava %{delivery_frequency}",
+          "prepaid_delivery_frequency": {
+            "one": "za %{count} isporuku",
+            "other": "za %{count} isporuka"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "one": "svaki dan",
+              "other": "svakih %{count} dana"
+            },
+            "week": {
+              "one": "svake nedelje",
+              "other": "svake %{count} nedelje"
+            },
+            "month": {
+              "one": "svakog meseca",
+              "other": "svakih %{count} meseci"
+            },
+            "year": {
+              "one": "svake godine",
+              "other": "svakih %{count} godina"
+            }
+          },
+          "multiple_subscriptions_shipping_price_label": "%{shipping_price} po isporuci",
+          "prepaid_shipping_price_label": "%{shipping_price} po isporuci x %{delivery_interval_count}",
+          "initial_order_discounted": "Prvi trošak isporuke %{discounted_shipping_cost}, a zatim %{frequency_description}",
+          "prepaid_initial_order_discounted": "Prvi trošak dostave %{discounted_shipping_price} %{prepaid_delivery_frequency}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "Trošak prve isporuke %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})",
+          "prepaid_initial_order_discounted_with_renewal": "Prvi trošak dostave %{discounted_shipping_price} %{prepaid_delivery_frequency}, zatim %{shipping_price} %{billing_cycle}",
+          "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "Prvi trošak dostave %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery}), a zatim %{shipping_price} %{billing_cycle}",
+          "shipping_price_included": "Uključeno",
+          "recurring_order_shipping_price": "praćeno sa %{recurring_order_shipping_price}",
+          "first_order_shipping_price_included": "Uključena prva porudžbina, zatim %{recurring_order_shipping_price}",
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (%{per_delivery_price} po isporuci), a zatim %{recurring_order_shipping_price}",
+          "first_n_order_free": {
+            "one": "Prva porudžbina besplatno",
+            "other": "Prvih %{count} narudžbina besplatno"
+          },
+          "free_for_first_n_order": {
+            "one": "Za prvi red",
+            "other": "Za prvih %{count} porudžbina"
+          }
+        },
+        "one_time_purchase_shipping": "Jednokratna isporuka",
+        "duties_and_taxes_title": "Carine i porezi",
+        "shipping_information_required_notice": "Potrebne su informacije o isporuci. {{link}}.",
+        "shipping_information_redirect_link": "Unesite svoje podatke ovde",
+        "loading_progressive_rates": "Tražim još cena…"
       }
     },
     "pagination": {
