@@ -3672,7 +3672,82 @@
       "title": "Podešavanja",
       "loading_accessibility_message": "Učitavam stranicu sa podešavanjima",
       "log_out_everywhere": {
-        "title": "Odjavite se svuda"
+        "title": "Odjavite se svuda",
+        "description": "Ako ste izgubili uređaj ili imate bezbednosne probleme, odjavite se svuda da biste obezbedili sigurnost svog naloga.",
+        "button": "Odjavi se sa svih uređaja",
+        "warning_message": "Bićete odjavljeni i na ovom uređaju."
+      }
+    },
+    "shop_ads": {
+      "title": "Drugi proizvodi koji bi vam se mogli dopasti",
+      "subtitle": "Dostupno ograničeno vreme",
+      "button": "Istražite u prodavnici",
+      "previous_button": "Prethodno",
+      "next_button": "Dalje"
+    },
+    "knowledge_base": {
+      "self_serve_returns": {
+        "enabled": "Kupci mogu sami da zatraže i upravljaju povraćajima.",
+        "disabled": "Kupci moraju kontaktirati trgovca kako bi zatražili povraćaj."
+      }
+    },
+    "subscriptions": {
+      "update_payment_instrument": {
+        "title": "Zameni način plaćanja",
+        "loading": "Učitavanje metoda plaćanja",
+        "no_payment_methods_available": "Nema dostupnih metoda plaćanja",
+        "select_new_payment_method": "Odaberite novi način plaćanja",
+        "current_method": "Trenutno",
+        "cancel": "Poništi",
+        "save": "Sačuvaj",
+        "success": "Način plaćanja je ažuriran",
+        "use_new_payment_method": "+ Koristite novi način plaćanja"
+      }
+    },
+    "intents": {
+      "subscription_replace_payment_method": {
+        "card_number": "Broj kartice",
+        "title": "Zameni način plaćanja",
+        "replace_with": "Zamenite sa",
+        "add_new_payment_method": "Dodaj novi",
+        "save_button": "Sačuvaj",
+        "close_button": "Zatvori",
+        "loading": "Učitavanje modalnog prozora za zamenu načina plaćanja",
+        "success": "Način plaćanja je ažuriran",
+        "invalid_subscription_contract": "Nije moguće pronaći pretplatu",
+        "expiry_date": "Ističe: {{expiryDate}}",
+        "edit_current_payment_method": "Izmeni trenutni način plaćanja",
+        "edit_selected_payment_method": "Izmenite izabrani način plaćanja"
+      }
+    },
+    "sign_in": {
+      "brand_logo_alt_text": "Logo preduzeća %{shop_name}",
+      "processing": "Obrada…",
+      "step_one": {
+        "page_title": "Prijavite se - %{shop_name}",
+        "heading": "Prijavljivanje",
+        "subheading": "Unesite svoju imejl adresu i poslaćemo vam verifikacioni kod",
+        "subheading_with_sign_in_options": "Prijavite se ili kreirajte nalog",
+        "input_field_label": "Imel",
+        "button": "Nastaviti",
+        "or": "ili",
+        "consent_agreement": "Nastavkom korišćenja saglasni ste sa %{terms}",
+        "last_used_pill": "Poslednje korišćeno"
+      },
+      "step_two": {
+        "page_title": "Unesi kod - %{shop_name}",
+        "heading": "Unesi kod",
+        "subheading": "Poslato na %{email}",
+        "change_email": "Izmeni",
+        "restart_link": "Prijavite se koristeći drugu e-poštu",
+        "input_field_label": "6-ocifreni kod",
+        "button": "Pošalji"
+      },
+      "error": {
+        "invalid": {
+          "invalid_email": "Unesite ispravnu e-adresu",
+          "invalid_code": "Unesite tačan šestocifreni kod"
+        }
       }
     }
   },
@@ -3789,5 +3864,60 @@
       "subtext": "Vaša poklon kartica",
       "shop_link": "Posetite internet prodavnicu"
     }
+  },
+  "accessibility": {
+    "account": "Nalog",
+    "cart": "Korpa",
+    "cart_count": "Ukupno stavki u korpi",
+    "close_dialog": "Zatvori dijalog",
+    "country_region": "Zemlja/Region",
+    "country_results_count": "{{ count }} rezultata",
+    "decrease_quantity": "Smanji količinu",
+    "discount": "Primeni kod za popust",
+    "discount_menu": "Kodovi za popust",
+    "discount_applied": "Primenjen kod za popust: {{ code }}",
+    "filters": "Filteri",
+    "filter_count": {
+      "one": "{{ count }} filter primenjen",
+      "other": "{{ count }} primenjenih filtera"
+    },
+    "increase_quantity": "Povećaj količinu",
+    "inventory_status": "Status zaliha",
+    "localization_region_and_language": "Izbor regiona i jezika",
+    "menu": "Meni",
+    "new_window": "Otvara se u novom prozoru.",
+    "open_hotspot": "Otvori pristupnu tačku",
+    "quantity": "Količina",
+    "pause_video": "Pauziraj video",
+    "play_model": "Reprodukuj 3D model",
+    "play_video": "Pusti video",
+    "loading_product_recommendations": "Učitavanje preporuka proizvoda",
+    "rating": "Ocena ovog proizvoda je {{ rating }} od 5",
+    "remove_item": "Ukloni {{ title}}",
+    "remove": "Ukloni",
+    "reset_search": "Resetuj pretragu",
+    "scroll_to": "Skrolujte do {{ title }}",
+    "search_results_count": "{{ count }} rezultata pretrage pronađeno za \"{{ query }}\"",
+    "search_results_no_results": "Nema rezultata za „{{ query }}“",
+    "skip_to_product_info": "Pređite na informacije o proizvodu",
+    "skip_to_results_list": "Pređite na listu rezultata",
+    "skip_to_text": "Pređi na sadržaj",
+    "slide_status": "Slajd {{ index }} od {{ length }}",
+    "slideshow": "Projekcija slajdova",
+    "slideshow_next": "Sledeći slajd",
+    "slideshow_pause": "Pauziraj projekciju slajdova",
+    "slideshow_play": "Pusti projekciju slajdova",
+    "slideshow_previous": "Prethodni slajd",
+    "unit_price": "Jedinična cena",
+    "find_country": "Pronađite državu",
+    "view_pricing_info": "Pogledajte informacije o cenama"
+  },
+  "actions": {
+    "add": "Dodaj",
+    "add_to_cart": "Dodaj u korpu",
+    "added": "Dodato",
+    "apply": "Primeni",
+    "back": "Nazad",
+    "choose": "Izaberite"
   }
 }
