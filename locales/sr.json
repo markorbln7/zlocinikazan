@@ -2121,6 +2121,112 @@
           "generic": "Došlo je do problema sa uslugom Apple Pay. Pokušajte ponovo ili koristite drugi način plaćanja.",
           "not_available": "Apple Pay nije dostupan na ovom uređaju."
         }
+      },
+      "update_success": {
+        "done_button": "Nastavi kupovinu"
+      },
+      "add_success": {
+        "title": "Način plaćanja dodat",
+        "done_button": "Nastavi kupovinu"
+      },
+      "card_fields": {
+        "card_number_label": "Broj kartice",
+        "card_number_placeholder": "Broj kartice",
+        "name_on_card_label": "Ime na kartici",
+        "name_on_card_placeholder": "Ime na kartici",
+        "card_expiry_label": "Datum isteka (MM / GG)",
+        "card_expiry_placeholder": "Datum isteka (MM / GG)",
+        "card_verification_value_label": "Sigurnosni kod",
+        "card_verification_value_placeholder": "Sigurnosni kod",
+        "card_start_label": "Datum izdavanja (MM / GG)",
+        "card_start_placeholder": "Datum izdavanja (MM / GG)",
+        "tooltip": {
+          "tooltip_accessibility_label": "Više informacija",
+          "card_verification_value_explanation_amex": "4-cifreni sigurnosni kod na prednjoj strani vaše kartice",
+          "card_verification_value_explanation_other": "Trošifreni sigurnosni kod na poleđini vaše kartice",
+          "card_verification_value_explanation": "Trojevocifreni sigurnosni kod se obično nalazi na poleđini vaše kartice. American Express kartice imaju četvorocifreni kod koji se nalazi na prednjoj strani.",
+          "card_security_notice": "Sve transakcije su sigurne i šifrovane."
+        },
+        "field_errors": {
+          "credit_card_name_invalid": "Unesite svoje ime tačno onako kako je napisano na vašoj kartici",
+          "credit_card_number_invalid": "Unesite važeći broj kartice",
+          "credit_card_expiry_invalid": "Unesite validan datum isteka kartice",
+          "credit_card_verification_value_blank": "Unesite CVV ili bezbednosni kod sa kartice"
+        },
+        "unavailable": {
+          "text": "Plaćanje kreditnim i debitnim karticama trenutno nije dostupno.",
+          "link_text": "Osveži ovu stranicu",
+          "suffix": "ili pokušajte ponovo kasnije."
+        }
+      },
+      "payment_delete": {
+        "title": "Obriši način plaćanja",
+        "description_without_replacement": "Ovaj način plaćanja više neće biti dostupan za buduće kupovine.",
+        "description_with_replacement": "Brisanje ovog načina plaćanja uticaće na prethodno autorizovane uplate. Možete ga opcionalno zameniti drugim načinom plaćanja kako biste nastavili da primate predstojeće narudžbine.",
+        "warning_message_with_replacement": {
+          "with_pending_orders_and_subscriptions": "Brisanje ovog načina plaćanja će uticati na unapred ovlašćena plaćanja. Ukoliko ne izaberete alternativni način plaćanja, ovim načinom plaćanja će se i dalje naplaćivati svi neizmireni iznosi za postojeće porudžbine. Odabir alternativnog načina plaćanja omogućiće vam da primate predstojeće porudžbine pretplate bez prekida.",
+          "with_pending_orders": "Brisanjem ovog načina plaćanja biće uklonjen sa vašeg naloga i više neće biti dostupan za buduće kupovine. Ukoliko ne odaberete alternativni način plaćanja, i dalje će biti korišćen za naplatu svih neizmirenih dugovanja za postojeće porudžbine.",
+          "with_subscriptions": "Brisanje ovog načina plaćanja uticaće na unapred autorizovana plaćanja. Zamenite ga alternativnim načinom plaćanja kako biste nastavili da primate buduće porudžbine."
+        },
+        "warning_message_without_replacement": {
+          "with_pending_orders_and_subscriptions": "Brisanje ovog načina plaćanja uticaće na prethodno autorizovana plaćanja. Ovaj način plaćanja će se i dalje koristiti za naplatu svih neizmirenih dugovanja za postojeće porudžbine, ali nećete primati predstojeće porudžbine pretplate. Dodajte alternativni način plaćanja kako biste nastavili da primate porudžbine pretplate.",
+          "with_pending_orders": "Brisanjem ovog načina plaćanja biće uklonjen sa vašeg naloga i više neće biti dostupan za buduće kupovine. I dalje će se koristiti za naplatu preostalih iznosa za postojeće porudžbine.",
+          "with_subscriptions": "Brisanjem ovog načina plaćanja uticaćete na preautorizovana plaćanja. Dodajte alternativni način plaćanja da biste nastavili da primate predstojeće narudžbine."
+        },
+        "payment_method_selector_placeholder": "Odaberite zamenski način plaćanja (opciono)",
+        "payment_method_selector_no_alternative_payment": "Nema metode zamene",
+        "replace_method_with_new_method_description": "Vaš {{currentPaymentMethodName}} će biti izbrisan i zamenjen sa {{newPaymentMethodName}}.",
+        "error_when_deleting": "Izvinjavamo se, ali nešto je pošlo naopako i nismo uspeli da izbrišemo ovaj način plaćanja. Pokušajte ponovo kasnije ili osvežite stranicu.",
+        "delete_and_replace_button": "Obriši i zameni",
+        "delete_and_replace_button_accessibility_label": "Izbrišite {{currentPaymentMethodName}} i zamenite sa {{newPaymentMethodName}}.",
+        "deleted_successfully": "Način plaćanja je uspešno obrisan.",
+        "loading_available_payment_methods_accessibility_label": "Učitavanje dostupnih metoda plaćanja"
+      },
+      "add_payment_method": {
+        "title": "Dodaj način plaćanja",
+        "button_title": "Dodaj",
+        "payment_method_added_confirmation": "Način plaćanja dodat",
+        "missing_customer_error": "Došlo je do greške. Pokušajte ponovo ili kontaktirajte podršku.",
+        "replace_mode_warning": "Brisanje ovog načina plaćanja uticaće na pretplate ili pre-porudžbine. Zamenite ga alternativnim načinom plaćanja da biste nastavili da primate predstojeće porudžbine.",
+        "choose_from_list": "Izaberite sa liste",
+        "add_new_button": "Dodaj novi",
+        "billing_address": {
+          "title": "Adresa za naplatu",
+          "add_billing_address_button": "Dodaj novi",
+          "add_billing_address_button_accessibility_label": "Dodaj novu adresu za naplatu",
+          "choose_billing_address_from_list_button": "Izaberite sa liste",
+          "choose_billing_address_from_list_button_accessibility_label": "Odaberite adresu za naplatu sa liste",
+          "missing_billing_address_error_message": "Molimo vas da navedete adresu za naplatu",
+          "default_checkbox": "Postavi kao podrazumevani način plaćanja"
+        },
+        "subscription_contracts": {
+          "title": "Koristite način plaćanja za ponavljajuće porudžbine",
+          "more_items": {
+            "one": "{{count}} još proizvoda",
+            "other": "{{count}} proizvoda više"
+          },
+          "product_count": {
+            "one": "{{count}} proizvoda",
+            "other": "{{count}} proizvoda"
+          },
+          "product_details": "Detalji o proizvodu",
+          "load_more": "Prikaži više"
+        },
+        "updating_contracts": {
+          "one": "Ažuriranje {{count}} ugovora o pretplati...",
+          "other": "Ažuriranje {{count}} ugovora o pretplati..."
+        },
+        "contracts_updated": {
+          "one": "Uspešno ažuriran {{count}} ugovor o pretplati",
+          "other": "Uspešno ažurirano {{count}} ugovora o pretplati"
+        },
+        "contracts_update_failed": "Nije uspelo ažuriranje nekih ugovora o pretplati",
+        "subscription_contracts_updated": "Ažurirano {{succeeded}} od {{total}} pretplata",
+        "invalid_wallet_type_error": "Nevažeći tip novčanika."
+      },
+      "three_d_secure": {
+        "title": "3D Secure",
+        "verification_failed": "Vaša uplata nije mogla biti verifikovana. Pokušajte ponovo ili koristite drugi način plaćanja."
       }
     },
     "order_details": {
@@ -2232,6 +2338,36 @@
       "due_on_date": "Dospeva {{date}}",
       "due_on_fulfillment": "Dospeva po ispunjenju",
       "due_on_receipt": "Dospeva po prijemu"
+    },
+    "payment_method_brands": {
+      "visa": "Viza",
+      "mastercard": "Mastercard",
+      "americanexpress": "American Express",
+      "discover": "Otkrijte",
+      "dinersclub": "Diners Club",
+      "jcb": "JCB",
+      "elo": "Zdravo",
+      "visaelectron": "Visa Electron",
+      "maestro": "Majstor",
+      "forbrugsforeningen": "Udruženje potrošača",
+      "dankort": "Dankort",
+      "hipercard": "Hiperkard",
+      "unionpay": "UnionPay",
+      "laser": "Laser",
+      "shoppay": "Shop Pay",
+      "applepay": "Apple Pay",
+      "googlepay": "Google Pay",
+      "paypal": "PayPal",
+      "storecredit": "Kredit u prodavnici",
+      "bogus": "Lažan",
+      "klarna_pay_now": "Klarna",
+      "klarna_pay_later": "Klarna",
+      "klarna_slice_it": "Klarna",
+      "blik": "BLIK",
+      "ideal": "iDEAL",
+      "klarna": "Klarna",
+      "mobilepay": "MobilePay",
+      "przelewy24": "Przelewy24"
     }
   },
   "content": {
