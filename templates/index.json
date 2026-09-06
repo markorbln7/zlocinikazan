@@ -177,58 +177,6 @@
         "link_label": "",
         "link_url": ""
       }
-    },
-    "testimonials": {
-      "type": "zik-testimonials",
-      "blocks": {
-        "t_1": {
-          "type": "testimonial",
-          "settings": {
-            "text": "Ima simbolike posle gledanja serije Vratiće se rode gde grupica beogradskih padavičara dolazi da proba nešto novo.",
-            "name": "Miloš Dašić - Kemiš"
-          }
-        },
-        "t_2": {
-          "type": "testimonial",
-          "settings": {
-            "text": "Ništa originalnije ne čuh odavno!",
-            "name": "Juucika"
-          }
-        },
-        "t_3": {
-          "type": "testimonial",
-          "settings": {
-            "text": "Dođite do sjajnih momaka! Primaju i kartice",
-            "name": "borhesbg"
-          }
-        },
-        "t_4": {
-          "type": "testimonial",
-          "settings": {
-            "text": "Nije vam dobro ime firme.",
-            "name": "neka baba u prolazu"
-          }
-        },
-        "t_5": {
-          "type": "testimonial",
-          "settings": {
-            "text": "Jedino ko može da me pobedi su momci iz ZiK-a!",
-            "name": "ChatGPT"
-          }
-        }
-      },
-      "block_order": [
-        "t_1",
-        "t_2",
-        "t_3",
-        "t_4",
-        "t_5"
-      ],
-      "settings": {
-        "heading": "Šta kažu o nama",
-        "loop": true,
-        "autoplay_speed": 0
-      }
     }
   },
   "order": [
@@ -238,7 +186,6 @@
     "product_1",
     "zigzag",
     "images",
-    "kokteli",
-    "testimonials"
+    "kokteli"
   ]
 }

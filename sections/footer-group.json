@@ -13,6 +13,7 @@
   "sections": {
     "zik_footer_newsletter": {
       "type": "zik-footer-newsletter",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Zlocin-i-Kazan-7-1-scaled.jpg",
         "hide_on_product": true,
