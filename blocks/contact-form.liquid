@@ -55,7 +55,7 @@
         id="ContactForm-name"
         class="contact-form__input"
         autocomplete="name"
-        name="contact[Ime]"
+        name="contact[name]"
         value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
         placeholder="{{ 'blocks.contact_form.name' | t }}"
       >
