@@ -1410,3 +1410,7 @@ body.zik-no-scroll {
   text-align: left;
   list-style-position: inside;
 }
+
+ .product-form__submit {
+    background: #90ee90 !important;
+}
