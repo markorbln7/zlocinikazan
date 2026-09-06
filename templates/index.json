@@ -79,10 +79,10 @@
         "link_url": "shopify://pages/o-nama"
       }
     },
-    "product_1": {
+    "product_2": {
       "type": "zik-product",
       "settings": {
-        "product": "dry-gin-classic",
+        "product": "botanicki-dzin",
         "show_description": true,
         "show_tags": true,
         "quantity_label": "Količina",
@@ -90,10 +90,10 @@
         "sold_out_label": "NEMA NA STANJU"
       }
     },
-    "product_2": {
+    "product_1": {
       "type": "zik-product",
       "settings": {
-        "product": "botanicki-dzin",
+        "product": "dry-gin-classic",
         "show_description": true,
         "show_tags": true,
         "quantity_label": "Količina",
@@ -234,8 +234,8 @@
   "order": [
     "slideshow",
     "intro",
-    "product_1",
     "product_2",
+    "product_1",
     "zigzag",
     "images",
     "kokteli",
