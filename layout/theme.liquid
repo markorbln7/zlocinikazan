@@ -114,5 +114,194 @@
     {% if settings.quick_add or settings.mobile_quick_add %}
       {% render 'quick-add-modal' %}
     {% endif %}
+<!-- AGE VERIFICATION POPUP -->
+<div id="age-gate" class="age-gate" aria-hidden="true">
+  <div class="age-gate__box">
+
+    <img
+      src="https://cdn.shopify.com/s/files/1/0973/5910/2241/files/crni_logo.jpg?v=1788731371"
+      alt="{{ shop.name }}"
+      class="age-gate__logo"
+  width="1770"
+  height="592"
+    >
+
+    <h2 class="age-gate__title">DA LI STE PUNOLETNI?</h2>
+
+    <p class="age-gate__text">
+      Morate da imate 18 godina ili više da biste pristupili Zločin i Kazan sajtu.
+    </p>
+
+    <div class="age-gate__buttons">
+      <button id="age-yes" class="age-gate__button age-gate__button--yes">
+        DA
+      </button>
+
+      <button id="age-no" class="age-gate__button age-gate__button--no">
+        NE
+      </button>
+    </div>
+
+    <p class="age-gate__small">
+      Uživajte odgovorno.
+    </p>
+
+  </div>
+</div>
+
+<style>
+  .age-gate {
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+    background: #000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+
+  .age-gate.age-gate--active {
+    display: flex;
+  }
+
+  .age-gate__box {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .age-gate__logo {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto 50px;
+    display: block;
+  }
+
+  .age-gate__title {
+    margin: 0 0 18px;
+    font-size: clamp(28px, 5vw, 48px);
+    line-height: 1.05;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+  }
+
+  .age-gate__text {
+    margin: 0 auto 32px;
+    max-width: 500px;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #d5d5d5;
+  }
+
+  .age-gate__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .age-gate__button {
+    min-width: 200px;
+    padding: 16px 28px;
+    border: 2px solid #fff;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition:
+      background 0.2s ease,
+      color 0.2s ease;
+  }
+
+  .age-gate__button--yes {
+    background: #fff;
+    color: #000;
+  }
+
+  .age-gate__button--yes:hover {
+    background: #000;
+    color: #fff;
+  }
+
+  .age-gate__button--no {
+    background: #000;
+    color: #fff;
+  }
+
+  .age-gate__button--no:hover {
+    background: #fff;
+    color: #000;
+  }
+
+  .age-gate__small {
+    margin-top: 28px;
+    font-size: 12px;
+    color: #888;
+  }
+
+  body.age-gate-open {
+    overflow: hidden;
+  }
+
+  @media (max-width: 600px) {
+    .age-gate__logo {
+      max-width: 340px;
+      margin-bottom: 35px;
+    }
+
+    .age-gate__buttons {
+      flex-direction: column;
+    }
+
+    .age-gate__button {
+      width: 100%;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const ageGate = document.getElementById('age-gate');
+    const yesButton = document.getElementById('age-yes');
+    const noButton = document.getElementById('age-no');
+
+    const storageKey = 'legalDrinkingAgeConfirmed';
+    const expiryKey = 'legalDrinkingAgeExpiry';
+
+    const now = new Date().getTime();
+    const confirmed = localStorage.getItem(storageKey);
+    const expiry = parseInt(localStorage.getItem(expiryKey), 10);
+
+    // Show popup unless confirmation is still valid
+    if (confirmed !== 'true' || !expiry || now > expiry) {
+      ageGate.classList.add('age-gate--active');
+      ageGate.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('age-gate-open');
+    }
+
+    yesButton.addEventListener('click', function () {
+      const thirtyDays = 30 * 24 * 60 * 60 * 1000;
+
+      localStorage.setItem(storageKey, 'true');
+      localStorage.setItem(expiryKey, now + thirtyDays);
+
+      ageGate.classList.remove('age-gate--active');
+      ageGate.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('age-gate-open');
+    });
+
+    noButton.addEventListener('click', function () {
+      window.location.href = 'https://www.google.com/';
+    });
+  });
+</script>
+<!-- END AGE VERIFICATION POPUP -->
+
   </body>
 </html>
