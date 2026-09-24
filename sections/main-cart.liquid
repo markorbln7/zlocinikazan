@@ -15,7 +15,9 @@
       <div class="cart-page__title">
         {%- content_for 'block', id: 'cart-page-title', type: '_cart-title' %}
       </div>
-
+<div>
+<p style="color:red;">{{ item.product.metafields.custom.cart_message }} </p>
+</div>
       <div class="cart-page__items">
         {%- content_for 'block', id: 'cart-page-items', type: '_cart-products' %}
       </div>
