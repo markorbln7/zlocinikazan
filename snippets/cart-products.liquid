@@ -162,6 +162,9 @@
                     >
                       {{- item.product.title -}}
                     </a>
+                    <div>
+<p style="color:red;">{{ item.product.metafields.custom.cart_message }} </p>
+</div>
                   </p>
                   {% if item.product.vendor and block_settings.vendor %}
                     <p>
