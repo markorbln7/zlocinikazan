@@ -146,6 +146,7 @@
       "blocks": {
         "column_site": {
           "type": "link_column",
+          "disabled": true,
           "settings": {
             "title": "SAJT",
             "menu": "footer"
@@ -153,6 +154,7 @@
         },
         "column_account": {
           "type": "link_column",
+          "disabled": true,
           "settings": {
             "title": "MOJ NALOG",
             "menu": "footer"
