@@ -114,6 +114,31 @@
     {% if settings.quick_add or settings.mobile_quick_add %}
       {% render 'quick-add-modal' %}
     {% endif %}
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  function changeQuickAddText() {
+    document.querySelectorAll("button, a").forEach(function (element) {
+      if (
+        element.textContent.trim() === "Quick Add" ||
+        element.textContent.trim() === "Quick add"
+      ) {
+        element.textContent = "Dodaj";
+      }
+    });
+  }
+
+  changeQuickAddText();
+
+  const observer = new MutationObserver(changeQuickAddText);
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+});
+</script>
+
 <!-- AGE VERIFICATION POPUP -->
 <div id="age-gate" class="age-gate" aria-hidden="true">
   <div class="age-gate__box">
